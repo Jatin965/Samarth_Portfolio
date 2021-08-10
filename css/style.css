@@ -231,7 +231,8 @@ nav .burger .line-3 {
   color: white;
 }
 .container {
-  margin-left: 12vw;
+  width: 76vw;
+  margin: auto;
 }
 .Main__Img {
   aspect-ratio: auto;

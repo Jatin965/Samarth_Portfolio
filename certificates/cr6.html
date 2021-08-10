@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samarth Portfolio</title>
+    <!-- Bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- LeafLet Script -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+         
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <!-- Menu Bar Creation -->
+    <nav>
+        <a href="../index.html" class="Logo__Img"><img src="../images/Logo.png" class="img-fluid" alt="Logo"></a>
+        <ul class="Menu__List__holder">
+            <li><a href="../index.html" class="nav__link">Home</a></li>
+            <li><a href="../about.html" class="nav__link">About</a></li>
+            <li><a href="#" class="nav__link">Projects</a></li>
+            <li><a href="./cr-main.html" class="nav__link">Certifications</a></li>
+            <li><a href="../gallery.html" class="nav__link">Gallery</a></li>
+            <li><a href="#" class="nav__link">Music</a></li>
+            <li><a href="#" class="nav__link">Blogs</a></li>
+            <li><a href="../contact.html" class="nav__link">Contact</a></li>
+            <li><a href="#" class="nav__link"><img src="../images/icons/light.svg" class="img-fluid mode__icon" alt="Modes"></a></li>
+        </ul>
+        <div class="burger">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+        </div>
+    </nav>
+
+    <br><br><br>
+
+
+    <!-- Certifcate Display Region -->
+    
+    <section class="container certificate__section">
+        <div class="row">
+            <div class="col col-sm-12 col-md-12 col-lg-12 mx-auto Certificate__Display">
+                <img src="../images/Certificates/Certificate_1st runner up_Samarth-page-001.jpg" class="img-fluid" alt="IMG__1">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+    <!-- Custom Js -->
+    <script>
+    const Mode = document.querySelector('.mode__icon');
+    const nav = document.querySelector('nav');
+    const navLink = document.querySelectorAll('.nav__link');
+    const body = document.querySelector('body');
+
+    let count = 0;
+    Mode.addEventListener('click',function(){
+        body.classList.toggle('DarkMode');
+        nav.classList.toggle('DarkMode');
+        navLink.forEach(element =>{
+            element.classList.toggle('DarkMode');
+        })
+        MenuList.classList.toggle("DarkMode");
+        count = count+1;
+        if(count % 2 === 0){
+            Mode.setAttribute("src","../images/icons/light.svg");
+        }else{
+            Mode.setAttribute("src","../images/icons/dark.svg");
+        }
+    });
+    </script>
+    
+    
+    <script src="../js/Nav.js"></script>
+</body>
+</html>

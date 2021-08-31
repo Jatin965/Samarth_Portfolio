@@ -49,10 +49,11 @@
     <link rel="stylesheet" href="./css/loading.css" />
     <link rel="stylesheet" href="./css/myanimation.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
   </head>
   <body>
     <!-- Loader Addition -->
-    <div class="load__wrapper">
+    <!-- <div class="load__wrapper">
       <div class="wrap">
         <div class="overlay"></div>
 
@@ -74,10 +75,10 @@
           <div class="center"></div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Menu Bar Creation -->
-    <nav>
+    <!-- <nav>
       <a href="./index.html" class="Logo__Img"
         ><img src="./images/Logo.png" class="img-fluid" alt="Logo"
       /></a>
@@ -103,12 +104,74 @@
               alt="Modes"
           /></a>
         </li>
-       
       </ul>
       <div class="burger">
         <div class="line-1"></div>
         <div class="line-2"></div>
         <div class="line-3"></div>
+      </div>
+    </nav> -->
+
+    <nav id="menu" class="menu">
+      <div class="actionsBar">
+        <div>
+          <button id="menuBtn" type="button">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h3 class="menuText">Dashboard</h3>
+        </div>
+      </div>
+      <ul class="optionsBar">
+        <li class="menuItem">
+          <a href="/nwcpnl" class="menuOption">
+            <i class="fas fa-home"></i>
+            <h5 class="menuText">Home</h5>
+          </a>
+        </li>
+        <li class="menuBreak">
+          <hr />
+        </li>
+        <li class="menuItem">
+          <button id="productManagerBtn" type="button" class="menuOption">
+            <i class="fas fa-shopping-bag"></i>
+            <h5 class="menuText">Product Manager</h5>
+          </button>
+        </li>
+        <li class="menuItem">
+          <button id="constantManagerBtn" type="button" class="menuOption">
+            <i class="fas fa-border-all"></i>
+            <h5 class="menuText">Constant Manager</h5>
+          </button>
+        </li>
+      </ul>
+      <div class="about" id="about">
+        <h5>Collapsable side nav</h5>
+        <p>by Parham06</p>
+      </div>
+      <div class="menuUser">
+        <a href="#">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=344&q=80"
+              alt=""
+            />
+          </div>
+          <h5 class="Username menuText">Alex</h5>
+          <p class="menuText"><i class="fas fa-chevron-right"></i></p>
+        </a>
+        <div class="userInfo">
+          <div>
+            <h1><i class="fas fa-exclamation-circle"></i></h1>
+            <p>User Info</p>
+          </div>
+        </div>
+      </div>
+      <div class="themeBar">
+        <div>
+          <button type="button" id="themeChangeBtn">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
       </div>
     </nav>
 
@@ -754,5 +817,6 @@
       });
     </script>
     <script src="js/mode.js"></script>
+    <script src="js/sidebar.js"></script>
   </body>
 </html>

@@ -1,23 +1,14 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  overflow: auto;
-}
-
 .menu {
   position: absolute;
+  overflow: hidden;
   width: 60px;
-  height: 600px;
+  height: 100vh;
   background-color: rgb(10, 0, 19);
   z-index: 2;
   top: 0;
   bottom: 0;
   left: auto;
-  right: 10px;
+  right: 0px;
   margin: auto;
   border-radius: 0.8rem;
   transition: 0.3s ease 0.15s;
@@ -59,7 +50,8 @@ body {
 }
 
 .menu .actionsBar div button:hover {
-  background-color: rgb(132, 0, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(10, 0, 19);
 }
 
 .menu .actionsBar div h3 {
@@ -98,7 +90,8 @@ body {
 }
 
 .menu .optionsBar .menuItem .menuOption:hover {
-  background-color: rgb(132, 0, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(10, 0, 19);
 }
 
 .menu .optionsBar .menuItem .menuOption i {
@@ -195,7 +188,8 @@ body {
 }
 
 .menu .themeBar div button:hover {
-  background-color: rgb(132, 0, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(10, 0, 19);
 }
 
 .menu .menuUser {
@@ -266,6 +260,7 @@ body {
 }
 
 .menu .menuUser .userInfo div {
+  visibility: hidden;
   position: relative;
   width: 100%;
   height: calc(100% - 20px);
@@ -285,7 +280,7 @@ body {
   font-size: 8rem;
 }
 
-.menu .menuUser .userInfo div::before {
+/* .menu .menuUser .userInfo div::before {
   content: "";
   position: absolute;
   bottom: -18px;
@@ -296,7 +291,7 @@ body {
   border-bottom: 15px solid transparent;
   border-right: 15px solid #fff;
   transform: rotate(45deg);
-}
+} */
 
 .menu .menuUser:hover .userInfo {
   pointer-events: all;

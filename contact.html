@@ -69,8 +69,7 @@
          </div>
          <ul class="optionsBar">
              <li class="menuItem">
-
-                 <a href="./index.html" class="menuOption">
+                                <a href="./index.html" class="menuOption">
                      <i class="fas fa-home"></i><h5 class="menuText">Home</h5>
                  </a>
              </li>
@@ -87,19 +86,30 @@
                  </a>
              </li>
              <li class="menuItem">
+                 <a  href="./certificates/cr-main.html" id="constantManagerBtn" class="menuOption">
+                     <i class="fas fa-border-all"></i><h5 class="menuText">Certificate</h5>
+                 </a>
+             </li>
+             <li class="menuItem">
                  <a  href="./gallery.html" id="constantManagerBtn" class="menuOption">
 
                  <i class="fas fa-border-all"></i><h5 class="menuText">Gallery</h5>
                   </a>
              </li>
+
              <li class="menuItem">
-                 <a  href="#" id="constantManagerBtn" class="menuOption">
-                     <i class="fas fa-border-all"></i><h5 class="menuText">Social Media</h5>
+                 <a  href="./music.html" id="constantManagerBtn" class="menuOption">
+                     <i class="fas fa-border-all"></i><h5 class="menuText">Music</h5>
                  </a>
              </li>
              <li class="menuItem">
-                 <a  href="#contact" id="constantManagerBtn" class="menuOption">
-                     <i class="fas fa-border-all"></i><h5 class="menuText">Social Media</h5>
+                 <a  href="#" id="constantManagerBtn" class="menuOption">
+                     <i class="fas fa-border-all"></i><h5 class="menuText">Blogs</h5>
+                 </a>
+             </li>
+             <li class="menuItem">
+                 <a  href="./contact.html" id="constantManagerBtn" class="menuOption">
+                     <i class="fas fa-border-all"></i><h5 class="menuText">Contact</h5>
                  </a>
              </li>
 
@@ -110,7 +120,7 @@
                  <div>
                    <img
                      src="./images/Main__img-1.png"
-                     class="Main__Img img-fluid"
+
                      alt="Main_img"
                    />
                  </div>
@@ -126,10 +136,14 @@
          </div>
          <div class="themeBar">
              <div>
-                 <button class="btn-toggle" type="button" id="dark-mode-toggle"><i class="fas fa-moon"></i><img src="./images/icons/light.svg" class="img-fluid mode__icon" alt="Modes"></button>
+                 <button class="btn-toggle" type="button" id="dark-mode-toggle"><i class="fas fa-moon" id="fa-moon"></i>
+                   <i class="fas fa-sun sun1" id="img-fluid" ></i></button>
              </div>
          </div>
      </div>
+
+
+     <!--  <div class="Separator"><br /><br /><br /><br /></div>-->
 
   <!--  <nav>
         <ul class="Menu__List__holder">
@@ -162,54 +176,78 @@
 -->
 
     <!-- Contact Section -->
-    <section class="Contact__Section" id="contact">
+    <section class="Contact__Section" id="contact" style='position:absolute;top:100px;width:100%'>
         <div class="container-fluid">
             <div class="row">
                 <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_1">
                     <h1>Contact Me</h1>
-                    <form class="MAIN__FORM" name="forms" >
-                        <div class="Form__items">
-                            <input type="text" placeholder="Enter Your Name" name="name" >
-                        </div>
-                        <div class="Form__items">
-                            <input type="text" placeholder="Enter Your Email" name="email" >
-                        </div>
-                        <div class="Form__items">
-                            <input type="number" placeholder="Enter Your Mobile Number" name="phone" >
-                        </div>
-                        <div class="Form__items">
-                            <textarea placeholder="Message" name="mssg" ></textarea>
-                        </div>
-                        <div class="Form__btn">
-                            <!-- <button class="btn btn-primary">Submit</button> -->
+                    <div class="MAIN__FORM">
+                      <div class="Form__items">
+                        <input type="text" placeholder="Enter Your Name" id="name" />
+                      </div>
+                      <div class="Form__items">
+                        <input
+                         type="text"
+                         placeholder="Enter Your Email"
+                         id="email"
+                         />
+                      </div>
+                      <div class="Form__items">
+                        <input
+                          type="number"
+                          placeholder="Enter Your Mobile Number"
+                           id="phone"
+                        />
+                      </div>
+                      <div class="Form__items">
+                        <textarea placeholder="Message" id="texta"></textarea>
+                      </div>
+                      <div class="Form__btn">
+                        <!-- <button class="btn btn-primary">Submit</button> -->
 
-                            <button id="button" class="ready" onclick="clickButton()">
+                        <button id="button" class="ready" onclick=" clickButton()">
+                          <div class="message submitMessage">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 13 12.2"
+                            >
+                              <polyline
+                                stroke="currentColor"
+                                points="2,7.1 6.5,11.1 11,7.1 "
+                              />
+                              <line
+                                stroke="currentColor"
+                                x1="6.5"
+                                y1="1.2"
+                                x2="6.5"
+                                y2="10.3"
+                              />
+                            </svg>
+                            <span class="button-text">Click Me!</span>
+                          </div>
 
-                                <div class="message submitMessage">
-                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12.2">
-                                    <polyline stroke="currentColor" points="2,7.1 6.5,11.1 11,7.1 "/>
-                                    <line stroke="currentColor" x1="6.5" y1="1.2" x2="6.5" y2="10.3"/>
-                                  </svg> <span class="button-ext">Click Me!</span>
-                                </div>
+                          <div class="message loadingMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                              <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                              <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+                            </svg>
+                          </div>
 
-                                <div class="message loadingMessage">
-                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
-                                    <circle class="loadingCircle" cx="2.2" cy="10" r="1.6"/>
-                                    <circle class="loadingCircle" cx="9.5" cy="10" r="1.6"/>
-                                    <circle class="loadingCircle" cx="16.8" cy="10" r="1.6"/>
-                                  </svg>
-                                </div>
+                          <div class="message successMessage">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                              <polyline
+                                stroke="currentColor"
+                                points="1.4,5.8 5.1,9.5 11.6,2.1 "
+                              />
+                            </svg>
+                            <span class="button-text">Success</span>
+                          </div>
+                        </button>
+                        <canvas id="canvas"></canvas>
+                      </div>
+                    </div>
 
-                                <div class="message successMessage">
-                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
-                                    <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 "/>
-                                  </svg> <span class="button-text">Success</span>
-                                </div>
-                              </button>
-
-                              <canvas id="canvas"></canvas>
-                        </div>
-                    </form>
                 </div>
 
                 <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_2">
@@ -272,7 +310,7 @@
             $('.load__wrapper').fadeOut('slow');
         });
     </script>
-  
+
         <script src="js/mode.js"></script>
 
 </body>

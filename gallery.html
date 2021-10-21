@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Samarth Portfolio</title>
     <!-- Bootstrap Css -->
     <link
@@ -78,7 +79,7 @@
     </div>
     <h1>MY GALLERY</h1>
 
-    <div id="gallery" class="container-fluid">
+  <!--  <div id="gallery" class="container-fluid">
       <img src="./images/IMG-20180504-WA0008-1.jpg" class="img-responsive" />
       <img src="./images/IMG_1737.JPG" class="img-responsive" />
       <img
@@ -146,8 +147,8 @@
 
     <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
+        <!--Modal content-->
+        <!--<div class="modal-content">
           <div class="modal-body"></div>
         </div>
       </div>
@@ -156,12 +157,40 @@
     <div id="myModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
         <!-- Modal content-->
-        <div class="modal-content">
+        <!--<div class="modal-content">
           <div class="modal-body"></div>
         </div>
       </div>
+    </div>-->
+
+    <div id="gallery" class="container-fluid">
+      <img src="https://source.unsplash.com/1600x1200?female,portrait" class="img-responsive">
+      <img src="https://source.unsplash.com/1024x768?female,portrait" class="img-responsive">
+       <img src="https://source.unsplash.com/1366x768?female,portrait" class="img-responsive">
+      <video class="vid" controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        </source>
+      </video>
+      <img src="https://source.unsplash.com/1920x1080?female,portrait" class="img-responsive">
+      <img src="https://source.unsplash.com/640x360?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/320x640?female,portrait" class="img-responsive">
+      <img src="https://source.unsplash.com/1200x1600?female,portrait" class="card img-responsive">
+      <img src="https://source.unsplash.com/800x600?female,portrait" class="img-responsive">
+      <img src="https://source.unsplash.com/600x800?female,portrait" class="img-responsive">
+      <img src="https://source.unsplash.com/400x600?female,portrait" class="img-responsive">
+      <img src="https://source.unsplash.com/600x400?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/1100x1600?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/1600x1100?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/992x768?female,portrait" class="img-responsive">
+    <img src="https://source.unsplash.com/768x992?female,portrait" class="img-responsive">
+
     </div>
 
+
+          <div class="modal-body">
+
+          </div>
+      
     <!-- Footer Design -->
     <footer>
       <p style="color: black">
@@ -178,30 +207,10 @@
     ></script>
 
     <!-- Custom Js -->
-    <script>
-      const Mode = document.querySelector(".mode__icon");
-      const nav = document.querySelector("nav");
-      const navLink = document.querySelectorAll(".nav__link");
-      const body = document.querySelector("body");
 
-      let count = 0;
-      Mode.addEventListener("click", function () {
-        body.classList.toggle("DarkMode");
-        nav.classList.toggle("DarkMode");
-        navLink.forEach((element) => {
-          element.classList.toggle("DarkMode");
-        });
-        MenuList.classList.toggle("DarkMode");
-        count = count + 1;
-        if (count % 2 === 0) {
-          Mode.setAttribute("src", "./images/icons/light.svg");
-        } else {
-          Mode.setAttribute("src", "./images/icons/dark.svg");
-        }
-      });
-    </script>
 
     <script src="./js/Nav.js"></script>
+    <script src="./js/gallery.js"></script>
 
     <!-- Loading Scripts   -->
     <!-- Jquery Script -->

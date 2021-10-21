@@ -23,32 +23,25 @@ body {
   scroll-behavior: smooth;
   background: var(--clr-dark);
   background: var(--clr-dark);
-
-
-
 }
-
-
 
 .darkmode {
   --clr-light: #fdffc4;
-  --clr-dark:#121212;
+  --clr-dark: #121212;
   --clr-primary: #202302;
   --clr-secondary: #00100d;
   --clr-accent: #ff7750;
-    color: white;
+  color: white;
   --foreground: var(--clr-light);
   --background: var(--clr-dark);
 }
-.toogle-mode__icon{
+.sun1 {
   display: none;
 }
-.toogle-mode__icon1{
+.toogle-mode__icon1 {
   display: block;
   color: white;
-
 }
-
 
 .DarkMode_Color {
   color: rgb(255, 210, 8) !important;
@@ -58,7 +51,6 @@ body {
   color: #fff !important;
 }
 /* NAVBAR CSS */
-
 
 nav {
   display: -webkit-box;
@@ -177,50 +169,46 @@ nav .burger .line-3 {
 
 @keyframes jello {
   0% {
-    transform:  scaleX(1) scaleY(1) ;
+    transform: scaleX(1) scaleY(1);
   }
 
-
   50% {
-    transform:   scaleX(1.42) scaleY(0.7) ;
+    transform: scaleX(1.42) scaleY(0.7);
   }
 
   90% {
-    transform:  scaleX(1) scaleY(1) ;
+    transform: scaleX(1) scaleY(1);
   }
   100% {
-    transform:  scaleX(1) scaleY(1) ;
+    transform: scaleX(1) scaleY(1);
   }
-
-
 }
 
 .jello span:hover {
-  animation: jello .5s infinite;
-  transform-origin: center
+  animation: jello 0.5s infinite;
+  transform-origin: center;
 }
 .center span {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 800;
   font-weight: bolder;
   display: inline-block;
-  font-size: 80px;
-  color: #ffff;
+
+  color: #1a08b9;
   letter-spacing: 1px;
-font-family: Georgia, serif;
-font-family: serif;
-animation: jell .5s forwards;
+  font-family: Georgia, serif;
+  font-family: serif;
 }
-.heading-jump
-{
+.heading-jump {
   position: absolute;
-  top:30%;
-  left: 55%;
+  top: 58%;
+  left: 70%;
   margin: 0;
 }
-
-
-
+.Time__Date__Temp {
+  position: absolute;
+  left: 100px;
+}
 
 @media only screen and (min-width: 1000px) {
   /* nav .burger {
@@ -292,7 +280,7 @@ animation: jell .5s forwards;
 /* FIRST SECTION */
 
 .First__Section {
-  min-height: 50vh !important;
+  min-height: 25vh;
   overflow: hidden;
 }
 
@@ -302,16 +290,17 @@ animation: jell .5s forwards;
 }
 .container {
   width: 76vw;
-
 }
 .Main__Img {
   position: absolute;
-  top: 10px;
+  top: 30px;
+  left: 180px;
+  width: 1120px;
+  height: auto;
 }
 
 @media only screen and (min-width: 1400px) {
   .Main__Img {
-
   }
 }
 
@@ -486,8 +475,8 @@ animation: jell .5s forwards;
 /* SECOND SECTION */
 
 .Second__section {
-  min-height: 20vh;
-  padding: 50px 0px;
+  min-height: 10vh;
+  padding: 0px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -789,6 +778,7 @@ footer {
 footer p {
   text-align: center;
   line-height: 40px;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 500px) {
   footer p {

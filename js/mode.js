@@ -37,9 +37,8 @@ const enableDarkMode = () => {
   // 1. Add the class to the body
   document.body.classList.add('darkmode');
   element.classList.remove("animated__background");
-      moon.classList.add('toogle-mode__icon');
-
-
+  moon.classList.add("sun1");
+sun.classList.remove("sun1");
 
   // 2. Update darkMode in localStorage
   localStorage.setItem('darkMode', 'enabled');
@@ -50,7 +49,8 @@ const disableDarkMode = () => {
   // 1. Remove the class from the body
   document.body.classList.remove('darkmode');
   element.classList.add("animated__background");
-
+  sun.classList.add("sun1");
+  moon.classList.remove("sun1");
   // 2. Update darkMode in localStorage
   localStorage.setItem('darkMode', null);
 }
@@ -59,6 +59,7 @@ const disableDarkMode = () => {
 // start things off with it on
 if (darkMode === 'enabled') {
   enableDarkMode();
+
 }
 
 // When someone clicks the button

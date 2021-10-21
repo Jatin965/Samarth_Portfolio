@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="./css/myanimation.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
-      <link rel="stylesheet" href="./css/dark.css" />
+    <link rel="stylesheet" href="./css/dark.css" />
   </head>
   <body>
     <!-- Loader Addition -->
@@ -115,77 +115,96 @@
 
     <!-- Menu Bar Creation -->
     <div id="menu" class="menu">
-         <div class="actionsBar">
-             <div>
-                 <button id="menuBtn" type="button"><i class="fas fa-bars"></i></button>
-                 <h3 class="menuText">Dashboard</h3>
-             </div>
-         </div>
-         <ul class="optionsBar">
-             <li class="menuItem">
-                                <a href="./index.html" class="menuOption">
-                     <i class="fas fa-home"></i><h5 class="menuText">Home</h5>
-                 </a>
-             </li>
+      <div class="actionsBar">
+        <div>
+          <button id="menuBtn" type="button">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h3 class="menuText">Dashboard</h3>
+        </div>
+      </div>
+      <ul class="optionsBar">
+        <li class="menuItem">
+          <a href="./index.html" class="menuOption">
+            <i class="fas fa-home"></i>
+            <h5 class="menuText">Home</h5>
+          </a>
+        </li>
 
-             <li class="menuItem">
+        <li class="menuItem">
+          <a href="#about" id="productManagerBtn" class="menuOption">
+            <i class="fas fa-shopping-bag"></i>
+            <h5 class="menuText">About</h5>
+          </a>
+        </li>
 
-                 <a  href="#about" id="productManagerBtn"  class="menuOption">
-                     <i class="fas fa-shopping-bag"></i><h5 class="menuText">About</h5>
-                 </a>
-             </li>
-             <li class="menuItem">
-                 <a  href="#" id="constantManagerBtn" class="menuOption">
-                     <i class="fas fa-border-all"></i><h5 class="menuText">Projects</h5>
-                 </a>
-             </li>
-             <li class="menuItem">
-                 <a  href="./gallery.html" id="constantManagerBtn" class="menuOption">
+        <li>
+          <a href="./certificates/cr-main.html" class="nav__link"
+            ><i class="fas fa-shopping-bag"></i>
+            <h5 class="menuText">Certificates</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="#" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-border-all"></i>
+            <h5 class="menuText">Projects</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="./gallery.html" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-border-all"></i>
+            <h5 class="menuText">Gallery</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="#" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-border-all"></i>
+            <h5 class="menuText">Social Media</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="#contact" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-border-all"></i>
+            <h5 class="menuText">Social Media</h5>
+          </a>
+        </li>
+      </ul>
 
-                 <i class="fas fa-border-all"></i><h5 class="menuText">Gallery</h5>
-                  </a>
-             </li>
-             <li class="menuItem">
-                 <a  href="#" id="constantManagerBtn" class="menuOption">
-                     <i class="fas fa-border-all"></i><h5 class="menuText">Social Media</h5>
-                 </a>
-             </li>
-             <li class="menuItem">
-                 <a  href="#contact" id="constantManagerBtn" class="menuOption">
-                     <i class="fas fa-border-all"></i><h5 class="menuText">Social Media</h5>
-                 </a>
-             </li>
+      <div class="menuUser">
+        <a href="#">
+          <div>
+            <img
+              src="./images/Main__img-1.png"
+              class="Main__Img img-fluid"
+              alt="Main_img"
+            />
+          </div>
+          <h5 class="Username menuText">Alex</h5>
+          <p class="menuText"><i class="fas fa-chevron-right"></i></p>
+        </a>
+        <div class="userInfo">
+          <div>
+            <h1><i class="fas fa-exclamation-circle"></i></h1>
+            <p>User Info</p>
+          </div>
+        </div>
+      </div>
+      <div class="themeBar">
+        <div>
+          <button class="btn-toggle" type="button" id="dark-mode-toggle">
+            <i class="fas fa-moon" id="fa-moon"></i
+            ><img
+              src="./images/icons/light.svg"
+              id="img-fluid"
+              class="img-fluid mode__icon"
+              alt="Modes"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
 
-         </ul>
-
-         <div class="menuUser">
-             <a href="#">
-                 <div>
-                   <img
-                     src="./images/Main__img-1.png"
-                     class="Main__Img img-fluid"
-                     alt="Main_img"
-                   />
-                 </div>
-                 <h5 class="Username menuText">Alex</h5>
-                 <p class="menuText"><i class="fas fa-chevron-right"></i></p>
-             </a>
-             <div class="userInfo">
-                 <div>
-                     <h1><i class="fas fa-exclamation-circle"></i></h1>
-                     <p>User Info</p>
-                 </div>
-             </div>
-         </div>
-         <div class="themeBar">
-             <div>
-                 <button class="btn-toggle" type="button" id="dark-mode-toggle"><i class="fas fa-moon" id="fa-moon"></i><img src="./images/icons/light.svg" id="img-fluid" class="img-fluid mode__icon" alt="Modes"></button>
-             </div>
-         </div>
-     </div>
-
-
-     <!--  <div class="Separator"><br /><br /><br /><br /></div>-->
+    <!--  <div class="Separator"><br /><br /><br /><br /></div>-->
     <!-- First Section Main Area -->
     <section class="First__Section">
       <div class="container">
@@ -195,43 +214,39 @@
           alt="Main_img"
         />
 
-        <div class="heading-jump ">
-        <h2  class='center jello' >
-          <span>H</span>
-          <span>I</span>
-          <span>,</span>
-        </h2>
+        <div class="heading-jump">
+          <h2 class="center jello">
+            <span>H</span>
+            <span>I</span>
+            <span>,</span>
+          </h2>
 
-        <h2  class='center jello'>
-        <span>I</span>
-        <span>'</span>
-        <span>M</span>
-        <span>S</span>
-        <span>A</span>
-        <span>M</span>
-        <span>A</span>
-        <span>R</span>
-        <span>T</span>
-        <span>H</span>
-
-</h2>
-</div>
-        <!--<h1 class="Heading3"></h1>-->
-       <div class="wrapper">
-
-         <div class="word">
-<span></span>
-           <span>Android Developer</span>
-              <span>Freelancer</span>
-                 <span>Blogger</span>
-                    <span>Photographer</span>
-                       <span>Web Designer</span>
-                          <span>Prototype</span>
-                             <span>Motivational Speaker</span>
-
+          <h2 class="center jello">
+            <span>I</span>
+            <span>'</span>
+            <span>M</span>
+            <span>S</span>
+            <span>A</span>
+            <span>M</span>
+            <span>A</span>
+            <span>R</span>
+            <span>T</span>
+            <span>H</span>
+          </h2>
         </div>
-
-     </div>
+        <!--<h1 class="Heading3"></h1>-->
+        <div class="wrapper">
+          <div class="word">
+            <span></span>
+            <span>Android Developer</span>
+            <span>Freelancer</span>
+            <span>Blogger</span>
+            <span>Photographer</span>
+            <span>Web Designer</span>
+            <span>Prototype</span>
+            <span>Motivational Speaker</span>
+          </div>
+        </div>
 
         <!-- chaange heading animation-->
 
@@ -626,17 +641,13 @@
                 <input type="text" placeholder="Enter Your Name" id="name" />
               </div>
               <div class="Form__items">
-                <input
-                 type="text"
-                 placeholder="Enter Your Email"
-                 id="email"
-                 />
+                <input type="text" placeholder="Enter Your Email" id="email" />
               </div>
               <div class="Form__items">
                 <input
                   type="number"
                   placeholder="Enter Your Mobile Number"
-                   id="phone"
+                  id="phone"
                 />
               </div>
               <div class="Form__items">

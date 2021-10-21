@@ -9,7 +9,7 @@
 
     <!-- Bootstrap Css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- LeafLet Script -->
@@ -26,8 +26,8 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="./css/formBtn.css">
     <link rel="stylesheet" href="./css/loading.css">
-    <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
 </head>
 
 <body>
@@ -36,7 +36,7 @@
         <div class="load__wrapper">
             <div class="wrap">
               <div class="overlay"></div>
-              
+
               <div class="cogWheel one">
                 <div class="cog one"></div>
                 <div class="cog two"></div>
@@ -45,7 +45,7 @@
                 <div class="cog five"></div>
                 <div class="center"></div>
               </div>
-            
+
               <div class="cogWheel two">
                 <div class="cog one"></div>
                 <div class="cog two"></div>
@@ -60,15 +60,85 @@
 
 
     <!-- Menu Bar Creation -->
-    <nav>
-        <a href="./index.html" class="Logo__Img"><img src="./images/Logo.png" class="img-fluid" alt="Logo"></a>
+    <div id="menu" class="menu">
+         <div class="actionsBar">
+             <div>
+                 <button id="menuBtn" type="button"><i class="fas fa-bars"></i></button>
+                 <h3 class="menuText">Dashboard</h3>
+             </div>
+         </div>
+         <ul class="optionsBar">
+             <li class="menuItem">
+
+                 <a href="./index.html" class="menuOption">
+                     <i class="fas fa-home"></i><h5 class="menuText">Home</h5>
+                 </a>
+             </li>
+
+             <li class="menuItem">
+
+                 <a  href="#about" id="productManagerBtn"  class="menuOption">
+                     <i class="fas fa-shopping-bag"></i><h5 class="menuText">About</h5>
+                 </a>
+             </li>
+             <li class="menuItem">
+                 <a  href="#" id="constantManagerBtn" class="menuOption">
+                     <i class="fas fa-border-all"></i><h5 class="menuText">Projects</h5>
+                 </a>
+             </li>
+             <li class="menuItem">
+                 <a  href="./gallery.html" id="constantManagerBtn" class="menuOption">
+
+                 <i class="fas fa-border-all"></i><h5 class="menuText">Gallery</h5>
+                  </a>
+             </li>
+             <li class="menuItem">
+                 <a  href="#" id="constantManagerBtn" class="menuOption">
+                     <i class="fas fa-border-all"></i><h5 class="menuText">Social Media</h5>
+                 </a>
+             </li>
+             <li class="menuItem">
+                 <a  href="#contact" id="constantManagerBtn" class="menuOption">
+                     <i class="fas fa-border-all"></i><h5 class="menuText">Social Media</h5>
+                 </a>
+             </li>
+
+         </ul>
+
+         <div class="menuUser">
+             <a href="#">
+                 <div>
+                   <img
+                     src="./images/Main__img-1.png"
+                     class="Main__Img img-fluid"
+                     alt="Main_img"
+                   />
+                 </div>
+                 <h5 class="Username menuText">Alex</h5>
+                 <p class="menuText"><i class="fas fa-chevron-right"></i></p>
+             </a>
+             <div class="userInfo">
+                 <div>
+                     <h1><i class="fas fa-exclamation-circle"></i></h1>
+                     <p>User Info</p>
+                 </div>
+             </div>
+         </div>
+         <div class="themeBar">
+             <div>
+                 <button class="btn-toggle" type="button" id="dark-mode-toggle"><i class="fas fa-moon"></i><img src="./images/icons/light.svg" class="img-fluid mode__icon" alt="Modes"></button>
+             </div>
+         </div>
+     </div>
+
+  <!--  <nav>
         <ul class="Menu__List__holder">
             <li><a href="./index.html" class="nav__link">Home</a></li>
-            <li><a href="#about" class="nav__link">About</a></li>
             <li><a href="#" class="nav__link">Projects</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
             <li><a href="#" class="nav__link">Certifications</a></li>
+            <li><a href="#" class="nav__link">Social Media</a></li>
             <li><a href="./gallery.html" class="nav__link">Gallery</a></li>
-            <!-- <li><a href="#" class="nav__link">Social Media</a></li> -->
             <li><a href="#" class="nav__link">Music</a></li>
             <li><a href="#" class="nav__link">Blogs</a></li>
             <li><a href="#contact" class="nav__link">Contact</a></li>
@@ -89,39 +159,39 @@
         <br><br>
         <br><br>
     </div>
+-->
 
-    
     <!-- Contact Section -->
     <section class="Contact__Section" id="contact">
         <div class="container-fluid">
             <div class="row">
                 <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_1">
                     <h1>Contact Me</h1>
-                    <form class="MAIN__FORM" autocomplete="off">
+                    <form class="MAIN__FORM" name="forms" >
                         <div class="Form__items">
-                            <input type="text" placeholder="Enter Your Name" required>
+                            <input type="text" placeholder="Enter Your Name" name="name" >
                         </div>
                         <div class="Form__items">
-                            <input type="text" placeholder="Enter Your Email" required>
+                            <input type="text" placeholder="Enter Your Email" name="email" >
                         </div>
                         <div class="Form__items">
-                            <input type="number" placeholder="Enter Your Mobile Number" required>
+                            <input type="number" placeholder="Enter Your Mobile Number" name="phone" >
                         </div>
                         <div class="Form__items">
-                            <textarea placeholder="Message" required></textarea>
+                            <textarea placeholder="Message" name="mssg" ></textarea>
                         </div>
                         <div class="Form__btn">
                             <!-- <button class="btn btn-primary">Submit</button> -->
 
-                            <button id="button" class="ready" onclick="clickButton();">
-  
+                            <button id="button" class="ready" onclick="clickButton()">
+
                                 <div class="message submitMessage">
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12.2">
                                     <polyline stroke="currentColor" points="2,7.1 6.5,11.1 11,7.1 "/>
                                     <line stroke="currentColor" x1="6.5" y1="1.2" x2="6.5" y2="10.3"/>
-                                  </svg> <span class="button-text">Click Me!</span>
+                                  </svg> <span class="button-ext">Click Me!</span>
                                 </div>
-                                
+
                                 <div class="message loadingMessage">
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
                                     <circle class="loadingCircle" cx="2.2" cy="10" r="1.6"/>
@@ -129,14 +199,14 @@
                                     <circle class="loadingCircle" cx="16.8" cy="10" r="1.6"/>
                                   </svg>
                                 </div>
-                                
+
                                 <div class="message successMessage">
                                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
                                     <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 "/>
                                   </svg> <span class="button-text">Success</span>
                                 </div>
                               </button>
-                              
+
                               <canvas id="canvas"></canvas>
                         </div>
                     </form>
@@ -160,10 +230,10 @@
 
     <!-- Bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  
-  
-  
-  
+
+
+
+
     <!-- Custom Js -->
     <script>
     const Mode = document.querySelector('.mode__icon');
@@ -186,10 +256,13 @@
             Mode.setAttribute("src","./images/icons/dark.svg");
         }
     });
+
     </script>
     <script src="./js/btn.js"></script>
     <script src="./js/Nav.js"></script>
     <script src="./js/Map.js"></script>
+    <script src="./js/mode.js"></script>
+    <script src="./js/sidebar.js"></script>
 
     <!-- Loading Scripts   -->
     <!-- Jquery Script -->
@@ -199,6 +272,7 @@
             $('.load__wrapper').fadeOut('slow');
         });
     </script>
+  
         <script src="js/mode.js"></script>
 
 </body>

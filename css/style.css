@@ -21,13 +21,34 @@
 
 body {
   scroll-behavior: smooth;
-  background: var(--body-color);
+  background: var(--clr-dark);
+  background: var(--clr-dark);
+
+
+
 }
 
-.DarkMode {
-  background: #222629 !important;
-  color: white !important;
+
+
+.darkmode {
+  --clr-light: #fdffc4;
+  --clr-dark:#121212;
+  --clr-primary: #202302;
+  --clr-secondary: #00100d;
+  --clr-accent: #ff7750;
+    color: white;
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
 }
+.toogle-mode__icon{
+  display: none;
+}
+.toogle-mode__icon1{
+  display: block;
+  color: white;
+
+}
+
 
 .DarkMode_Color {
   color: rgb(255, 210, 8) !important;
@@ -37,6 +58,8 @@ body {
   color: #fff !important;
 }
 /* NAVBAR CSS */
+
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,6 +175,53 @@ nav .burger .line-3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+@keyframes jello {
+  0% {
+    transform:  scaleX(1) scaleY(1) ;
+  }
+
+
+  50% {
+    transform:   scaleX(1.42) scaleY(0.7) ;
+  }
+
+  90% {
+    transform:  scaleX(1) scaleY(1) ;
+  }
+  100% {
+    transform:  scaleX(1) scaleY(1) ;
+  }
+
+
+}
+
+.jello span:hover {
+  animation: jello .5s infinite;
+  transform-origin: center
+}
+.center span {
+  font-size: 50px;
+  font-weight: 800;
+  font-weight: bolder;
+  display: inline-block;
+  font-size: 80px;
+  color: #ffff;
+  letter-spacing: 1px;
+font-family: Georgia, serif;
+font-family: serif;
+animation: jell .5s forwards;
+}
+.heading-jump
+{
+  position: absolute;
+  top:30%;
+  left: 55%;
+  margin: 0;
+}
+
+
+
+
 @media only screen and (min-width: 1000px) {
   /* nav .burger {
     display: none;
@@ -232,15 +302,16 @@ nav .burger .line-3 {
 }
 .container {
   width: 76vw;
-  margin: auto;
+
 }
 .Main__Img {
-  aspect-ratio: auto;
+  position: absolute;
+  top: 10px;
 }
 
 @media only screen and (min-width: 1400px) {
   .Main__Img {
-    height: 105vh;
+
   }
 }
 

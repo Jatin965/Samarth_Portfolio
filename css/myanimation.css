@@ -73,7 +73,7 @@
 }
 
 /* First Section Heading 3 */
-.Heading3:after {
+/*.Heading3:after {
   content: "";
   animation: animateProfession 2s infinite;
 }
@@ -97,6 +97,73 @@
   100% {
     content: "Motivational Speaker";
   }
+}*/
+.word{
+
+  overflow: hidden;
+  }
+.wrapper
+{
+position: absolute;
+ right: 35px;
+ top:80%;
+  box-sizing: content-box;
+      background: rgba(255, 255, 255, 0);
+  height: 80px;
+
+  padding: 50px 0;
+  display: flex;
+  border-radius: 8px;
+
+}
+.wrapper span
+{
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  color:black;
+  margin-bottom: 5px;
+ font-size: 35px;
+color: #1a08b9;
+ font-weight: bold;
+  animation:spin_word 8s infinite;
+  margin-left: 0px;
+}
+
+.wrapper p
+{
+
+  font-size: 35px;
+  font-weight: bold;
+  color: #1a08b9;
+
+}
+@keyframes spin_word {
+  10%{
+  transform:translateY(-122%);
+
+}
+25%{
+transform:translateY(-100%);
+}
+35%{
+transform:translateY(-222%);
+}
+50%{
+transform:translateY(-200%);
+}
+60%{
+transform:translateY(-322%);
+}
+75%{
+transform:translateY(-300%);
+}
+85%{
+transform:translateY(-422%);
+}
+100%{
+transform:translateY(-400%);
+}
 }
 
 /* Media Queries Are used to show the first page professional if you want dance effect in mobile devices remove this */
@@ -150,7 +217,7 @@
 
 /* SQUARE ANMATION */
 
-/* 
+/*
 .animated__background .box div{
     position: absolute;
     width: 40px;
@@ -223,7 +290,7 @@
     top: 20%;
     left: 80%;
     animation: amimateMyBox 5s linear infinite;
-} 
+}
 
 @keyframes amimateMyBox {
     0%{

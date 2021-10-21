@@ -16,3 +16,5 @@ const NAV__KA__Link = document.querySelectorAll(".nav__link");
 NAV__KA__Link.forEach((Element) =>
   Element.addEventListener("click", NavRemover)
 );
+
+//heading 3

@@ -50,6 +50,7 @@
     <link rel="stylesheet" href="./css/myanimation.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
+      <link rel="stylesheet" href="./css/dark.css" />
   </head>
   <body>
     <!-- Loader Addition -->
@@ -112,67 +113,79 @@
       </div>
     </nav> -->
 
-    <nav id="menu" class="menu">
-      <div class="actionsBar">
-        <div>
-          <button id="menuBtn" type="button">
-            <i class="fas fa-bars"></i>
-          </button>
-          <h3 class="menuText">Dashboard</h3>
-        </div>
-      </div>
-      <ul class="optionsBar">
-        <li class="menuItem">
-          <a href="/nwcpnl" class="menuOption">
-            <i class="fas fa-home"></i>
-            <h5 class="menuText">Home</h5>
-          </a>
-        </li>
-        <li class="menuBreak">
-          <hr />
-        </li>
-        <li class="menuItem">
-          <button id="productManagerBtn" type="button" class="menuOption">
-            <i class="fas fa-shopping-bag"></i>
-            <h5 class="menuText">Product Manager</h5>
-          </button>
-        </li>
-        <li class="menuItem">
-          <button id="constantManagerBtn" type="button" class="menuOption">
-            <i class="fas fa-border-all"></i>
-            <h5 class="menuText">Constant Manager</h5>
-          </button>
-        </li>
-      </ul>
-      <div class="menuUser">
-        <a href="#">
-          <div>
-            <img
-              src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=344&q=80"
-              alt=""
-            />
-          </div>
-          <h5 class="Username menuText">Samarth</h5>
-          <p class="menuText"><i class="fas fa-chevron-right"></i></p>
-        </a>
-        <div class="userInfo">
-          <div>
-            <h1><i class="fas fa-exclamation-circle"></i></h1>
-            <p>User Info</p>
-          </div>
-        </div>
-      </div>
-      <div class="themeBar">
-        <div>
-          <button type="button" id="themeChangeBtn">
-            <i class="fas fa-moon"></i>
-          </button>
-        </div>
-      </div>
-    </nav>
+    <!-- Menu Bar Creation -->
+    <div id="menu" class="menu">
+         <div class="actionsBar">
+             <div>
+                 <button id="menuBtn" type="button"><i class="fas fa-bars"></i></button>
+                 <h3 class="menuText">Dashboard</h3>
+             </div>
+         </div>
+         <ul class="optionsBar">
+             <li class="menuItem">
+                                <a href="./index.html" class="menuOption">
+                     <i class="fas fa-home"></i><h5 class="menuText">Home</h5>
+                 </a>
+             </li>
 
-    <div class="Separator"><br /><br /><br /><br /></div>
+             <li class="menuItem">
 
+                 <a  href="#about" id="productManagerBtn"  class="menuOption">
+                     <i class="fas fa-shopping-bag"></i><h5 class="menuText">About</h5>
+                 </a>
+             </li>
+             <li class="menuItem">
+                 <a  href="#" id="constantManagerBtn" class="menuOption">
+                     <i class="fas fa-border-all"></i><h5 class="menuText">Projects</h5>
+                 </a>
+             </li>
+             <li class="menuItem">
+                 <a  href="./gallery.html" id="constantManagerBtn" class="menuOption">
+
+                 <i class="fas fa-border-all"></i><h5 class="menuText">Gallery</h5>
+                  </a>
+             </li>
+             <li class="menuItem">
+                 <a  href="#" id="constantManagerBtn" class="menuOption">
+                     <i class="fas fa-border-all"></i><h5 class="menuText">Social Media</h5>
+                 </a>
+             </li>
+             <li class="menuItem">
+                 <a  href="#contact" id="constantManagerBtn" class="menuOption">
+                     <i class="fas fa-border-all"></i><h5 class="menuText">Social Media</h5>
+                 </a>
+             </li>
+
+         </ul>
+
+         <div class="menuUser">
+             <a href="#">
+                 <div>
+                   <img
+                     src="./images/Main__img-1.png"
+                     class="Main__Img img-fluid"
+                     alt="Main_img"
+                   />
+                 </div>
+                 <h5 class="Username menuText">Alex</h5>
+                 <p class="menuText"><i class="fas fa-chevron-right"></i></p>
+             </a>
+             <div class="userInfo">
+                 <div>
+                     <h1><i class="fas fa-exclamation-circle"></i></h1>
+                     <p>User Info</p>
+                 </div>
+             </div>
+         </div>
+         <div class="themeBar">
+             <div>
+                 <button class="btn-toggle" type="button" id="dark-mode-toggle"><i class="fas fa-moon" id="fa-moon"></i><img src="./images/icons/light.svg" id="img-fluid" class="img-fluid mode__icon" alt="Modes"></button>
+             </div>
+         </div>
+     </div>
+
+
+     <!--  <div class="Separator"><br /><br /><br /><br /></div>-->
     <!-- First Section Main Area -->
     <section class="First__Section">
       <div class="container">
@@ -181,29 +194,51 @@
           class="Main__Img img-fluid"
           alt="Main_img"
         />
-        <h1 class="Heading">
+
+        <div class="heading-jump ">
+        <h2  class='center jello' >
           <span>H</span>
           <span>I</span>
-          <span>!</span>
-        </h1>
-        <h1 class="Heading2">
-          <span>I</span>
-          <span>'</span>
-          <span>M</span>
-          <span>&nbsp;</span>
-          <span>S</span>
-          <span>A</span>
-          <span>M</span>
-          <span>A</span>
-          <span>R</span>
-          <span>T</span>
-          <span>H</span>
-        </h1>
-        <h1 class="Heading3"></h1>
+          <span>,</span>
+        </h2>
+
+        <h2  class='center jello'>
+        <span>I</span>
+        <span>'</span>
+        <span>M</span>
+        <span>S</span>
+        <span>A</span>
+        <span>M</span>
+        <span>A</span>
+        <span>R</span>
+        <span>T</span>
+        <span>H</span>
+
+</h2>
+</div>
+        <!--<h1 class="Heading3"></h1>-->
+       <div class="wrapper">
+
+         <div class="word">
+<span></span>
+           <span>Android Developer</span>
+              <span>Freelancer</span>
+                 <span>Blogger</span>
+                    <span>Photographer</span>
+                       <span>Web Designer</span>
+                          <span>Prototype</span>
+                             <span>Motivational Speaker</span>
+
+        </div>
+
+     </div>
+
+        <!-- chaange heading animation-->
+
         <!-- <p class="Heading4">FULL STACK APP DEVELOPER</p> -->
 
         <!-- Animated Boxes -->
-        <div class="animated__background">
+        <div class="animated__background" id="head-col">
           <!-- <div class="box">
                     <div></div>
                     <div></div>
@@ -312,14 +347,14 @@
                         </div>
                         <span class="Value">95%</span>
                     </div>
-                    
+
                     <div class="skills">
                         <span class="Name">CSS</span>
                         <div class="percent">
                             <div class="progress" style="width: 90%;"></div>
                         </div>
                         <span class="Value">90%</span>
-                    </div>        
+                    </div>
 
                     <div class="skills">
                         <span class="Name">JAVASCRIPT</span>
@@ -328,7 +363,7 @@
                         </div>
                         <span class="Value">70%</span>
                     </div>
-                    
+
                     <div class="skills">
                         <span class="Name">Bootstrap</span>
                         <div class="percent">
@@ -586,27 +621,31 @@
         <div class="row">
           <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_1">
             <h1>Contact Me</h1>
-            <form class="MAIN__FORM" autocomplete="off">
+            <div class="MAIN__FORM">
               <div class="Form__items">
-                <input type="text" placeholder="Enter Your Name" required />
+                <input type="text" placeholder="Enter Your Name" id="name" />
               </div>
               <div class="Form__items">
-                <input type="text" placeholder="Enter Your Email" required />
+                <input
+                 type="text"
+                 placeholder="Enter Your Email"
+                 id="email"
+                 />
               </div>
               <div class="Form__items">
                 <input
                   type="number"
                   placeholder="Enter Your Mobile Number"
-                  required
+                   id="phone"
                 />
               </div>
               <div class="Form__items">
-                <textarea placeholder="Message" required></textarea>
+                <textarea placeholder="Message" id="texta"></textarea>
               </div>
               <div class="Form__btn">
                 <!-- <button class="btn btn-primary">Submit</button> -->
 
-                <button id="button" class="ready" onclick="clickButton();">
+                <button id="button" class="ready" onclick=" clickButton()">
                   <div class="message submitMessage">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -647,7 +686,7 @@
                 </button>
                 <canvas id="canvas"></canvas>
               </div>
-            </form>
+            </div>
           </div>
 
           <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_2">
@@ -785,6 +824,7 @@
     <script src="./js/script.js"></script>
     <script src="./js/Interacting.js"></script>
     <script src="./js/Nav.js"></script>
+    <script src="./js/mode.js"></script>
     <script src="./js/btn.js"></script>
     <script src="./js/vanilla-tilt.js"></script>
     <script type="text/javascript">
@@ -812,6 +852,7 @@
         header.classList.toggle("sticky", window.scrollY > 200);
       });
     </script>
+
     <script src="js/mode.js"></script>
     <script src="js/sidebar.js"></script>
   </body>

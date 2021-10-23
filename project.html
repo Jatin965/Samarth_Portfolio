@@ -21,10 +21,11 @@
     <!-- Animation -->
     <link rel="stylesheet" href="./asserts/Animation/animate.css">
     <script src="./asserts/Animation/wow.min.js"></script>
-    
+
     <!-- Custom Css -->
     <link rel="stylesheet" href="./css/loading.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sidebar.css">
 
 </head>
 <body>
@@ -33,7 +34,7 @@
         <div class="load__wrapper">
             <div class="wrap">
               <div class="overlay"></div>
-              
+
               <div class="cogWheel one">
                 <div class="cog one"></div>
                 <div class="cog two"></div>
@@ -42,7 +43,7 @@
                 <div class="cog five"></div>
                 <div class="center"></div>
               </div>
-            
+
               <div class="cogWheel two">
                 <div class="cog one"></div>
                 <div class="cog two"></div>
@@ -57,25 +58,83 @@
 
 
     <!-- Menu Bar Creation -->
-    <nav>
-        <a href="./index.html" class="Logo__Img"><img src="./images/Logo.png" class="img-fluid" alt="Logo"></a>
-        <ul class="Menu__List__holder">
-            <li><a href="./index.html" class="nav__link">Home</a></li>
-            <li><a href="./about.html" class="nav__link">About</a></li>
-            <li><a href="./project.html" class="nav__link">Projects</a></li>
-            <li><a href="./certificates/cr-main.html" class="nav__link">Certificate</a></li>
-            <li><a href="./gallery.html" class="nav__link">Gallery</a></li>
-            <li><a href="./music.html" class="nav__link">Music</a></li>
-            <li><a href="#" class="nav__link">Blogs</a></li>
-            <li><a href="./contact.html" class="nav__link">Contact</a></li>
-            <li><a href="#" class="nav__link"><img src="./images/icons/light.svg" class="img-fluid mode__icon" alt="Modes"></a></li>
-        </ul>
-        <div class="burger">
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-            <div class="line-3"></div>
+    <div id="menu" class="menu">
+      <div class="actionsBar">
+        <div>
+          <button id="menuBtn" type="button">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h3 class="menuText">Dashboard</h3>
         </div>
-    </nav>
+      </div>
+      <ul class="optionsBar">
+        <li class="menuItem">
+          <a href="./index.html" class="menuOption">
+            <img src="./images/Logo.png" class="img-fluid" alt="Logo">
+            <h5 class="menuText">Home</h5>
+          </a>
+        </li>
+
+        <li class="menuItem">
+          <a href="#about" id="productManagerBtn" class="menuOption">
+            <i class="fas fa-info"></i>
+            <h5 class="menuText">About</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="#" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-border-all"></i>
+            <h5 class="menuText">Projects</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a
+            href="./certificates/cr-main.html"
+            id="constantManagerBtn"
+            class="menuOption"
+          >
+            <i class="fas fa-certificate"></i>
+            <h5 class="menuText">Certificate</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="./gallery.html" id="constantManagerBtn" class="menuOption">
+          <i class="fas fa-images"></i>
+            <h5 class="menuText">Gallery</h5>
+          </a>
+        </li>
+
+        <li class="menuItem">
+          <a href="./music.html" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-play"></i>
+            <h5 class="menuText">Music</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="#" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-blog"></i>
+            <h5 class="menuText">Blogs</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="./contact.html" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-phone"></i>
+            <h5 class="menuText">Contact</h5>
+          </a>
+        </li>
+      </ul>
+
+
+      <div class="themeBar">
+        <div>
+          <button class="btn-toggle button" type="button" id="dark-mode-toggle">
+            <i class="fas fa-moon" id="fa-moon"></i>
+            <i class="fas fa-sun sun1" id="img-fluid"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
 
         <br><br><br><br>
 
@@ -84,7 +143,7 @@
     <section class="Projects__section">
         <div class="container">
             <h1>Projects</h1>
-            
+
             <div class="row">
                 <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Project__First__column">
                     <a href="https://apkcombo.com/engy-craft-factory/com.engycraftfactory.shopping/"><img src="./images/Projects/2.png" class="img-fluid" alt=""></a>
@@ -110,9 +169,9 @@
             </div>
 
 
-                  
+
             <div class="row Advanced_row">
-                
+
                 <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Project__Second__column">
                     <h2>Zenith project</h2>
                     <p>The Zenith project is based on the fundamentals of Al, machine learning and
@@ -143,7 +202,7 @@
 
             </div>
 
-                   
+
             <div class="row">
                 <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Project__First__column">
                     <a href="#"><img src="./images/Projects/3.JPG" class="img-fluid" alt=""></a>
@@ -158,9 +217,9 @@
                 </div>
             </div>
 
-                          
+
             <div class="row Advanced_row">
-                
+
                 <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Project__Second__column">
                     <h2>Intelli AR</h2>
                     <p>In IntelliAR worked on augmented reality wherein learned to create various 3D objects to be used for real-life applications such as for the purpose of home design and entertainment.</p>
@@ -196,14 +255,14 @@
     <!-- Bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
+  <script src="./js/sidebar.js"></script>
     <!-- Custom Js -->
     <script>
         const Mode = document.querySelector('.mode__icon');
         const nav = document.querySelector('nav');
         const navLink = document.querySelectorAll('.nav__link');
         const body = document.querySelector('body');
-    
+
         let count = 0;
         Mode.addEventListener('click',function(){
             body.classList.toggle('DarkMode');
@@ -220,9 +279,9 @@
             }
         });
     </script>
-        
+
     <script src="./js/Nav.js"></script>
-    
+
     <!-- Loading Scripts   -->
     <!-- Jquery Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>

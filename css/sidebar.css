@@ -337,6 +337,11 @@
     border-radius: 0.5rem;
     transition: 0.3s ease;
 }
+.menu .menuItem  img {
+
+  width: 30px;
+  height: 30px;
+}
 
 .menu .actionsBar div button {
     background-color: transparent;
@@ -443,8 +448,7 @@
 .menu .themeBar div {
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
+
     justify-content: space-around;
     border-radius: 0.5rem;
     transition: 0.3s ease;
@@ -458,6 +462,7 @@
     color: #fff;
     width: 100%;
     height: 45px;
+
     transition: 0.3s ease;
     font-size: 1rem;
 }

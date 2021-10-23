@@ -1,7 +1,4 @@
-.container .row {
-  width: 80%;
-  margin: auto;
-}
+
 
 .container .row > h5 {
   text-align: center;
@@ -15,7 +12,7 @@
 
 .container .row div h5 {
   font-size: 20px;
-  margin: 0px 0px 20px 0px;
+
 }
 
 .container .row .Certificate__Display {

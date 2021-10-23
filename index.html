@@ -126,14 +126,14 @@
       <ul class="optionsBar">
         <li class="menuItem">
           <a href="./index.html" class="menuOption">
-            <i class="fas fa-home"></i>
+            <img src="./images/Logo.png" class="img-fluid" alt="Logo">
             <h5 class="menuText">Home</h5>
           </a>
         </li>
 
         <li class="menuItem">
           <a href="#about" id="productManagerBtn" class="menuOption">
-            <i class="fas fa-shopping-bag"></i>
+            <i class="fas fa-info"></i>
             <h5 class="menuText">About</h5>
           </a>
         </li>
@@ -149,55 +149,41 @@
             id="constantManagerBtn"
             class="menuOption"
           >
-            <i class="fas fa-border-all"></i>
+            <i class="fas fa-certificate"></i>
             <h5 class="menuText">Certificate</h5>
           </a>
         </li>
         <li class="menuItem">
           <a href="./gallery.html" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-border-all"></i>
+          <i class="fas fa-images"></i>
             <h5 class="menuText">Gallery</h5>
           </a>
         </li>
 
         <li class="menuItem">
           <a href="./music.html" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-border-all"></i>
+            <i class="fas fa-play"></i>
             <h5 class="menuText">Music</h5>
           </a>
         </li>
         <li class="menuItem">
           <a href="#" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-border-all"></i>
+            <i class="fas fa-blog"></i>
             <h5 class="menuText">Blogs</h5>
           </a>
         </li>
         <li class="menuItem">
           <a href="./contact.html" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-border-all"></i>
+            <i class="fas fa-phone"></i>
             <h5 class="menuText">Contact</h5>
           </a>
         </li>
       </ul>
 
-      <div class="menuUser">
-        <a href="#">
-          <div>
-            <img src="./images/Main__img-1.png" alt="Main_img" />
-          </div>
-          <h5 class="Username menuText">Alex</h5>
-          <p class="menuText"><i class="fas fa-chevron-right"></i></p>
-        </a>
-        <div class="userInfo">
-          <div>
-            <h1><i class="fas fa-exclamation-circle"></i></h1>
-            <p>User Info</p>
-          </div>
-        </div>
-      </div>
+
       <div class="themeBar">
         <div>
-          <button class="btn-toggle" type="button" id="dark-mode-toggle">
+          <button class="btn-toggle button" type="button" id="dark-mode-toggle">
             <i class="fas fa-moon" id="fa-moon"></i>
             <i class="fas fa-sun sun1" id="img-fluid"></i>
           </button>
@@ -640,26 +626,30 @@
           <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_1">
             <h1>Contact Me</h1>
             <div class="MAIN__FORM">
-              <div class="Form__items">
-                <input type="text" placeholder="Enter Your Name" id="name" />
+              <div class="group">
+                <input type="text" id="name"><span class="highlight"></span><span class="bar"></span>
+                <label>Name</label>
               </div>
-              <div class="Form__items">
-                <input type="text" placeholder="Enter Your Email" id="email" />
+              <div class="group">
+                <input type="email" id="email"><span class="highlight"></span><span class="bar"></span>
+                <label>Email</label>
               </div>
-              <div class="Form__items">
-                <input
-                  type="number"
-                  placeholder="Enter Your Mobile Number"
-                  id="phone"
-                />
+              <div class="group">
+                <input type="number"
+
+                id="phone" ><span class="highlight"></span><span class="bar"></span>
+                <label>Email</label>
               </div>
-              <div class="Form__items">
-                <textarea placeholder="Message" id="texta"></textarea>
+              <div class="group">
+              <textarea id="texta"></textarea><span class="highlight"></span><span class="bar"></span>
+                <label>Email</label>
+
               </div>
-              <div class="Form__btn">
+
+                    <div class="Form__btn">
                 <!-- <button class="btn btn-primary">Submit</button> -->
 
-                <button id="button" class="ready" onclick=" clickButton()">
+                <button id="button" class="ready " onclick=" clickButton()">
                   <div class="message submitMessage">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -697,6 +687,7 @@
                     </svg>
                     <span class="button-text">Success</span>
                   </div>
+
                 </button>
                 <canvas id="canvas"></canvas>
               </div>
@@ -709,6 +700,9 @@
         </div>
       </div>
     </section>
+
+
+
 
     <!-- Social Media  -->
     <section>
@@ -760,6 +754,9 @@
         </div>
       </div>
     </section>
+
+
+
 
     <!-- Footer Design -->
     <footer>

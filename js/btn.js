@@ -280,6 +280,28 @@ textElements.forEach((element) => {
 // kick off the render loop
 render();
 */
+$(window, document, undefined).ready(function() {
+
+	$('input').blur(function() {
+		var $this = $(this);
+
+		if ($this.val())
+		$this.addClass('used');
+			else
+			$this.removeClass('used');
+
+	});
+	$('textarea').blur(function() {
+		var $this = $(this);
+		if ($this.val())
+			$this.addClass('used');
+		else
+			$this.removeClass('used');
+	});
+
+
+});
+
 const button = document.getElementById('button');
 		var disabled = false;
 		const canvas = document.getElementById('canvas');
@@ -496,10 +518,19 @@ const button = document.getElementById('button');
 		          disabled = false;
 		          button.classList.add('ready');
 		          button.classList.remove('complete');
-											document.getElementById("name").value=" ";
-			 	 				 document.getElementById("email").value=" ";
-				 	 				 document.getElementById("phone").value=" ";
-				 	 				 document.getElementById("texta").value=" ";}, 4000);
+							document.getElementById("name").value="";
+											document.getElementById("name").classList.remove("used");
+											document.getElementById("email").value="";
+											document.getElementById("email").classList.remove("used");
+											document.getElementById("phone").value="";
+											document.getElementById("phone").classList.remove("used");
+										document.getElementById("texta").value="";
+									document.getElementById("texta").classList.remove("used");
+
+
+
+
+}, 4000);
 		     }, 320);
 		   }, 1800);
 
@@ -527,11 +558,7 @@ const button = document.getElementById('button');
 
 		// click button on spacebar or return keypress
 
-		document.body.onkeyup = (e) => {
-		  if (e.keyCode == 13 || e.keyCode == 32) {
-		    clickButton();
-		  }
-		}
+		
 
 		// Set up button text transition timings on page load
 		textElements = button.querySelectorAll('.button-text');
@@ -548,6 +575,5 @@ const button = document.getElementById('button');
 		render();
 
 		// click button on spacebar or return keypress
-
 
 		// Set up button text transition timings on page load

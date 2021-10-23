@@ -37,263 +37,261 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/loading.css" />
-      <link rel="stylesheet" href="../css/sidebar.css" />
-      <link rel="stylesheet" href="../css/dark.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/dark.css" />
   </head>
   <body>
     <!-- Loader Addition -->
-    <div class="load__wrapper">
-      <div class="wrap">
-        <div class="overlay"></div>
+    <div class="loading-screen load__wrapper">
+      <div class="loading-animation">
+        <img src="https://imgur.com/FsvEuM2.png" alt="logo" class="logo" />
+        <div class="loading-bar"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2" <!-- Menu Bar Creation -->
+        <div id="menu" class="menu">
+          <div class="actionsBar">
+            <div>
+              <button id="menuBtn" type="button">
+                <i class="fas fa-bars"></i>
+              </button>
+              <h3 class="menuText">Dashboard</h3>
+            </div>
+          </div>
+          <ul class="optionsBar">
+            <li class="menuItem">
+              <a href="./index.html" class="menuOption">
+                <img src="../images/Logo.png" class="img-fluid" alt="Logo" />
+                <h5 class="menuText">Home</h5>
+              </a>
+            </li>
 
-        <div class="cogWheel one">
-          <div class="cog one"></div>
-          <div class="cog two"></div>
-          <div class="cog three"></div>
-          <div class="cog four"></div>
-          <div class="cog five"></div>
-          <div class="center"></div>
+            <li class="menuItem">
+              <a href="#about" id="productManagerBtn" class="menuOption">
+                <i class="fas fa-info"></i>
+                <h5 class="menuText">About</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="#" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-border-all"></i>
+                <h5 class="menuText">Projects</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a
+                href="./certificates/cr-main.html"
+                id="constantManagerBtn"
+                class="menuOption"
+              >
+                <i class="fas fa-certificate"></i>
+                <h5 class="menuText">Certificate</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a
+                href="./gallery.html"
+                id="constantManagerBtn"
+                class="menuOption"
+              >
+                <i class="fas fa-images"></i>
+                <h5 class="menuText">Gallery</h5>
+              </a>
+            </li>
+
+            <li class="menuItem">
+              <a href="./music.html" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-play"></i>
+                <h5 class="menuText">Music</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="#" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-blog"></i>
+                <h5 class="menuText">Blogs</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a
+                href="./contact.html"
+                id="constantManagerBtn"
+                class="menuOption"
+              >
+                <i class="fas fa-phone"></i>
+                <h5 class="menuText">Contact</h5>
+              </a>
+            </li>
+          </ul>
+
+          <div class="themeBar">
+            <div>
+              <button
+                class="btn-toggle button"
+                type="button"
+                id="dark-mode-toggle"
+              >
+                <i class="fas fa-moon" id="fa-moon"></i>
+                <i class="fas fa-sun sun1" id="img-fluid"></i>
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="portfolio">
+          <h2 class="title">My Certificates</h2>
 
-        <div class="cogWheel two">
-          <div class="cog one"></div>
-          <div class="cog two"></div>
-          <div class="cog three"></div>
-          <div class="cog four"></div>
-          <div class="cog five"></div>
-          <div class="center"></div>
+          <a href="./cr1.html" class="card">
+            <div class="content">
+              <span class="title">English</span>
+              <span class="category">Speed English Typing</span>
+            </div>
+            <div class="image">
+              <img src="../images/Certificates/2232261-1586586800.jpg" alt="" />
+            </div>
+          </a>
+
+          <a href="./cr2.html" class="card">
+            <div class="content">
+              <span class="title">Photography</span>
+              <span class="category">Rajasthan Studio Photography </span>
+            </div>
+            <div class="image">
+              <img src="../images/Certificates/86 - Samarth Goyal.jpg" alt="" />
+            </div>
+          </a>
+
+          <a href="./cr3.html" class="card">
+            <div class="content">
+              <span class="title">Udemy Certificate</span>
+              <span class="category">Digital Marketing</span>
+            </div>
+            <div class="image">
+              <img src="../images/Certificates/cer.PNG" alt="" />
+            </div>
+          </a>
+
+          <a href="./cr4.html" class="card">
+            <div class="content">
+              <span class="title">Web Development</span>
+              <span class="category">HTML / CSS / JS</span>
+            </div>
+            <div class="image">
+              <img
+                src="../images/Certificates/cert-preview800461123.jpeg"
+                alt=""
+              />
+            </div>
+          </a>
+
+          <a href="./cr5.html" class="card">
+            <div class="content">
+              <span class="title">CVC</span>
+              <span class="category">Central Vigilance Commision</span>
+            </div>
+            <div class="image">
+              <img src="../images/Certificates/certificate.jpg" alt="" />
+            </div>
+          </a>
+
+          <a href="./cr6.html" class="card">
+            <div class="content">
+              <span class="title">Bennet University</span>
+              <span class="category">Hult Prize</span>
+            </div>
+            <div class="image">
+              <img
+                src="../images/Certificates/Certificate_1st runner up_Samarth-page-001.jpg"
+                alt=""
+              />
+            </div>
+          </a>
+
+          <a href="./cr7.html" class="card">
+            <div class="content">
+              <span class="title">JAVA</span>
+              <span class="category">Object Oriented Programming</span>
+            </div>
+            <div class="image">
+              <img
+                src="../images/Certificates/CERTIFICATE_LANDING_PAGE_M4SHK4W2BQQE.jpeg"
+                alt=""
+              />
+            </div>
+          </a>
+
+          <a href="./cr8.html" class="card">
+            <div class="content">
+              <span class="title">Hackathon</span>
+              <span class="category">Coding Contest </span>
+            </div>
+            <div class="image">
+              <img src="../images/Certificates/Hackathon.png" alt="" />
+            </div>
+          </a>
+
+          <a href="./cr9.html" class="card">
+            <div class="content">
+              <span class="title">Covid-19 Certificate</span>
+              <span class="category">Covid Awareness</span>
+            </div>
+            <div class="image">
+              <img
+                src="../images/Certificates/InJNTU Covid19 Awareness Certificate.jpg"
+                alt=""
+              />
+            </div>
+          </a>
+
+          <a href="./cr10.html" class="card">
+            <div class="content">
+              <span class="title">Google Certificate</span>
+              <span class="category">Digital Marketing</span>
+            </div>
+            <div class="image">
+              <img src="../images/Certificates/jj.PNG" alt="" />
+            </div>
+          </a>
+
+          <a href="./cr11.html" class="card">
+            <div class="content">
+              <span class="title">Python</span>
+              <span class="category">The Python Week</span>
+            </div>
+            <div class="image">
+              <img src="../images/Certificates/Python.jpg" alt="" />
+            </div>
+          </a>
+
+          <a href="./cr12.html" class="card">
+            <div class="content">
+              <span class="title">Bennet University</span>
+              <span class="category">Ideathon</span>
+            </div>
+            <div class="image">
+              <img
+                src="../images/Certificates/SamarthGoyal-page-001.jpg"
+                alt=""
+              />
+            </div>
+          </a>
+
+          <a href="./cr13.html" class="card">
+            <div class="content">
+              <span class="title">Pacific University</span>
+              <span class="category">Super Student</span>
+            </div>
+            <div class="image">
+              <img
+                src="../images/Certificates/Super Student - 2020 - Certificate-007.jpg"
+                alt=""
+              />
+            </div>
+          </a>
         </div>
       </div>
     </div>
-<div class="row">
-  <div class="col-lg-3"
-    <!-- Menu Bar Creation -->
-    <div id="menu" class="menu">
-      <div class="actionsBar">
-        <div>
-          <button id="menuBtn" type="button">
-            <i class="fas fa-bars"></i>
-          </button>
-          <h3 class="menuText">Dashboard</h3>
-        </div>
-      </div>
-      <ul class="optionsBar">
-        <li class="menuItem">
-          <a href="./index.html" class="menuOption">
-            <img src="../images/Logo.png" class="img-fluid" alt="Logo">
-            <h5 class="menuText">Home</h5>
-          </a>
-        </li>
-
-        <li class="menuItem">
-          <a href="#about" id="productManagerBtn" class="menuOption">
-            <i class="fas fa-info"></i>
-            <h5 class="menuText">About</h5>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a href="#" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-border-all"></i>
-            <h5 class="menuText">Projects</h5>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a
-            href="./certificates/cr-main.html"
-            id="constantManagerBtn"
-            class="menuOption"
-          >
-            <i class="fas fa-certificate"></i>
-            <h5 class="menuText">Certificate</h5>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a href="./gallery.html" id="constantManagerBtn" class="menuOption">
-          <i class="fas fa-images"></i>
-            <h5 class="menuText">Gallery</h5>
-          </a>
-        </li>
-
-        <li class="menuItem">
-          <a href="./music.html" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-play"></i>
-            <h5 class="menuText">Music</h5>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a href="#" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-blog"></i>
-            <h5 class="menuText">Blogs</h5>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a href="./contact.html" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-phone"></i>
-            <h5 class="menuText">Contact</h5>
-          </a>
-        </li>
-      </ul>
-
-
-      <div class="themeBar">
-        <div>
-          <button class="btn-toggle button" type="button" id="dark-mode-toggle">
-            <i class="fas fa-moon" id="fa-moon"></i>
-            <i class="fas fa-sun sun1" id="img-fluid"></i>
-          </button>
-        </div>
-      </div>
-    </div>
- </div>
- <div class="col-lg-9">
-
-    <div class="portfolio">
-      <h2 class="title">My Certificates</h2>
-
-      <a href="./cr1.html" class="card">
-        <div class="content">
-          <span class="title">English</span>
-          <span class="category">Speed English Typing</span>
-        </div>
-        <div class="image">
-          <img src="../images/Certificates/2232261-1586586800.jpg" alt="" />
-        </div>
-      </a>
-
-      <a href="./cr2.html" class="card">
-        <div class="content">
-          <span class="title">Photography</span>
-          <span class="category">Rajasthan Studio Photography </span>
-        </div>
-        <div class="image">
-          <img src="../images/Certificates/86 - Samarth Goyal.jpg" alt="" />
-        </div>
-      </a>
-
-      <a href="./cr3.html" class="card">
-        <div class="content">
-          <span class="title">Udemy Certificate</span>
-          <span class="category">Digital Marketing</span>
-        </div>
-        <div class="image">
-          <img src="../images/Certificates/cer.PNG" alt="" />
-        </div>
-      </a>
-
-      <a href="./cr4.html" class="card">
-        <div class="content">
-          <span class="title">Web Development</span>
-          <span class="category">HTML / CSS / JS</span>
-        </div>
-        <div class="image">
-          <img src="../images/Certificates/cert-preview800461123.jpeg" alt="" />
-        </div>
-      </a>
-
-      <a href="./cr5.html" class="card">
-        <div class="content">
-          <span class="title">CVC</span>
-          <span class="category">Central Vigilance Commision</span>
-        </div>
-        <div class="image">
-          <img src="../images/Certificates/certificate.jpg" alt="" />
-        </div>
-      </a>
-
-      <a href="./cr6.html" class="card">
-        <div class="content">
-          <span class="title">Bennet University</span>
-          <span class="category">Hult Prize</span>
-        </div>
-        <div class="image">
-          <img
-            src="../images/Certificates/Certificate_1st runner up_Samarth-page-001.jpg"
-            alt=""
-          />
-        </div>
-      </a>
-
-      <a href="./cr7.html" class="card">
-        <div class="content">
-          <span class="title">JAVA</span>
-          <span class="category">Object Oriented Programming</span>
-        </div>
-        <div class="image">
-          <img
-            src="../images/Certificates/CERTIFICATE_LANDING_PAGE_M4SHK4W2BQQE.jpeg"
-            alt=""
-          />
-        </div>
-      </a>
-
-      <a href="./cr8.html" class="card">
-        <div class="content">
-          <span class="title">Hackathon</span>
-          <span class="category">Coding Contest </span>
-        </div>
-        <div class="image">
-          <img src="../images/Certificates/Hackathon.png" alt="" />
-        </div>
-      </a>
-
-      <a href="./cr9.html" class="card">
-        <div class="content">
-          <span class="title">Covid-19 Certificate</span>
-          <span class="category">Covid Awareness</span>
-        </div>
-        <div class="image">
-          <img
-            src="../images/Certificates/InJNTU Covid19 Awareness Certificate.jpg"
-            alt=""
-          />
-        </div>
-      </a>
-
-      <a href="./cr10.html" class="card">
-        <div class="content">
-          <span class="title">Google Certificate</span>
-          <span class="category">Digital Marketing</span>
-        </div>
-        <div class="image">
-          <img src="../images/Certificates/jj.PNG" alt="" />
-        </div>
-      </a>
-
-      <a href="./cr11.html" class="card">
-        <div class="content">
-          <span class="title">Python</span>
-          <span class="category">The Python Week</span>
-        </div>
-        <div class="image">
-          <img src="../images/Certificates/Python.jpg" alt="" />
-        </div>
-      </a>
-
-      <a href="./cr12.html" class="card">
-        <div class="content">
-          <span class="title">Bennet University</span>
-          <span class="category">Ideathon</span>
-        </div>
-        <div class="image">
-          <img src="../images/Certificates/SamarthGoyal-page-001.jpg" alt="" />
-        </div>
-      </a>
-
-      <a href="./cr13.html" class="card">
-        <div class="content">
-          <span class="title">Pacific University</span>
-          <span class="category">Super Student</span>
-        </div>
-        <div class="image">
-          <img
-            src="../images/Certificates/Super Student - 2020 - Certificate-007.jpg"
-            alt=""
-          />
-        </div>
-      </a>
-    </div>
-  </div>
-</div>
 
     <!-- Bootstrap Js -->
     <script
@@ -301,8 +299,8 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-<script src="../js/sidebar.js"></script>
-<script src="../js/mode.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/mode.js"></script>
     <!-- Custom Js -->
     <script>
       const Mode = document.querySelector(".mode__icon");

@@ -1,55 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samarth Portfolio</title>
     <!-- Bootstrap Css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
-
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon" />
 
     <!-- Custom Css -->
-    <link rel="stylesheet" href="./css/loading.css">
-    <link rel="stylesheet" href="./css/style.css">
-
-</head>
-<style>
-    h1{
-        text-align: center;
+    <link rel="stylesheet" href="./css/loading.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <style>
+    h1 {
+      text-align: center;
     }
-</style>
-<body>
-
-
-        <!-- Loader Addition -->
-        <div class="load__wrapper">
-            <div class="wrap">
-              <div class="overlay"></div>
-
-              <div class="cogWheel one">
-                <div class="cog one"></div>
-                <div class="cog two"></div>
-                <div class="cog three"></div>
-                <div class="cog four"></div>
-                <div class="cog five"></div>
-                <div class="center"></div>
-              </div>
-
-              <div class="cogWheel two">
-                <div class="cog one"></div>
-                <div class="cog two"></div>
-                <div class="cog three"></div>
-                <div class="cog four"></div>
-                <div class="cog five"></div>
-                <div class="center"></div>
-              </div>
-            </div>
-          </div>
+  </style>
+  <body>
+    <!-- Loader Addition -->
+    <div class="loading-screen load__wrapper">
+      <div class="loading-animation">
+        <img src="https://imgur.com/FsvEuM2.png" alt="logo" class="logo" />
+        <div class="loading-bar"></div>
+      </div>
+    </div>
 
     <!-- Menu Bar Creation -->
     <div id="menu" class="menu">
@@ -64,7 +54,7 @@
       <ul class="optionsBar">
         <li class="menuItem">
           <a href="./index.html" class="menuOption">
-            <img src="./images/Logo.png" class="img-fluid" alt="Logo">
+            <img src="./images/Logo.png" class="img-fluid" alt="Logo" />
             <h5 class="menuText">Home</h5>
           </a>
         </li>
@@ -93,7 +83,7 @@
         </li>
         <li class="menuItem">
           <a href="./gallery.html" id="constantManagerBtn" class="menuOption">
-          <i class="fas fa-images"></i>
+            <i class="fas fa-images"></i>
             <h5 class="menuText">Gallery</h5>
           </a>
         </li>
@@ -118,7 +108,6 @@
         </li>
       </ul>
 
-
       <div class="themeBar">
         <div>
           <button class="btn-toggle button" type="button" id="dark-mode-toggle">
@@ -129,91 +118,106 @@
       </div>
     </div>
 
-    <div class="Separator">
-        <br><br><br><br>
-    </div>
+    <div class="Separator"><br /><br /><br /><br /></div>
 
     <div class="Separator__2">
-        <br><br>
-        <br><br>
+      <br /><br />
+      <br /><br />
     </div>
-
 
     <!-- About Section -->
     <section class="About__Section" id="about">
-        <div class="container">
-            <h1>About Me</h1>
-            <div class="row">
-                <div class="col col-sm-12 col-md-12 col-lg-7 mx-auto About__Content">
-                    <p>I am a self-motivated person doing self-development and learning for the past 4 years. I am very self-disciplined, sincere, and focused when it comes to my goals.
-                    </p>
-                    <p>I'm always ready to help others in any way that I can.
-                        I believe in sharing and like to donate to those in need on various occasions. Seeing other people happy is also a source of my happiness.
-                        If I talk about my work, I am a full-stack Android App Developer. I have been doing this since I was 17. I started learning languages on my own and had developed quite an interest in this field. I developed my first app when I was in X grade which was based on an E-commerce named engy craft factory (Samarth app development)
-                    </p>
+      <div class="container">
+        <h1>About Me</h1>
+        <div class="row">
+          <div class="col col-sm-12 col-md-12 col-lg-7 mx-auto About__Content">
+            <p>
+              I am a self-motivated person doing self-development and learning
+              for the past 4 years. I am very self-disciplined, sincere, and
+              focused when it comes to my goals.
+            </p>
+            <p>
+              I'm always ready to help others in any way that I can. I believe
+              in sharing and like to donate to those in need on various
+              occasions. Seeing other people happy is also a source of my
+              happiness. If I talk about my work, I am a full-stack Android App
+              Developer. I have been doing this since I was 17. I started
+              learning languages on my own and had developed quite an interest
+              in this field. I developed my first app when I was in X grade
+              which was based on an E-commerce named engy craft factory (Samarth
+              app development)
+            </p>
 
-                    <p>
-                        I started showing interest in laptops from a pretty young age and since then have only grown and learned along the way.
-                        I know about all the fundamentals of a pc, all the hardware parts, all the companies of the laptops, and a lot more.
-                        I have a passion for gadgets as well.  I get very excited finding about a new thing even if it is too small. I love to explore new gadgets and am always eager to know more about their mechanism.
-                    </p>
+            <p>
+              I started showing interest in laptops from a pretty young age and
+              since then have only grown and learned along the way. I know about
+              all the fundamentals of a pc, all the hardware parts, all the
+              companies of the laptops, and a lot more. I have a passion for
+              gadgets as well. I get very excited finding about a new thing even
+              if it is too small. I love to explore new gadgets and am always
+              eager to know more about their mechanism.
+            </p>
 
-                    <p>I always guide my friends and relatives to walk on the right path on how to grow and be  successful in life.
-                        That is all that there is to know about me!  Hope you enjoyed reading through my life story in short.
-                        Feel free to talk to me! I shall always try to give you my 100%.
+            <p>
+              I always guide my friends and relatives to walk on the right path
+              on how to grow and be successful in life. That is all that there
+              is to know about me! Hope you enjoyed reading through my life
+              story in short. Feel free to talk to me! I shall always try to
+              give you my 100%.
 
-                        <br>Thanks
-                    </p>
-                </div>
+              <br />Thanks
+            </p>
+          </div>
 
-                <div class="col col-sm-5 col-md-5 col-lg-5 mx-auto About__Image">
-                    <img src="./images/IMG_20200517_085510.jpg" class="img-fluid" alt="About__IMG">
-                </div>
-            </div>
+          <div class="col col-sm-5 col-md-5 col-lg-5 mx-auto About__Image">
+            <img
+              src="./images/IMG_20200517_085510.jpg"
+              class="img-fluid"
+              alt="About__IMG"
+            />
+          </div>
         </div>
+      </div>
     </section>
-
-
-
-
 
     <!-- Footer Design -->
     <footer>
-        <p style="color: black;">Created With ❤️  By Samarth | Copyright &copy; <span class="Footer__year">2021</span> All rights reserved ! </p>
+      <p style="color: black">
+        Created With ❤️ By Samarth | Copyright &copy;
+        <span class="Footer__year">2021</span> All rights reserved !
+      </p>
     </footer>
 
-
-
     <!-- Bootstrap Js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom Js -->
     <script>
-    const Mode = document.querySelector('.mode__icon');
-    const nav = document.querySelector('nav');
-    const navLink = document.querySelectorAll('.nav__link');
-    const body = document.querySelector('body');
+      const Mode = document.querySelector(".mode__icon");
+      const nav = document.querySelector("nav");
+      const navLink = document.querySelectorAll(".nav__link");
+      const body = document.querySelector("body");
 
-    let count = 0;
-    Mode.addEventListener('click',function(){
-        body.classList.toggle('DarkMode');
-        nav.classList.toggle('DarkMode');
-        navLink.forEach(element =>{
-            element.classList.toggle('DarkMode');
-        })
+      let count = 0;
+      Mode.addEventListener("click", function () {
+        body.classList.toggle("DarkMode");
+        nav.classList.toggle("DarkMode");
+        navLink.forEach((element) => {
+          element.classList.toggle("DarkMode");
+        });
         MenuList.classList.toggle("DarkMode");
-        count = count+1;
-        if(count % 2 === 0){
-            Mode.setAttribute("src","./images/icons/light.svg");
-        }else{
-            Mode.setAttribute("src","./images/icons/dark.svg");
+        count = count + 1;
+        if (count % 2 === 0) {
+          Mode.setAttribute("src", "./images/icons/light.svg");
+        } else {
+          Mode.setAttribute("src", "./images/icons/dark.svg");
         }
-    });
+      });
     </script>
-
 
     <script src="./js/Nav.js"></script>
 
@@ -221,10 +225,10 @@
     <!-- Jquery Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
-        $(window).on('load',function(){
-            $('.load__wrapper').fadeOut('slow');
-        });
+      $(window).on("load", function () {
+        $(".load__wrapper").fadeOut("slow");
+      });
     </script>
-<script src="js/mode.js"></script>
-</body>
+    <script src="js/mode.js"></script>
+  </body>
 </html>

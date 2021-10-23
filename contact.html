@@ -1,63 +1,57 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samarth Portfolio</title>
 
     <!-- Bootstrap Css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- LeafLet Script -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
 
-    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon">
-
+    <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon" />
 
     <!-- Custom Css -->
-    <link rel="stylesheet" href="./css/formBtn.css">
-    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/formBtn.css" />
+    <link rel="stylesheet" href="./css/loading.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
-</head>
+  </head>
 
-<body>
-
-        <!-- Loader Addition -->
-        <div class="load__wrapper">
-            <div class="wrap">
-              <div class="overlay"></div>
-
-              <div class="cogWheel one">
-                <div class="cog one"></div>
-                <div class="cog two"></div>
-                <div class="cog three"></div>
-                <div class="cog four"></div>
-                <div class="cog five"></div>
-                <div class="center"></div>
-              </div>
-
-              <div class="cogWheel two">
-                <div class="cog one"></div>
-                <div class="cog two"></div>
-                <div class="cog three"></div>
-                <div class="cog four"></div>
-                <div class="cog five"></div>
-                <div class="center"></div>
-              </div>
-            </div>
-          </div>
-
-
+  <body style="min-height: 100vh">
+    <!-- Loader Addition -->
+    <div class="loading-screen load__wrapper">
+      <div class="loading-animation">
+        <img src="https://imgur.com/FsvEuM2.png" alt="logo" class="logo" />
+        <div class="loading-bar"></div>
+      </div>
+    </div>
 
     <!-- Menu Bar Creation -->
     <div id="menu" class="menu">
@@ -72,7 +66,7 @@
       <ul class="optionsBar">
         <li class="menuItem">
           <a href="./index.html" class="menuOption">
-            <img src="./images/Logo.png" class="img-fluid" alt="Logo">
+            <img src="./images/Logo.png" class="img-fluid" alt="Logo" />
             <h5 class="menuText">Home</h5>
           </a>
         </li>
@@ -101,7 +95,7 @@
         </li>
         <li class="menuItem">
           <a href="./gallery.html" id="constantManagerBtn" class="menuOption">
-          <i class="fas fa-images"></i>
+            <i class="fas fa-images"></i>
             <h5 class="menuText">Gallery</h5>
           </a>
         </li>
@@ -126,7 +120,6 @@
         </li>
       </ul>
 
-
       <div class="themeBar">
         <div>
           <button class="btn-toggle button" type="button" id="dark-mode-toggle">
@@ -137,10 +130,9 @@
       </div>
     </div>
 
+    <!--  <div class="Separator"><br /><br /><br /><br /></div>-->
 
-     <!--  <div class="Separator"><br /><br /><br /><br /></div>-->
-
-  <!--  <nav>
+    <!--  <nav>
         <ul class="Menu__List__holder">
             <li><a href="./index.html" class="nav__link">Home</a></li>
             <li><a href="#" class="nav__link">Projects</a></li>
@@ -171,125 +163,123 @@
 -->
 
     <!-- Contact Section -->
-    <section class="Contact__Section" id="contact" style='position:absolute;top:100px;width:100%'>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_1">
-                    <h1>Contact Me</h1>
-                    <div class="MAIN__FORM">
-                      <div class="Form__items">
-                        <input type="text" placeholder="Enter Your Name" id="name" />
-                      </div>
-                      <div class="Form__items">
-                        <input
-                         type="text"
-                         placeholder="Enter Your Email"
-                         id="email"
-                         />
-                      </div>
-                      <div class="Form__items">
-                        <input
-                          type="number"
-                          placeholder="Enter Your Mobile Number"
-                           id="phone"
-                        />
-                      </div>
-                      <div class="Form__items">
-                        <textarea placeholder="Message" id="texta"></textarea>
-                      </div>
-                      <div class="Form__btn">
-                        <!-- <button class="btn btn-primary">Submit</button> -->
+    <section
+      class="Contact__Section"
+      id="contact"
+      style="position: absolute; top: 100px; width: 100%"
+    >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_1">
+            <h1>Contact Me</h1>
+            <div class="MAIN__FORM">
+              <div class="Form__items">
+                <input type="text" placeholder="Enter Your Name" id="name" />
+              </div>
+              <div class="Form__items">
+                <input type="text" placeholder="Enter Your Email" id="email" />
+              </div>
+              <div class="Form__items">
+                <input
+                  type="number"
+                  placeholder="Enter Your Mobile Number"
+                  id="phone"
+                />
+              </div>
+              <div class="Form__items">
+                <textarea placeholder="Message" id="texta"></textarea>
+              </div>
+              <div class="Form__btn">
+                <!-- <button class="btn btn-primary">Submit</button> -->
 
-                        <button id="button" class="ready" onclick=" clickButton()">
-                          <div class="message submitMessage">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 13 12.2"
-                            >
-                              <polyline
-                                stroke="currentColor"
-                                points="2,7.1 6.5,11.1 11,7.1 "
-                              />
-                              <line
-                                stroke="currentColor"
-                                x1="6.5"
-                                y1="1.2"
-                                x2="6.5"
-                                y2="10.3"
-                              />
-                            </svg>
-                            <span class="button-text">Click Me!</span>
-                          </div>
+                <button id="button" class="ready" onclick=" clickButton()">
+                  <div class="message submitMessage">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 13 12.2"
+                    >
+                      <polyline
+                        stroke="currentColor"
+                        points="2,7.1 6.5,11.1 11,7.1 "
+                      />
+                      <line
+                        stroke="currentColor"
+                        x1="6.5"
+                        y1="1.2"
+                        x2="6.5"
+                        y2="10.3"
+                      />
+                    </svg>
+                    <span class="button-text">Click Me!</span>
+                  </div>
 
-                          <div class="message loadingMessage">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
-                              <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
-                              <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
-                              <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
-                            </svg>
-                          </div>
+                  <div class="message loadingMessage">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                      <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                      <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                      <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+                    </svg>
+                  </div>
 
-                          <div class="message successMessage">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
-                              <polyline
-                                stroke="currentColor"
-                                points="1.4,5.8 5.1,9.5 11.6,2.1 "
-                              />
-                            </svg>
-                            <span class="button-text">Success</span>
-                          </div>
-                        </button>
-                        <canvas id="canvas"></canvas>
-                      </div>
-                    </div>
-
-                </div>
-
-                <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_2">
-                    <div id="map"></div>
-                </div>
+                  <div class="message successMessage">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                      <polyline
+                        stroke="currentColor"
+                        points="1.4,5.8 5.1,9.5 11.6,2.1 "
+                      />
+                    </svg>
+                    <span class="button-text">Success</span>
+                  </div>
+                </button>
+                <canvas id="canvas"></canvas>
+              </div>
             </div>
+          </div>
+
+          <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_2">
+            <div id="map"></div>
+          </div>
         </div>
+      </div>
     </section>
 
-
-
     <!-- Footer Design -->
-    <footer>
-        <p style="color: black;">Created With ❤️ By Samarth | Copyright &copy; <span class="Footer__year">2021</span> All rights reserved ! </p>
+    <footer style="bottom: 0">
+      <p style="color: black; bottom: 0">
+        Created With ❤️ By Samarth | Copyright &copy;
+        <span class="Footer__year">2021</span> All rights reserved !
+      </p>
     </footer>
 
-
-
     <!-- Bootstrap Js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom Js -->
     <script>
-    const Mode = document.querySelector('.mode__icon');
-    const nav = document.querySelector('nav');
-    const navLink = document.querySelectorAll('.nav__link');
-    const body = document.querySelector('body');
+      const Mode = document.querySelector(".mode__icon");
+      const nav = document.querySelector("nav");
+      const navLink = document.querySelectorAll(".nav__link");
+      const body = document.querySelector("body");
 
-    let count = 0;
-    Mode.addEventListener('click',function(){
-        body.classList.toggle('DarkMode');
-        nav.classList.toggle('DarkMode');
-        navLink.forEach(element =>{
-            element.classList.toggle('DarkMode');
-        })
+      let count = 0;
+      Mode.addEventListener("click", function () {
+        body.classList.toggle("DarkMode");
+        nav.classList.toggle("DarkMode");
+        navLink.forEach((element) => {
+          element.classList.toggle("DarkMode");
+        });
         MenuList.classList.toggle("DarkMode");
-        count = count+1;
-        if(count % 2 === 0){
-            Mode.setAttribute("src","./images/icons/light.svg");
-        }else{
-            Mode.setAttribute("src","./images/icons/dark.svg");
+        count = count + 1;
+        if (count % 2 === 0) {
+          Mode.setAttribute("src", "./images/icons/light.svg");
+        } else {
+          Mode.setAttribute("src", "./images/icons/dark.svg");
         }
-    });
-
+      });
     </script>
     <script src="./js/btn.js"></script>
     <script src="./js/Nav.js"></script>
@@ -301,12 +291,11 @@
     <!-- Jquery Script -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
-        $(window).on('load',function(){
-            $('.load__wrapper').fadeOut('slow');
-        });
+      $(window).on("load", function () {
+        $(".load__wrapper").fadeOut("slow");
+      });
     </script>
 
-        <script src="js/mode.js"></script>
-
-</body>
+    <script src="js/mode.js"></script>
+  </body>
 </html>

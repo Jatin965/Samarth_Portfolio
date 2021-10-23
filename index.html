@@ -54,6 +54,13 @@
   </head>
   <body>
     <!-- Loader Addition -->
+
+    <div class="loading-screen load__wrapper">
+      <div class="loading-animation">
+        <img src="https://imgur.com/FsvEuM2.png" alt="logo" class="logo" />
+        <div class="loading-bar"></div>
+      </div>
+    </div>
     <!-- <div class="load__wrapper">
       <div class="wrap">
         <div class="overlay"></div>
@@ -126,7 +133,7 @@
       <ul class="optionsBar">
         <li class="menuItem">
           <a href="./index.html" class="menuOption">
-            <img src="./images/Logo.png" class="img-fluid" alt="Logo">
+            <img src="./images/Logo.png" class="img-fluid" alt="Logo" />
             <h5 class="menuText">Home</h5>
           </a>
         </li>
@@ -155,7 +162,7 @@
         </li>
         <li class="menuItem">
           <a href="./gallery.html" id="constantManagerBtn" class="menuOption">
-          <i class="fas fa-images"></i>
+            <i class="fas fa-images"></i>
             <h5 class="menuText">Gallery</h5>
           </a>
         </li>
@@ -179,7 +186,6 @@
           </a>
         </li>
       </ul>
-
 
       <div class="themeBar">
         <div>
@@ -434,9 +440,13 @@
             </div>
             <div class="Project__BTn">
               <a
+                class="cta"
                 href="https://apkcombo.com/engy-craft-factory/com.engycraftfactory.shopping/"
-                >View Details</a
-              >
+                ><span>View Details</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline></svg
+              ></a>
             </div>
           </div>
         </div>
@@ -469,7 +479,12 @@
               </div>
             </div>
             <div class="Project__BTn">
-              <!-- <a href="#">View Details</a> -->
+              <a class="cta" href="#"
+                ><span>View Details</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline></svg
+              ></a>
             </div>
           </div>
 
@@ -510,7 +525,12 @@
             <h2>Photography</h2>
             <p>Canon certified official photographer in Jodhpur</p>
             <div class="Project__BTn">
-              <a href="#">View Details</a>
+              <a class="cta" href="#"
+                ><span>View Details</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline></svg
+              ></a>
             </div>
           </div>
         </div>
@@ -540,7 +560,12 @@
               </div>
             </div>
             <div class="Project__BTn">
-              <a href="#">View Details</a>
+              <a class="cta" href="#"
+                ><span>View Details</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline></svg
+              ></a>
             </div>
           </div>
 
@@ -602,9 +627,12 @@
               <br />Thanks
             </p>
             <div class="Next__Quote__Btn__Holder">
-              <a href="./resume/resume.html" class="Next__Quote__Btn btn"
-                >See Resume</a
-              >
+              <a href="./resume/resume.html" class="cta"
+                ><span>See Resume</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline></svg
+              ></a>
             </div>
           </div>
 
@@ -627,29 +655,30 @@
             <h1>Contact Me</h1>
             <div class="MAIN__FORM">
               <div class="group">
-                <input type="text" id="name"><span class="highlight"></span><span class="bar"></span>
+                <input type="text" id="name" /><span class="highlight"></span
+                ><span class="bar"></span>
                 <label>Name</label>
               </div>
               <div class="group">
-                <input type="email" id="email"><span class="highlight"></span><span class="bar"></span>
+                <input type="email" id="email" /><span class="highlight"></span
+                ><span class="bar"></span>
                 <label>Email</label>
               </div>
               <div class="group">
-                <input type="number"
-
-                id="phone" ><span class="highlight"></span><span class="bar"></span>
-                <label>Email</label>
+                <input type="number" id="phone" /><span class="highlight"></span
+                ><span class="bar"></span>
+                <label>Mobile</label>
               </div>
               <div class="group">
-              <textarea id="texta"></textarea><span class="highlight"></span><span class="bar"></span>
-                <label>Email</label>
-
+                <textarea id="texta"></textarea><span class="highlight"></span
+                ><span class="bar"></span>
+                <label>Message</label>
               </div>
 
-                    <div class="Form__btn">
+              <div class="Form__btn">
                 <!-- <button class="btn btn-primary">Submit</button> -->
 
-                <button id="button" class="ready " onclick=" clickButton()">
+                <button id="button" class="ready" onclick=" clickButton()">
                   <div class="message submitMessage">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -687,7 +716,6 @@
                     </svg>
                     <span class="button-text">Success</span>
                   </div>
-
                 </button>
                 <canvas id="canvas"></canvas>
               </div>
@@ -700,9 +728,6 @@
         </div>
       </div>
     </section>
-
-
-
 
     <!-- Social Media  -->
     <section>
@@ -754,9 +779,6 @@
         </div>
       </div>
     </section>
-
-
-
 
     <!-- Footer Design -->
     <footer>

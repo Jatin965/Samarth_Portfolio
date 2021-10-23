@@ -1,293 +1,280 @@
 <!DOCTYPE html>
 <!-- Coding By CodingNepal - youtube.com/codingnepal -->
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samarth Portfolio | Music Player </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samarth Portfolio | Music Player</title>
 
     <!-- Custom Css -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/loading.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-*::before, *::after{
-  padding: 0;
-  margin: 0;
-}
-:root{
-  --pink: #ff74a4;
-  --violet: #9f6ea3;
-  --lightblack: #515C6F;
-  --white: #ffffff;
-  --darkwhite: #cecaca;
-  --pinkshadow: #ffcbdd;
-  --lightbshadow: rgba(0,0,0,0.15);
-}
-body{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 110vh;
-  background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
-}
-.wrapper{
-  width: 380px;
-  padding: 25px 30px;
-  overflow: hidden;
-  position: relative;
-  border-radius: 15px;
-  background: var(--white);
-  box-shadow: 0px 6px 15px var(--lightbshadow);
-}
-.wrapper i{
-  cursor: pointer;
-}
-.top-bar, .progress-area .song-timer,
-.controls, .music-list .header, .music-list ul li{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.top-bar i{
-  font-size: 30px;
-  color: var(--lightblack);
-}
-.top-bar i:first-child{
-  margin-left: -7px;
-}
-.top-bar span{
-  font-size: 18px;
-  margin-left: -3px;
-  color: var(--lightblack);
-}
-.img-area{
-  width: 100%;
-  height: 256px;
-  overflow: hidden;
-  margin-top: 25px;
-  border-radius: 15px;
-  box-shadow: 0px 6px 12px var(--lightbshadow);
-}
-.img-area img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.song-details{
-  text-align: center;
-  margin: 30px 0;
-}
-.song-details p{
-  color: var(--lightblack);
-}
-.song-details .name{
-  font-size: 21px;
-}
-.song-details .artist{
-  font-size: 18px;
-  opacity: 0.9;
-  line-height: 35px;
-}
-.progress-area{
-  height: 6px;
-  width: 100%;
-  border-radius: 50px;
-  background: #f0f0f0;
-  cursor: pointer;
-}
-.progress-area .progress-bar{
-  height: inherit;
-  width: 0%;
-  position: relative;
-  border-radius: inherit;
-  background: linear-gradient(90deg, var(--pink) 0%, var(--violet) 100%);
-}
-.progress-bar::before{
-  content: "";
-  position: absolute;
-  height: 12px;
-  width: 12px;
-  border-radius: 50%;
-  top: 50%;
-  right: -5px;
-  z-index: 2;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-50%);
-  background: inherit;
-  transition: opacity 0.2s ease;
-}
-.progress-area:hover .progress-bar::before{
-  opacity: 1;
-  pointer-events: auto;
-}
-.progress-area .song-timer{
-  margin-top: 2px;
-}
-.song-timer span{
-  font-size: 13px;
-  color: var(--lightblack);
-}
-.controls{
-  margin: 40px 0 5px 0;
-}
-.controls i{
-  font-size: 28px;
-  user-select: none;
-  background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.controls i:nth-child(2),
-.controls i:nth-child(4){
-  font-size: 43px;
-}
-.controls #prev{
-  margin-right: -13px;
-}
-.controls #next{
-  margin-left: -13px;
-}
-.controls .play-pause{
-  height: 54px;
-  width: 54px;
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%);
-  box-shadow: 0px 0px 5px var(--pink);
-}
-.play-pause::before{
-  position: absolute;
-  content: "";
-  height: 43px;
-  width: 43px;
-  border-radius: inherit;
-  background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
-}
-.play-pause i{
-  height: 43px;
-  width: 43px;
-  line-height: 43px;
-  text-align: center;
-  background: inherit;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-}
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/loading.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    *::before,
+    *::after {
+      padding: 0;
+      margin: 0;
+    }
+    :root {
+      --pink: #ff74a4;
+      --violet: #9f6ea3;
+      --lightblack: #515c6f;
+      --white: #ffffff;
+      --darkwhite: #cecaca;
+      --pinkshadow: #ffcbdd;
+      --lightbshadow: rgba(0, 0, 0, 0.15);
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 110vh;
+      background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
+    }
+    .wrapper {
+      width: 380px;
+      padding: 25px 30px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: 0px 6px 15px var(--lightbshadow);
+    }
+    .wrapper i {
+      cursor: pointer;
+    }
+    .top-bar,
+    .progress-area .song-timer,
+    .controls,
+    .music-list .header,
+    .music-list ul li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .top-bar i {
+      font-size: 30px;
+      color: var(--lightblack);
+    }
+    .top-bar i:first-child {
+      margin-left: -7px;
+    }
+    .top-bar span {
+      font-size: 18px;
+      margin-left: -3px;
+      color: var(--lightblack);
+    }
+    .img-area {
+      width: 100%;
+      height: 256px;
+      overflow: hidden;
+      margin-top: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 6px 12px var(--lightbshadow);
+    }
+    .img-area img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .song-details {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .song-details p {
+      color: var(--lightblack);
+    }
+    .song-details .name {
+      font-size: 21px;
+    }
+    .song-details .artist {
+      font-size: 18px;
+      opacity: 0.9;
+      line-height: 35px;
+    }
+    .progress-area {
+      height: 6px;
+      width: 100%;
+      border-radius: 50px;
+      background: #f0f0f0;
+      cursor: pointer;
+    }
+    .progress-area .progress-bar {
+      height: inherit;
+      width: 0%;
+      position: relative;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--pink) 0%, var(--violet) 100%);
+    }
+    .progress-bar::before {
+      content: "";
+      position: absolute;
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      top: 50%;
+      right: -5px;
+      z-index: 2;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(-50%);
+      background: inherit;
+      transition: opacity 0.2s ease;
+    }
+    .progress-area:hover .progress-bar::before {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .progress-area .song-timer {
+      margin-top: 2px;
+    }
+    .song-timer span {
+      font-size: 13px;
+      color: var(--lightblack);
+    }
+    .controls {
+      margin: 40px 0 5px 0;
+    }
+    .controls i {
+      font-size: 28px;
+      user-select: none;
+      background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .controls i:nth-child(2),
+    .controls i:nth-child(4) {
+      font-size: 43px;
+    }
+    .controls #prev {
+      margin-right: -13px;
+    }
+    .controls #next {
+      margin-left: -13px;
+    }
+    .controls .play-pause {
+      height: 54px;
+      width: 54px;
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: linear-gradient(var(--white) 0%, var(--darkwhite) 100%);
+      box-shadow: 0px 0px 5px var(--pink);
+    }
+    .play-pause::before {
+      position: absolute;
+      content: "";
+      height: 43px;
+      width: 43px;
+      border-radius: inherit;
+      background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
+    }
+    .play-pause i {
+      height: 43px;
+      width: 43px;
+      line-height: 43px;
+      text-align: center;
+      background: inherit;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: absolute;
+    }
 
-.music-list{
-  position: absolute;
-  background: var(--white);
-  width: 100%;
-  left: 0;
-  bottom: -55%;
-  opacity: 0;
-  pointer-events: none;
-  z-index: 5;
-  padding: 15px 30px;
-  border-radius: 15px;
-  box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
-  transition: all 0.15s ease-out;
-}
-.music-list.show{
-  bottom: 0;
-  opacity: 1;
-  pointer-events: auto;
-}
-.header .row{
-  display: flex;
-  align-items: center;
-  font-size: 19px;
-  color: var(--lightblack);
-}
-.header .row i{
-  cursor: default;
-}
-.header .row span{
-  margin-left: 5px;
-}
-.header #close{
-  font-size: 22px;
-  color: var(--lightblack);
-}
-.music-list ul{
-  margin: 10px 0;
-  max-height: 260px;
-  overflow: auto;
-}
-.music-list ul::-webkit-scrollbar{
-  width: 0px;
-}
-.music-list ul li{
-  list-style: none;
-  display: flex;
-  cursor: pointer;
-  padding-bottom: 10px;
-  margin-bottom: 5px;
-  color: var(--lightblack);
-  border-bottom: 1px solid #E5E5E5;
-}
-.music-list ul li:last-child{
-  border-bottom: 0px;
-}
-.music-list ul li .row span{
-  font-size: 17px;
-}
-.music-list ul li .row p{
-  opacity: 0.9;
-}
-ul li .audio-duration{
-  font-size: 16px;
-}
-ul li.playing{
-  pointer-events: none;
-  color: var(--violet);
-}
-</style>
-<body>
-
-
-      <!-- Loader Addition -->
-      <div class="load__wrapper">
-        <div class="wrap">
-          <div class="overlay"></div>
-
-          <div class="cogWheel one">
-            <div class="cog one"></div>
-            <div class="cog two"></div>
-            <div class="cog three"></div>
-            <div class="cog four"></div>
-            <div class="cog five"></div>
-            <div class="center"></div>
-          </div>
-
-          <div class="cogWheel two">
-            <div class="cog one"></div>
-            <div class="cog two"></div>
-            <div class="cog three"></div>
-            <div class="cog four"></div>
-            <div class="cog five"></div>
-            <div class="center"></div>
-          </div>
-        </div>
+    .music-list {
+      position: absolute;
+      background: var(--white);
+      width: 100%;
+      left: 0;
+      bottom: -55%;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 5;
+      padding: 15px 30px;
+      border-radius: 15px;
+      box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.15s ease-out;
+    }
+    .music-list.show {
+      bottom: 0;
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .header .row {
+      display: flex;
+      align-items: center;
+      font-size: 19px;
+      color: var(--lightblack);
+    }
+    .header .row i {
+      cursor: default;
+    }
+    .header .row span {
+      margin-left: 5px;
+    }
+    .header #close {
+      font-size: 22px;
+      color: var(--lightblack);
+    }
+    .music-list ul {
+      margin: 10px 0;
+      max-height: 260px;
+      overflow: auto;
+    }
+    .music-list ul::-webkit-scrollbar {
+      width: 0px;
+    }
+    .music-list ul li {
+      list-style: none;
+      display: flex;
+      cursor: pointer;
+      padding-bottom: 10px;
+      margin-bottom: 5px;
+      color: var(--lightblack);
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .music-list ul li:last-child {
+      border-bottom: 0px;
+    }
+    .music-list ul li .row span {
+      font-size: 17px;
+    }
+    .music-list ul li .row p {
+      opacity: 0.9;
+    }
+    ul li .audio-duration {
+      font-size: 16px;
+    }
+    ul li.playing {
+      pointer-events: none;
+      color: var(--violet);
+    }
+  </style>
+  <body>
+    <!-- Loader Addition -->
+    <div class="loading-screen load__wrapper">
+      <div class="loading-animation">
+        <img src="https://imgur.com/FsvEuM2.png" alt="logo" class="logo" />
+        <div class="loading-bar"></div>
       </div>
-
-
-
+    </div>
 
     <!-- Menu Bar Creation -->
     <div id="menu" class="menu">
@@ -302,7 +289,7 @@ ul li.playing{
       <ul class="optionsBar">
         <li class="menuItem">
           <a href="./index.html" class="menuOption">
-            <img src="./images/Logo.png" class="img-fluid" alt="Logo">
+            <img src="./images/Logo.png" class="img-fluid" alt="Logo" />
             <h5 class="menuText">Home</h5>
           </a>
         </li>
@@ -331,7 +318,7 @@ ul li.playing{
         </li>
         <li class="menuItem">
           <a href="./gallery.html" id="constantManagerBtn" class="menuOption">
-          <i class="fas fa-images"></i>
+            <i class="fas fa-images"></i>
             <h5 class="menuText">Gallery</h5>
           </a>
         </li>
@@ -356,7 +343,6 @@ ul li.playing{
         </li>
       </ul>
 
-
       <div class="themeBar">
         <div>
           <button class="btn-toggle button" type="button" id="dark-mode-toggle">
@@ -367,95 +353,91 @@ ul li.playing{
       </div>
     </div>
 
+    <br /><br /><br /><br />
 
-
-    <br><br><br><br>
-
-
-  <div class="wrapper">
-    <div class="top-bar">
-      <i class="material-icons">expand_more</i>
-      <span>Now Playing</span>
-      <i class="material-icons">more_horiz</i>
-    </div>
-    <div class="img-area">
-      <img src="" alt="">
-    </div>
-    <div class="song-details">
-      <p class="name"></p>
-      <p class="artist"></p>
-    </div>
-    <div class="progress-area">
-      <div class="progress-bar">
-        <audio id="main-audio" src=""></audio>
+    <div class="wrapper">
+      <div class="top-bar">
+        <i class="material-icons">expand_more</i>
+        <span>Now Playing</span>
+        <i class="material-icons">more_horiz</i>
       </div>
-      <div class="song-timer">
-        <span class="current-time">0:00</span>
-        <span class="max-duration">0:00</span>
+      <div class="img-area">
+        <img src="" alt="" />
       </div>
-    </div>
-    <div class="controls">
-      <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
-      <i id="prev" class="material-icons">skip_previous</i>
-      <div class="play-pause">
-        <i class="material-icons play">play_arrow</i>
+      <div class="song-details">
+        <p class="name"></p>
+        <p class="artist"></p>
       </div>
-      <i id="next" class="material-icons">skip_next</i>
-      <i id="more-music" class="material-icons">queue_music</i>
-    </div>
-    <div class="music-list">
-      <div class="header">
-        <div class="row">
-          <i class= "list material-icons">queue_music</i>
-          <span>Music list</span>
+      <div class="progress-area">
+        <div class="progress-bar">
+          <audio id="main-audio" src=""></audio>
         </div>
-        <i id="close" class="material-icons">close</i>
+        <div class="song-timer">
+          <span class="current-time">0:00</span>
+          <span class="max-duration">0:00</span>
+        </div>
       </div>
-      <ul>
-        <!-- here li list are coming from js -->
-      </ul>
+      <div class="controls">
+        <i id="repeat-plist" class="material-icons" title="Playlist looped"
+          >repeat</i
+        >
+        <i id="prev" class="material-icons">skip_previous</i>
+        <div class="play-pause">
+          <i class="material-icons play">play_arrow</i>
+        </div>
+        <i id="next" class="material-icons">skip_next</i>
+        <i id="more-music" class="material-icons">queue_music</i>
+      </div>
+      <div class="music-list">
+        <div class="header">
+          <div class="row">
+            <i class="list material-icons">queue_music</i>
+            <span>Music list</span>
+          </div>
+          <i id="close" class="material-icons">close</i>
+        </div>
+        <ul>
+          <!-- here li list are coming from js -->
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <script src="js/music_list.js"></script>
-  <script src="./js/music.js"></script>
-  <script src="./js/Nav.js"></script>
+    <script src="js/music_list.js"></script>
+    <script src="./js/music.js"></script>
+    <script src="./js/Nav.js"></script>
 
     <!-- Custom Js -->
     <script>
-        const Mode = document.querySelector('.mode__icon');
-        const nav = document.querySelector('nav');
-        const navLink = document.querySelectorAll('.nav__link');
-        const body = document.querySelector('body');
+      const Mode = document.querySelector(".mode__icon");
+      const nav = document.querySelector("nav");
+      const navLink = document.querySelectorAll(".nav__link");
+      const body = document.querySelector("body");
 
-        let count = 0;
-        Mode.addEventListener('click',function(){
-            body.classList.toggle('DarkMode');
-            nav.classList.toggle('DarkMode');
-            navLink.forEach(element =>{
-                element.classList.toggle('DarkMode');
-            })
-            MenuList.classList.toggle("DarkMode");
-            count = count+1;
-            if(count % 2 === 0){
-                Mode.setAttribute("src","./images/icons/light.svg");
-            }else{
-                Mode.setAttribute("src","./images/icons/dark.svg");
-            }
+      let count = 0;
+      Mode.addEventListener("click", function () {
+        body.classList.toggle("DarkMode");
+        nav.classList.toggle("DarkMode");
+        navLink.forEach((element) => {
+          element.classList.toggle("DarkMode");
         });
+        MenuList.classList.toggle("DarkMode");
+        count = count + 1;
+        if (count % 2 === 0) {
+          Mode.setAttribute("src", "./images/icons/light.svg");
+        } else {
+          Mode.setAttribute("src", "./images/icons/dark.svg");
+        }
+      });
+    </script>
 
-        </script>
-
-
-
-      <!-- Loading Scripts   -->
-        <!-- Jquery Script -->
-      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-      <script>
-          $(window).on('load',function(){
-              $('.load__wrapper').fadeOut('slow');
-          });
-      </script>
-      <script src="js/mode.js"></script>
-</body>
+    <!-- Loading Scripts   -->
+    <!-- Jquery Script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+      $(window).on("load", function () {
+        $(".load__wrapper").fadeOut("slow");
+      });
+    </script>
+    <script src="js/mode.js"></script>
+  </body>
 </html>

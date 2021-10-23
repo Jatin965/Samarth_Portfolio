@@ -207,6 +207,55 @@
   }
 }
 
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  width: 200px;
+}
+
+.loading-bar {
+  width: 250px;
+  height: 6px;
+  background: #e8e9f3;
+  margin-top: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-bar::before {
+  content: "";
+  width: 125px;
+  height: 8px;
+  background: linear-gradient(
+    to right,
+    rgb(76, 217, 100),
+    rgb(90, 200, 250),
+    rgb(0, 122, 255),
+    rgb(52, 170, 220),
+    rgb(88, 86, 214),
+    rgb(255, 45, 85)
+  );
+  position: absolute;
+  left: -34px;
+  animation: pinkbar 1.5s infinite ease;
+}
+
+@keyframes pinkbar {
+  50% {
+    left: 196px;
+  }
+}
+
 /* SQUARE ANMATION */
 
 /*

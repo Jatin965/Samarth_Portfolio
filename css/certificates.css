@@ -1,26 +1,63 @@
-
-
-.container .row > h5 {
-  text-align: center;
+.Certificate__Display img
+{
+  width: 100%;
 }
 
-.container .row div p {
-  font-size: 13px;
-  margin: 0;
-  padding: 5px 0;
-}
-
-.container .row div h5 {
-  font-size: 20px;
+.container
+{
+  margin:0;
 
 }
+.img-clog
+{
 
-.container .row .Certificate__Display {
-  width: 90%;
-  margin: auto;
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+
+}
+.side
+{
+ background: #FEFBF3;
+ margin: 0px;
+ color: grey;
+}
+.text-center
+
+{
+  padding-bottom: 20px;
+}
+.cir
+{
+  margin-top: 80px;
+}
+footer{
+  background: ##FFFAFA;
 }
 
-.container .row .Certificate__Display img {
-  max-width: 800px;
-  height: auto;
+
+@media screen and  (max-device-width:995px) , screen and (max-width:995px)  {
+
+
+.certificate__section
+{
+  margin-top: 40px;
+  padding: 0!important;
+  padding-left: 0px!important;
+  width: 100%;
+  height: 100%!important;
+}
+.text-center
+
+{
+  padding-bottom: 10px;
+  font-size: 12px;
+
+}
+.text-center img
+{margin-top: 13px;
+  width:70px!important;
+  height: 70px!important;
+}
+
 }

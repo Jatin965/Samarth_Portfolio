@@ -98,65 +98,7 @@
     content: "Motivational Speaker";
   }
 }*/
-.word {
-  overflow: hidden;
-}
-.wrapper {
-  position: absolute;
-  right: 35px;
-  top: 80%;
-  box-sizing: content-box;
-  background: rgba(255, 255, 255, 0);
-  height: 80px;
 
-  padding: 10px 0;
-  display: flex;
-  border-radius: 8px;
-}
-.wrapper span {
-  display: block;
-  height: 100%;
-  padding-left: 10px;
-  color: black;
-  margin-bottom: 5px;
-  font-size: 35px;
-  color: #1a08b9;
-  font-weight: bold;
-  animation: spin_word 8s infinite;
-  margin-left: 0px;
-}
-
-.wrapper p {
-  font-size: 35px;
-  font-weight: bold;
-  color: #1a08b9;
-}
-@keyframes spin_word {
-  10% {
-    transform: translateY(-122%);
-  }
-  25% {
-    transform: translateY(-100%);
-  }
-  35% {
-    transform: translateY(-222%);
-  }
-  50% {
-    transform: translateY(-200%);
-  }
-  60% {
-    transform: translateY(-322%);
-  }
-  75% {
-    transform: translateY(-300%);
-  }
-  85% {
-    transform: translateY(-422%);
-  }
-  100% {
-    transform: translateY(-400%);
-  }
-}
 
 /* Media Queries Are used to show the first page professional if you want dance effect in mobile devices remove this */
 @media only screen and (max-width: 768px) {
@@ -175,9 +117,9 @@
   left: 0;
   top: 0;
   width: 100%;
-  height: 105%;
+  height: 100%;
   overflow: hidden;
-  z-index: -100;
+  z-index: -1;
   background: linear-gradient(
     132deg,
     #24c6dc,

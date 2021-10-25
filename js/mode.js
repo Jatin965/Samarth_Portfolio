@@ -26,7 +26,7 @@ darkModeToggle.addEventListener("click", () => {
   }
 });
 */
-var element = document.getElementById("head-col");
+
 var moon = document.getElementById("fa-moon");
 var sun = document.getElementById("img-fluid");
 
@@ -36,7 +36,6 @@ const darkModeToggle = document.getElementById('dark-mode-toggle');
 const enableDarkMode = () => {
   // 1. Add the class to the body
   document.body.classList.add('darkmode');
-  element.classList.remove("animated__background");
   moon.classList.add("sun1");
 sun.classList.remove("sun1");
 
@@ -48,7 +47,6 @@ sun.classList.remove("sun1");
 const disableDarkMode = () => {
   // 1. Remove the class from the body
   document.body.classList.remove('darkmode');
-  element.classList.add("animated__background");
   sun.classList.add("sun1");
   moon.classList.remove("sun1");
   // 2. Update darkMode in localStorage

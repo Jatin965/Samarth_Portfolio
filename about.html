@@ -24,8 +24,14 @@
     <link rel="shortcut icon" href="./images/Logo.png" type="image/x-icon" />
 
     <!-- Custom Css -->
+
+    <link rel="stylesheet" href="./asserts/Animation/animate.css" />
+    <link rel="stylesheet" href="./css/formBtn.css" />
     <link rel="stylesheet" href="./css/loading.css" />
+    <link rel="stylesheet" href="./css/myanimation.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/dark.css" />
   </head>
   <style>
     h1 {
@@ -41,91 +47,138 @@
       </div>
     </div>
 
-    <!-- Menu Bar Creation -->
-    <div id="menu" class="menu">
-      <div class="actionsBar">
-        <div>
-          <button id="menuBtn" type="button">
-            <i class="fas fa-bars"></i>
-          </button>
-          <h3 class="menuText">Dashboard</h3>
+    <div class="con">
+          <div class="nav-bar">
+            <div class="toggle-menu">
+              <div class="line line1"></i></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-list-item"><a href="./index.html" class="nav-link"><img src="./images/Logo.png" class="img-fluid" alt="Logo" width="30" height="30" />Home</a></li>
+              <li class="nav-list-item"><a href="./about.html"  class="nav-link"><i class="fas fa-info"></i>
+              <h5 >About</h5></a></li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">    <i class="fas fa-border-all"></i>
+                    <h5 >Projects</h5></a>
+              </li>
+              <li class="nav-list-item"><a href="./certificates/cr-main.html" class="nav-link"><i class="fas fa-certificate"></i>
+              <h5 >Certificate</h5></a></li>
+              <li class="nav-list-item">
+                <a href="./gallery.html" class="nav-link"><i class="fas fa-images"></i>
+                <h5 >Gallery</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./music.html" class="nav-link"><i class="fas fa-play"></i>
+                <h5 >Music</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">  <i class="fas fa-blog"></i>
+                    <h5>Blogs</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./contact.html" class="nav-link"><i class="fas fa-phone"></i>
+                <h5 >Contact</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <div class="btn-toggle button" type="button" id="dark-mode">
+                  <i class="fas fa-moon" id="fa-moon1"></i>
+                  <i class="fas fa-sun sun1" id="img-fluid1"></i>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-2">
+        <div id="menu" class="menu">
+          <div class="actionsBar">
+            <div>
+              <button id="menuBtn" type="button">
+                <i class="fas fa-bars"></i>
+              </button>
+              <h3 class="menuText">Dashboard</h3>
+            </div>
+          </div>
+          <ul class="optionsBar">
+            <li class="menuItem">
+              <a href="./index.html" class="menuOption">
+                <img src="./images/Logo.png" class="img-fluid" alt="Logo" />
+                <h5 class="menuText">Home</h5>
+              </a>
+            </li>
+
+            <li class="menuItem">
+              <a href="#about" id="productManagerBtn" class="menuOption">
+                <i class="fas fa-info"></i>
+                <h5 class="menuText">About</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="#" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-border-all"></i>
+                <h5 class="menuText">Projects</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a
+                href="./certificates/cr-main.html"
+                id="constantManagerBtn"
+                class="menuOption"
+              >
+                <i class="fas fa-certificate"></i>
+                <h5 class="menuText">Certificate</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="./gallery.html" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-images"></i>
+                <h5 class="menuText">Gallery</h5>
+              </a>
+            </li>
+
+            <li class="menuItem">
+              <a href="./music.html" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-play"></i>
+                <h5 class="menuText">Music</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="#" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-blog"></i>
+                <h5 class="menuText">Blogs</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="./contact.html" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-phone"></i>
+                <h5 class="menuText">Contact</h5>
+              </a>
+            </li>
+
+          </ul>
+
+
+          <div class="themeBar">
+            <div>
+              <button class="btn-toggle button" type="button" id="dark-mode-toggle">
+                <i class="fas fa-moon" id="fa-moon"></i>
+                <i class="fas fa-sun sun1" id="img-fluid"></i>
+              </button>
+
+            </div>
+          </div>
         </div>
       </div>
-      <ul class="optionsBar">
-        <li class="menuItem">
-          <a href="./index.html" class="menuOption">
-            <img src="./images/Logo.png" class="img-fluid" alt="Logo" />
-            <h5 class="menuText">Home</h5>
-          </a>
-        </li>
 
-        <li class="menuItem">
-          <a href="#about" id="productManagerBtn" class="menuOption">
-            <i class="fas fa-info"></i>
-            <h5 class="menuText">About</h5>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a href="#" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-border-all"></i>
-            <h5 class="menuText">Projects</h5>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a
-            href="./certificates/cr-main.html"
-            id="constantManagerBtn"
-            class="menuOption"
-          >
-            <i class="fas fa-certificate"></i>
-            <h5 class="menuText">Certificate</h5>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a href="./gallery.html" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-images"></i>
-            <h5 class="menuText">Gallery</h5>
-          </a>
-        </li>
 
-        <li class="menuItem">
-          <a href="./music.html" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-play"></i>
-            <h5 class="menuText">Music</h5>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a href="#" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-blog"></i>
-            <h5 class="menuText">Blogs</h5>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a href="./contact.html" id="constantManagerBtn" class="menuOption">
-            <i class="fas fa-phone"></i>
-            <h5 class="menuText">Contact</h5>
-          </a>
-        </li>
-      </ul>
 
-      <div class="themeBar">
-        <div>
-          <button class="btn-toggle button" type="button" id="dark-mode-toggle">
-            <i class="fas fa-moon" id="fa-moon"></i>
-            <i class="fas fa-sun sun1" id="img-fluid"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="Separator"><br /><br /><br /><br /></div>
-
-    <div class="Separator__2">
-      <br /><br />
-      <br /><br />
-    </div>
 
     <!-- About Section -->
+
+      <div class="col-lg-10">
     <section class="About__Section" id="about">
       <div class="container">
         <h1>About Me</h1>
@@ -179,7 +232,8 @@
         </div>
       </div>
     </section>
-
+</div>
+</div>
     <!-- Footer Design -->
     <footer>
       <p style="color: black">
@@ -196,30 +250,18 @@
     ></script>
 
     <!-- Custom Js -->
-    <script>
-      const Mode = document.querySelector(".mode__icon");
-      const nav = document.querySelector("nav");
-      const navLink = document.querySelectorAll(".nav__link");
-      const body = document.querySelector("body");
 
-      let count = 0;
-      Mode.addEventListener("click", function () {
-        body.classList.toggle("DarkMode");
-        nav.classList.toggle("DarkMode");
-        navLink.forEach((element) => {
-          element.classList.toggle("DarkMode");
-        });
-        MenuList.classList.toggle("DarkMode");
-        count = count + 1;
-        if (count % 2 === 0) {
-          Mode.setAttribute("src", "./images/icons/light.svg");
-        } else {
-          Mode.setAttribute("src", "./images/icons/dark.svg");
-        }
-      });
-    </script>
 
-    <script src="./js/Nav.js"></script>
+
+    <script src="./js/Interacting.js"></script>
+
+    <script src="js/mobmenu.js"></script>
+    <script src="js/mobile.js"></script>
+  <script src="js/sidebar.js"></script>
+
+      <script src="js/mode.js"></script>
+    <script src="./js/vanilla-tilt.js"></script>
+
 
     <!-- Loading Scripts   -->
     <!-- Jquery Script -->
@@ -229,6 +271,6 @@
         $(".load__wrapper").fadeOut("slow");
       });
     </script>
-    <script src="js/mode.js"></script>
+
   </body>
 </html>

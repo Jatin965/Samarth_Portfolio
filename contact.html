@@ -42,9 +42,15 @@
     <link rel="stylesheet" href="./css/loading.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
+
+      <link rel="stylesheet" href="./css/myanimation.css" />
+
+
+
   </head>
 
   <body style="min-height: 100vh">
+
     <!-- Loader Addition -->
     <div class="loading-screen load__wrapper">
       <div class="loading-animation">
@@ -54,6 +60,53 @@
     </div>
 
     <!-- Menu Bar Creation -->
+    <div class="con">
+          <div class="nav-bar">
+            <div class="toggle-menu">
+              <div class="line line1"></i></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-list-item"><a href="./index.html" class="nav-link"><img src="./images/Logo.png" class="img-fluid" alt="Logo" width="30" height="30" />Home</a></li>
+              <li class="nav-list-item"><a href="#about"  class="nav-link"><i class="fas fa-info"></i>
+              <h5 >About</h5></a></li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">    <i class="fas fa-border-all"></i>
+                    <h5 >Projects</h5></a>
+              </li>
+              <li class="nav-list-item"><a href="./certificates/cr-main.html" class="nav-link"><i class="fas fa-certificate"></i>
+              <h5 >Certificate</h5></a></li>
+              <li class="nav-list-item">
+                <a href="./gallery.html" class="nav-link"><i class="fas fa-images"></i>
+                <h5 >Gallery</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./music.html" class="nav-link"><i class="fas fa-play"></i>
+                <h5 >Music</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">  <i class="fas fa-blog"></i>
+                    <h5>Blogs</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./contact.html" class="nav-link"><i class="fas fa-phone"></i>
+                <h5 >Contact</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <div class="btn-toggle button" type="button" id="dark-mode">
+                  <i class="fas fa-moon" id="fa-moon1"></i>
+                  <i class="fas fa-sun sun1" id="img-fluid1"></i>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+    <h1>Contact Me</h1>
+    <div class="row">
+      <div class="col-lg-2">
     <div id="menu" class="menu">
       <div class="actionsBar">
         <div>
@@ -72,7 +125,7 @@
         </li>
 
         <li class="menuItem">
-          <a href="#about" id="productManagerBtn" class="menuOption">
+          <a href="./about.html" id="productManagerBtn" class="menuOption">
             <i class="fas fa-info"></i>
             <h5 class="menuText">About</h5>
           </a>
@@ -129,7 +182,7 @@
         </div>
       </div>
     </div>
-
+</div>
     <!--  <div class="Separator"><br /><br /><br /><br /></div>-->
 
     <!--  <nav>
@@ -163,36 +216,39 @@
 -->
 
     <!-- Contact Section -->
-    <section
-      class="Contact__Section"
-      id="contact"
-      style="position: absolute; top: 100px; width: 100%"
-    >
+    <!-- Contact Section -->
+    <div class="col-lg-10">
+    <section class="Contact__Section" id="contact">
       <div class="container-fluid">
         <div class="row">
           <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_1">
-            <h1>Contact Me</h1>
+
             <div class="MAIN__FORM">
-              <div class="Form__items">
-                <input type="text" placeholder="Enter Your Name" id="name" />
+              <div class="group">
+                <input type="text" id="name" /><span class="highlight"></span
+                ><span class="bar"></span>
+                <label>Name</label>
               </div>
-              <div class="Form__items">
-                <input type="text" placeholder="Enter Your Email" id="email" />
+              <div class="group">
+                <input type="email" id="email" /><span class="highlight"></span
+                ><span class="bar"></span>
+                <label>Email</label>
               </div>
-              <div class="Form__items">
-                <input
-                  type="number"
-                  placeholder="Enter Your Mobile Number"
-                  id="phone"
-                />
+              <div class="group">
+                <input type="number" id="phone" /><span class="highlight"></span
+                ><span class="bar"></span>
+                <label>Mobile</label>
               </div>
-              <div class="Form__items">
-                <textarea placeholder="Message" id="texta"></textarea>
+              <div class="group">
+                <textarea id="texta"></textarea><span class="highlight"></span
+                ><span class="bar"></span>
+                <label>Message</label>
               </div>
+
               <div class="Form__btn">
                 <!-- <button class="btn btn-primary">Submit</button> -->
 
-                <button id="button" class="ready" onclick=" clickButton()">
+                <button id="button" class="ready" onclick=" clickButton()" style="z-index:-1;">
                   <div class="message submitMessage">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -242,10 +298,11 @@
         </div>
       </div>
     </section>
-
+</div>
+</div>
     <!-- Footer Design -->
-    <footer style="bottom: 0">
-      <p style="color: black; bottom: 0">
+    <footer >
+      <p >
         Created With ❤️ By Samarth | Copyright &copy;
         <span class="Footer__year">2021</span> All rights reserved !
       </p>
@@ -260,42 +317,47 @@
 
     <!-- Custom Js -->
     <script>
-      const Mode = document.querySelector(".mode__icon");
-      const nav = document.querySelector("nav");
-      const navLink = document.querySelectorAll(".nav__link");
-      const body = document.querySelector("body");
 
-      let count = 0;
-      Mode.addEventListener("click", function () {
-        body.classList.toggle("DarkMode");
-        nav.classList.toggle("DarkMode");
-        navLink.forEach((element) => {
-          element.classList.toggle("DarkMode");
-        });
-        MenuList.classList.toggle("DarkMode");
-        count = count + 1;
-        if (count % 2 === 0) {
-          Mode.setAttribute("src", "./images/icons/light.svg");
-        } else {
-          Mode.setAttribute("src", "./images/icons/dark.svg");
-        }
-      });
     </script>
     <script src="./js/btn.js"></script>
     <script src="./js/Nav.js"></script>
     <script src="./js/Map.js"></script>
-    <script src="./js/mode.js"></script>
-    <script src="./js/sidebar.js"></script>
+
+    <script src="js/mode.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/mobile.js"></script>
+    <script src="js/mobmenu.js"></script>
 
     <!-- Loading Scripts   -->
     <!-- Jquery Script -->
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script>
       $(window).on("load", function () {
         $(".load__wrapper").fadeOut("slow");
       });
+      $(window, document, undefined).ready(function() {
+
+      	$('input').blur(function() {
+      		var $this = $(this);
+
+      		if ($this.val())
+      		$this.addClass('used');
+      			else
+      			$this.removeClass('used');
+
+      	});
+      	$('textarea').blur(function() {
+      		var $this = $(this);
+      		if ($this.val())
+      			$this.addClass('used');
+      		else
+      			$this.removeClass('used');
+      	});
+
+
+      });
     </script>
 
-    <script src="js/mode.js"></script>
   </body>
 </html>

@@ -280,27 +280,7 @@ textElements.forEach((element) => {
 // kick off the render loop
 render();
 */
-$(window, document, undefined).ready(function() {
 
-	$('input').blur(function() {
-		var $this = $(this);
-
-		if ($this.val())
-		$this.addClass('used');
-			else
-			$this.removeClass('used');
-
-	});
-	$('textarea').blur(function() {
-		var $this = $(this);
-		if ($this.val())
-			$this.addClass('used');
-		else
-			$this.removeClass('used');
-	});
-
-
-});
 
 const button = document.getElementById('button');
 		var disabled = false;
@@ -558,7 +538,7 @@ const button = document.getElementById('button');
 
 		// click button on spacebar or return keypress
 
-		
+
 
 		// Set up button text transition timings on page load
 		textElements = button.querySelectorAll('.button-text');

@@ -44,7 +44,52 @@
       <br /><br />
       <br /><br />
     </div>-->
-    <h1>MY GALLERY</h1>
+
+    <div class="con">
+          <div class="nav-bar">
+            <div class="toggle-menu">
+              <div class="line line1"></i></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-list-item"><a href="./index.html" class="nav-link"><img src="./images/Logo.png" class="img-fluid" alt="Logo" width="30" height="30" />Home</a></li>
+              <li class="nav-list-item"><a href="#about"  class="nav-link"><i class="fas fa-info"></i>
+              <h5 >About</h5></a></li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">    <i class="fas fa-border-all"></i>
+                    <h5 >Projects</h5></a>
+              </li>
+              <li class="nav-list-item"><a href="./certificates/cr-main.html" class="nav-link"><i class="fas fa-certificate"></i>
+              <h5 >Certificate</h5></a></li>
+              <li class="nav-list-item">
+                <a href="./gallery.html" class="nav-link"><i class="fas fa-images"></i>
+                <h5 >Gallery</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./music.html" class="nav-link"><i class="fas fa-play"></i>
+                <h5 >Music</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">  <i class="fas fa-blog"></i>
+                    <h5>Blogs</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./contact.html" class="nav-link"><i class="fas fa-phone"></i>
+                <h5 >Contact</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <div class="btn-toggle button" type="button" id="dark-mode">
+                  <i class="fas fa-moon" id="fa-moon1"></i>
+                  <i class="fas fa-sun sun1" id="img-fluid1"></i>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </br></br>
+
     <div class="row">
       <div class="col-lg-2">
         <div id="menu" class="menu">
@@ -136,6 +181,7 @@
         </div>
       </div>
       <div class="col-lg-9">
+          <h1>MY GALLERY</h1>
         <div id="gallery" class="container-fluid">
           <!-- Menu Bar Creation -->
 
@@ -248,15 +294,24 @@
         $(".load__wrapper").fadeOut("slow");
       });
     </script>
-    <script src="js/mode.js"></script>
+    <script src="./js/mode.js"></script>
+    <script src="./js/mobile.js"></script>
+    <script src="./js/mobmenu.js"></script>
     <script>
       $(document).ready(function () {
         $("img").click(function () {
           var t = $(this).attr("src");
+          $(".modal-body").css("display","block");
           $(".modal-body").html("<img src='" + t + "' class='modal-img'>");
           $("#myModal").modal();
         });
+        $(".modal-body").click(function () {
+
+          $(".modal-body").css("display","none");
+
+        });
       });
+
     </script>
   </body>
 </html>

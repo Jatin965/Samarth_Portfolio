@@ -48,6 +48,51 @@
         <div class="loading-bar"></div>
       </div>
     </div>
+    <div class="con">
+          <div class="nav-bar">
+            <div class="toggle-menu">
+              <div class="line line1"></i></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-list-item"><a href="../index.html" class="nav-link"><img src="../images/Logo.png" class="img-fluid" alt="Logo" width="30" height="30" />Home</a></li>
+              <li class="nav-list-item"><a href="../about.html"  class="nav-link"><i class="fas fa-info"></i>
+              <h5 >About</h5></a></li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">    <i class="fas fa-border-all"></i>
+                    <h5 >Projects</h5></a>
+              </li>
+              <li class="nav-list-item"><a href="../certificates/cr-main.html" class="nav-link"><i class="fas fa-certificate"></i>
+              <h5 >Certificate</h5></a></li>
+              <li class="nav-list-item">
+                <a href="../gallery.html" class="nav-link"><i class="fas fa-images"></i>
+                <h5 >Gallery</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="../music.html" class="nav-link"><i class="fas fa-play"></i>
+                <h5 >Music</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">  <i class="fas fa-blog"></i>
+                    <h5>Blogs</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="../contact.html" class="nav-link"><i class="fas fa-phone"></i>
+                <h5 >Contact</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <div class="btn-toggle button" type="button" id="dark-mode">
+                  <i class="fas fa-moon" id="fa-moon1"></i>
+                  <i class="fas fa-sun sun1" id="img-fluid1"></i>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+
     <div class="row">
       <div class="col-lg-2" <!-- Menu Bar Creation -->
         <div id="menu" class="menu">
@@ -61,14 +106,14 @@
           </div>
           <ul class="optionsBar">
             <li class="menuItem">
-              <a href="./index.html" class="menuOption">
+              <a href="../index.html" class="menuOption">
                 <img src="../images/Logo.png" class="img-fluid" alt="Logo" />
                 <h5 class="menuText">Home</h5>
               </a>
             </li>
 
             <li class="menuItem">
-              <a href="#about" id="productManagerBtn" class="menuOption">
+              <a href="../about.html" id="productManagerBtn" class="menuOption">
                 <i class="fas fa-info"></i>
                 <h5 class="menuText">About</h5>
               </a>
@@ -81,7 +126,7 @@
             </li>
             <li class="menuItem">
               <a
-                href="./certificates/cr-main.html"
+                href="../cr-main.html"
                 id="constantManagerBtn"
                 class="menuOption"
               >
@@ -91,7 +136,7 @@
             </li>
             <li class="menuItem">
               <a
-                href="./gallery.html"
+                href="../gallery.html"
                 id="constantManagerBtn"
                 class="menuOption"
               >
@@ -101,7 +146,7 @@
             </li>
 
             <li class="menuItem">
-              <a href="./music.html" id="constantManagerBtn" class="menuOption">
+              <a href="../music.html" id="constantManagerBtn" class="menuOption">
                 <i class="fas fa-play"></i>
                 <h5 class="menuText">Music</h5>
               </a>
@@ -114,7 +159,7 @@
             </li>
             <li class="menuItem">
               <a
-                href="./contact.html"
+                href="../contact.html"
                 id="constantManagerBtn"
                 class="menuOption"
               >
@@ -123,7 +168,14 @@
               </a>
             </li>
           </ul>
-
+          <div class="time">
+          <span class="Time"></span>
+          <span class="Format"></span>
+          <div class="date">
+                <span class="Month"></span>
+                <span class="Day"></span>
+          </div>
+        </div>
           <div class="themeBar">
             <div>
               <button
@@ -138,7 +190,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-9" >
         <div class="portfolio">
           <h2 class="title">My Certificates</h2>
 
@@ -299,31 +351,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="../js/sidebar.js"></script>
-    <script src="../js/mode.js"></script>
-    <!-- Custom Js -->
-    <script>
-      const Mode = document.querySelector(".mode__icon");
-      const nav = document.querySelector("nav");
-      const navLink = document.querySelectorAll(".nav__link");
-      const body = document.querySelector("body");
 
-      let count = 0;
-      Mode.addEventListener("click", function () {
-        body.classList.toggle("DarkMode");
-        nav.classList.toggle("DarkMode");
-        navLink.forEach((element) => {
-          element.classList.toggle("DarkMode");
-        });
-        MenuList.classList.toggle("DarkMode");
-        count = count + 1;
-        if (count % 2 === 0) {
-          Mode.setAttribute("src", "../images/icons/light.svg");
-        } else {
-          Mode.setAttribute("src", "../images/icons/dark.svg");
-        }
-      });
-    </script>
+
+    <!-- Custom Js -->
+
 
     <script src="../js/Nav.js"></script>
 
@@ -335,6 +366,10 @@
         $(".load__wrapper").fadeOut("slow");
       });
     </script>
+
     <script src="../js/mode.js"></script>
+    <script src="../js/mobile.js"></script>
+    <script src="../js/mobmenu.js"></script>
+        <script src="../js/sidebar.js"></script>
   </body>
 </html>

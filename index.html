@@ -51,6 +51,9 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
     <link rel="stylesheet" href="./css/dark.css" />
+    <style>
+
+    </style>
   </head>
   <body>
     <!-- Loader Addition -->
@@ -119,8 +122,53 @@
         <div class="line-3"></div>
       </div>
     </nav> -->
+    <div class="con">
+          <div class="nav-bar">
+            <div class="toggle-menu">
+              <div class="line line1"></i></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-list-item"><a href="./index.html" class="nav-link"><img src="./images/Logo.png" class="img-fluid" alt="Logo" width="30" height="30" />Home</a></li>
+              <li class="nav-list-item"><a href="#about"  class="nav-link"><i class="fas fa-info"></i>
+              <h5 >About</h5></a></li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">    <i class="fas fa-border-all"></i>
+                    <h5 >Projects</h5></a>
+              </li>
+              <li class="nav-list-item"><a href="./certificates/cr-main.html" class="nav-link"><i class="fas fa-certificate"></i>
+              <h5 >Certificate</h5></a></li>
+              <li class="nav-list-item">
+                <a href="./gallery.html" class="nav-link"><i class="fas fa-images"></i>
+                <h5 >Gallery</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./music.html" class="nav-link"><i class="fas fa-play"></i>
+                <h5 >Music</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">  <i class="fas fa-blog"></i>
+                    <h5>Blogs</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./contact.html" class="nav-link"><i class="fas fa-phone"></i>
+                <h5 >Contact</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <div class="btn-toggle button" type="button" id="dark-mode">
+                  <i class="fas fa-moon" id="fa-moon1"></i>
+                  <i class="fas fa-sun sun1" id="img-fluid1"></i>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
 
     <!-- Menu Bar Creation -->
+    <div class="row header" id="headerrr1">
+      <div class="col-lg-1">
     <div id="menu" class="menu">
       <div class="actionsBar">
         <div>
@@ -185,7 +233,16 @@
             <h5 class="menuText">Contact</h5>
           </a>
         </li>
+
       </ul>
+      <div class="time">
+      <span class="Time"></span>
+      <span class="Format"></span>
+      <div class="date">
+            <span class="Month"></span>
+            <span class="Day"></span>
+      </div>
+    </div>
 
       <div class="themeBar">
         <div>
@@ -193,22 +250,27 @@
             <i class="fas fa-moon" id="fa-moon"></i>
             <i class="fas fa-sun sun1" id="img-fluid"></i>
           </button>
+
         </div>
       </div>
     </div>
+  </div>
 
     <!--  <div class="Separator"><br /><br /><br /><br /></div>-->
-    <!-- First Section Main Area -->
-    <section class="First__Section">
-      <div class="container">
+    <!-- First Section Main Area   old imge class Main__Img img-fluid-->
+
+      <div class="col-lg-7">
+        <div class="First__Section ">
         <img
           src="./images/Main__img-1.png"
-          class="Main__Img img-fluid"
+          class="user_img"
           alt="Main_img"
         />
-
+</div>
+</div>
+     <div class="col-lg-4">
         <div class="heading-jump">
-          <h2 class="center jello hi" style="padding-left: 300px">
+          <h2 class="center jello">
             <span>H</span>
             <span>i</span>
             <span>,</span>
@@ -240,13 +302,17 @@
           </div>
         </div>
 
+        </div>
+            </div>
+  </div>
+</div>
         <!-- chaange heading animation-->
 
         <!-- <p class="Heading4">FULL STACK APP DEVELOPER</p> -->
 
-        <!-- Animated Boxes -->
-        <div class="animated__background" id="head-col">
-          <!-- <div class="box">
+      <!--   Animated Boxes -->
+      <!--  <div class="animated__background " id="head-col">
+          <div class="box">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -257,30 +323,16 @@
                     <div></div>
                     <div></div>
                     <div></div>
-                </div> -->
-        </div>
-      </div>
+                </div>
+        </div>-->
+
 
       <!-- TIME DATE TEMP -->
-      <div
-        class="Time__Date__Temp wow fadeInUp"
-        style="position: absolute; left: 100px"
-      >
-        <div class="partition">
-          <span class="Time"></span>
-          <span class="Format"></span>
-        </div>
 
-        <div class="partition__2 partition">
-          <span class="Month"></span>
-          <span class="Day"></span>
-        </div>
 
-        <div class="partition">
-          <span class="temp"></span>
-        </div>
-      </div>
-    </section>
+
+
+
 
     <!-- Second Section Quote Area -->
     <section class="Second__section">
@@ -525,7 +577,7 @@
             <h2>Photography</h2>
             <p>Canon certified official photographer in Jodhpur</p>
             <div class="Project__BTn">
-              <a class="cta" href="#"
+              <a class="cta" href="#" id="a"
                 ><span>View Details</span>
                 <svg width="13px" height="10px" viewBox="0 0 13 10">
                   <path d="M1,5 L11,5"></path>
@@ -782,7 +834,7 @@
 
     <!-- Footer Design -->
     <footer>
-      <p style="color: black">
+      <p >
         Created With ❤️ By Samarth | Copyright &copy;
         <span class="Footer__year">2021</span> All rights reserved !
       </p>
@@ -857,7 +909,7 @@
     <script src="./js/script.js"></script>
     <script src="./js/Interacting.js"></script>
     <script src="./js/Nav.js"></script>
-    <script src="./js/mode.js"></script>
+
     <script src="./js/btn.js"></script>
     <script src="./js/vanilla-tilt.js"></script>
     <script type="text/javascript">
@@ -884,9 +936,82 @@
         var header = document.querySelector("nav");
         header.classList.toggle("sticky", window.scrollY > 200);
       });
+
+
     </script>
 
-    <script src="js/mode.js"></script>
+    <script >
+
+    var moon = document.getElementById("fa-moon");
+    var sun = document.getElementById("img-fluid");
+
+    let darkMode = localStorage.getItem('darkMode');
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const enableDarkMode = () => {
+      // 1. Add the class to the body
+
+      document.body.classList.add('darkmode');
+   document.getElementById("headerrr1").classList.remove("header");
+   document.getElementsByClassName("cta")[0].style.color="white";
+   document.getElementsByClassName("cta")[1].style.color="white";
+   document.getElementsByClassName("cta")[2].style.color="white";
+    document.getElementsByClassName("cta")[3].style.color="white";
+    document.getElementsByClassName("cta")[4].style.color="white";
+
+      moon.classList.add("sun1");
+    sun.classList.remove("sun1");
+
+
+      // 2. Update darkMode in localStorage
+      localStorage.setItem('darkMode', 'enabled');
+
+    }
+
+    const disableDarkMode = () => {
+      // 1. Remove the class from the body
+      document.body.classList.remove('darkmode');
+
+
+      document.getElementById("headerrr1").classList.add("header");
+      document.getElementsByClassName("cta")[0].style.color="black";
+      document.getElementsByClassName("cta")[1].style.color="black";
+      document.getElementsByClassName("cta")[2].style.color="black";
+       document.getElementsByClassName("cta")[3].style.color="black";
+       document.getElementsByClassName("cta")[4].style.color="black";
+       sun.classList.add("sun1");
+       moon.classList.remove("sun1");
+      // 2. Update darkMode in localStorage
+      localStorage.setItem('darkMode', null);
+    }
+
+    // If the user already visited and enabled darkMode
+    // start things off with it on
+    if (darkMode === 'enabled') {
+      enableDarkMode();
+
+    }
+
+    // When someone clicks the button
+    darkModeToggle.addEventListener('click', () => {
+      // get their darkMode setting
+      darkMode = localStorage.getItem('darkMode');
+
+      // if it not current enabled, enable it
+      if (darkMode !== 'enabled') {
+        enableDarkMode();
+      // if it has been enabled, turn it off
+      } else {
+        disableDarkMode();
+      }
+    });
+
+
+    </script>
+
+
     <script src="js/sidebar.js"></script>
+    <script src="js/mobile.js"></script>
+    <script src="js/mobmenu.js"></script>
   </body>
 </html>

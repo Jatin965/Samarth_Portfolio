@@ -37,45 +37,145 @@
     <!-- Custom Css -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/certificates.css" />
+      <link rel="stylesheet" href="../css/sidebar.css" />
+      <link rel="stylesheet" href="./css/formBtn.css" />
+      <link rel="stylesheet" href="./css/loading.css" />
+      <link rel="stylesheet" href="./css/myanimation.css" />
+
+      <link rel="stylesheet" href="./css/dark.css" />
   </head>
 
   <body>
+    <div class="con">
+          <div class="nav-bar">
+            <div class="toggle-menu">
+              <div class="line line1"></i></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-list-item"><a href="../index.html" class="nav-link"><img src="../images/Logo.png" class="img-fluid" alt="Logo" width="30" height="30" />Home</a></li>
+              <li class="nav-list-item"><a href="../about.html"  class="nav-link"><i class="fas fa-info"></i>
+              <h5 >About</h5></a></li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">    <i class="fas fa-border-all"></i>
+                    <h5 >Projects</h5></a>
+              </li>
+              <li class="nav-list-item"><a href="../certificates/cr-main.html" class="nav-link"><i class="fas fa-certificate"></i>
+              <h5 >Certificate</h5></a></li>
+              <li class="nav-list-item">
+                <a href="../gallery.html" class="nav-link"><i class="fas fa-images"></i>
+                <h5 >Gallery</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="../music.html" class="nav-link"><i class="fas fa-play"></i>
+                <h5 >Music</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">  <i class="fas fa-blog"></i>
+                    <h5>Blogs</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="../contact.html" class="nav-link"><i class="fas fa-phone"></i>
+                <h5 >Contact</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <div class="btn-toggle button" type="button" id="dark-mode">
+                  <i class="fas fa-moon" id="fa-moon1"></i>
+                  <i class="fas fa-sun sun1" id="img-fluid1"></i>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
     <!-- Menu Bar Creation -->
-    <nav>
-      <a href="../index.html" class="Logo__Img"
-        ><img src="../images/Logo.png" class="img-fluid" alt="Logo"
-      /></a>
-      <ul class="Menu__List__holder">
-        <li><a href="../index.html" class="nav__link">Home</a></li>
-        <li><a href="../about.html" class="nav__link">About</a></li>
-        <li><a href="#" class="nav__link">Projects</a></li>
-        <li><a href="./cr-main.html" class="nav__link">Certifications</a></li>
-        <li><a href="../gallery.html" class="nav__link">Gallery</a></li>
-        <li><a href="#" class="nav__link">Music</a></li>
-        <li><a href="#" class="nav__link">Blogs</a></li>
-        <li><a href="../contact.html" class="nav__link">Contact</a></li>
-        <li>
-          <a href="#" class="nav__link"
-            ><img
-              src="../images/icons/light.svg"
-              class="img-fluid mode__icon"
-              alt="Modes"
-          /></a>
-        </li>
-      </ul>
-      <div class="burger">
-        <div class="line-1"></div>
-        <div class="line-2"></div>
-        <div class="line-3"></div>
+    <div class="row cir">
+      <div class="col-lg-2">
+        <div id="menu" class="menu">
+          <div class="actionsBar">
+            <div>
+              <button id="menuBtn" type="button">
+                <i class="fas fa-bars"></i>
+              </button>
+              <h3 class="menuText">Dashboard</h3>
+            </div>
+          </div>
+          <ul class="optionsBar">
+            <li class="menuItem">
+              <a href="../index.html" class="menuOption">
+                <img src="../images/Logo.png" class="img-fluid" alt="Logo">
+                <h5 class="menuText">Home</h5>
+              </a>
+            </li>
+
+            <li class="menuItem">
+              <a href="../about.html" id="productManagerBtn" class="menuOption">
+                <i class="fas fa-info"></i>
+                <h5 class="menuText">About</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="#" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-border-all"></i>
+                <h5 class="menuText">Projects</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a
+                href="../certificates/cr-main.html"
+                id="constantManagerBtn"
+                class="menuOption"
+              >
+                <i class="fas fa-certificate"></i>
+                <h5 class="menuText">Certificate</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="../gallery.html" id="constantManagerBtn" class="menuOption">
+              <i class="fas fa-images"></i>
+                <h5 class="menuText">Gallery</h5>
+              </a>
+            </li>
+
+            <li class="menuItem">
+              <a href="../music.html" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-play"></i>
+                <h5 class="menuText">Music</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="#" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-blog"></i>
+                <h5 class="menuText">Blogs</h5>
+              </a>
+            </li>
+            <li class="menuItem">
+              <a href="../contact.html" id="constantManagerBtn" class="menuOption">
+                <i class="fas fa-phone"></i>
+                <h5 class="menuText">Contact</h5>
+              </a>
+            </li>
+          </ul>
+
+
+          <div class="themeBar">
+            <div>
+              <button class="btn-toggle button" type="button" id="dark-mode-toggle">
+                <i class="fas fa-moon" id="fa-moon"></i>
+                <i class="fas fa-sun sun1" id="img-fluid"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
 
-    <br /><br /><br />
 
+      <div class="col-lg-10 ">
     <!-- Certifcate Display Region -->
 
     <section class="container certificate__section">
-      <div class="row">
+
         <div
           class="col col-sm-12 col-md-12 col-lg-12 mx-auto Certificate__Display"
         >
@@ -85,24 +185,41 @@
             alt="IMG__1"
           />
         </div>
-      </div>
 
-      <div class="row mt-5">
+
+      <div class="row side">
         <h5>More about Samarth Goyal's accomplishment</h5>
 
         <hr />
-        <div class="col-sm-6 text-center">
+        <div class="col-lg-4 col-4 text-center img-box">
+
+          <img
+            src="../images/Certificates/clog.png"
+            class="img-clog"
+            alt="IMG__1"
+          />
+
+
+        </div>
+        <div class="col-lg-4 col-4 text-center">
           <p>CERTIFICATE ID NUMBER:</p>
           <h5>DKX PBG 5NH</h5>
         </div>
 
-        <div class="col-sm-6 text-center">
+        <div class="col-lg-4 col-4 text-center">
           <p>ISSUED ON:</p>
           <h5>APRIL 24, 2020</h5>
         </div>
       </div>
     </section>
-
+  </div>
+    </div>
+    <footer style="margin-top:50px;">
+      <p >
+        Created With ❤️ By Samarth | Copyright &copy;
+        <span class="Footer__year">2021</span> All rights reserved !
+      </p>
+    </footer>
     <!-- Bootstrap Js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -133,8 +250,11 @@
         }
       });
     </script>
-
     <script src="../js/Nav.js"></script>
-    <script src="./assets/js/mode.js"></script>
+    <script src="../js/sidebar.js"></script>
+      <script src="../js/mode.js"></script>
+      <script src="../js/mode.js"></script>
+      <script src="../js/mobile.js"></script>
+      <script src="../js/mobmenu.js"></script>
   </body>
 </html>

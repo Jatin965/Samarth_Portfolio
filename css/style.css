@@ -547,12 +547,13 @@ padding-right: 20px;
 position: fixed;
     background-color: #122;
 
-    height: 100vh;
+    height: 110vh;
 
 
     width: 200px;
     transition: 0.5s ease-out;
     z-index: 1;
+    padding-top: 14vh;
   }
 
   .toggle-menu {
@@ -568,7 +569,7 @@ position: fixed;
   }
   .line {
     width: 100%;
-    height: 2px;
+    height: 5px;
     border-radius:5px;
     background-color: #fff;
     transition: 0.2s ease-out;
@@ -580,7 +581,7 @@ position: fixed;
 
   .nav-list {
     text-align: left!important;
-    padding:  0!important;
+    padding-top: 10px!important;
   }
   .nav-link {
     text-align: left;

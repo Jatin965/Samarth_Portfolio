@@ -39,15 +39,15 @@
       --lightbshadow: rgba(0, 0, 0, 0.15);
     }
     body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
       min-height: 110vh;
       background: linear-gradient(var(--pink) 0%, var(--violet) 100%);
     }
-    .wrapper {
+    .wrapper1 {
       width: 380px;
       padding: 25px 30px;
+      text-align: center;
+
       overflow: hidden;
       position: relative;
       border-radius: 15px;
@@ -266,21 +266,188 @@
       pointer-events: none;
       color: var(--violet);
     }
+    .mus
+    {
+padding-left: 200px!important;
+padding-top: 60px;
+         }
+         @media screen and (max-device-width: 995px), screen and (max-width: 995px) {
+
+           .mus
+           {
+         padding-left: 0!important;
+         padding-top: 60px!important;
+         padding-right: 0px!important;
+         margin-right:0px!important;
+
+                }
+                .wrapper1
+                {
+                  width: 100%!important;
+                  height: 100%!important;
+                  margin: 0!important
+                }
+}
   </style>
-  <body>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/sidebar.css" />
+  <body  >
     <!-- Loader Addition -->
     <div class="loading-screen load__wrapper">
       <div class="loading-animation">
         <img src="https://imgur.com/FsvEuM2.png" alt="logo" class="logo" />
         <div class="loading-bar"></div>
       </div>
+    </div >
+    <div class="con">
+          <div class="nav-bar">
+            <div class="toggle-menu">
+              <div class="line line1"></i></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-list-item"><a href="./index.html" class="nav-link"><img src="./images/Logo.png" class="img-fluid" alt="Logo" width="30" height="30" />Home</a></li>
+              <li class="nav-list-item"><a href="#about"  class="nav-link"><i class="fas fa-info"></i>
+              <h5 >About</h5></a></li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">    <i class="fas fa-border-all"></i>
+                    <h5 >Projects</h5></a>
+              </li>
+              <li class="nav-list-item"><a href="./certificates/cr-main.html" class="nav-link"><i class="fas fa-certificate"></i>
+              <h5 >Certificate</h5></a></li>
+              <li class="nav-list-item">
+                <a href="./gallery.html" class="nav-link"><i class="fas fa-images"></i>
+                <h5 >Gallery</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./music.html" class="nav-link"><i class="fas fa-play"></i>
+                <h5 >Music</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#" class="nav-link">  <i class="fas fa-blog"></i>
+                    <h5>Blogs</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./contact.html" class="nav-link"><i class="fas fa-phone"></i>
+                <h5 >Contact</h5></a>
+              </li>
+              <li class="nav-list-item">
+                <div class="btn-toggle button" type="button" id="dark-mode">
+                  <i class="fas fa-moon" id="fa-moon1"></i>
+                  <i class="fas fa-sun sun1" id="img-fluid1"></i>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+    <!-- Menu Bar Creation -->
+    <div class="row">
+      <div class="col-lg-3">
+    <div id="menu" class="menu" >
+      <div class="actionsBar">
+        <div>
+          <button id="menuBtn" type="button">
+            <i class="fas fa-bars"></i>
+          </button>
+          <h3 class="menuText">Dashboard</h3>
+        </div>
+      </div>
+      <ul class="optionsBar">
+        <li class="menuItem">
+          <a href="./index.html" class="menuOption">
+            <img src="./images/Logo.png" class="img-fluid" alt="Logo" />
+            <h5 class="menuText">Home</h5>
+          </a>
+        </li>
+
+        <li class="menuItem">
+          <a href="#about" id="productManagerBtn" class="menuOption">
+            <i class="fas fa-info"></i>
+            <h5 class="menuText">About</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="#project" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-border-all"></i>
+            <h5 class="menuText">Projects</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a
+            href="./certificates/cr-main.html"
+            id="constantManagerBtn"
+            class="menuOption"
+          >
+            <i class="fas fa-certificate"></i>
+            <h5 class="menuText">Certificate</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="./gallery.html" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-images"></i>
+            <h5 class="menuText">Gallery</h5>
+          </a>
+        </li>
+
+        <li class="menuItem">
+          <a href="./music.html" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-play"></i>
+            <h5 class="menuText">Music</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="#" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-blog"></i>
+            <h5 class="menuText">Blogs</h5>
+          </a>
+        </li>
+        <li class="menuItem">
+          <a href="./contact.html" id="constantManagerBtn" class="menuOption">
+            <i class="fas fa-phone"></i>
+            <h5 class="menuText">Contact</h5>
+          </a>
+        </li>
+
+      </ul>
+      <div class="time">
+      <span class="Time"></span>
+      <span class="Format"></span>
+      <div class="date">
+            <span class="Month"></span>
+            <span class="Day"></span>
+      </div>
     </div>
 
-    <!-- Menu Bar Creation -->
-  
-    <br /><br /><br /><br />
+      <div class="themeBar">
+        <div>
+          <button class="btn-toggle button" type="button" id="dark-mode-toggle">
+            <i class="fas fa-moon" id="fa-moon"></i>
+            <i class="fas fa-sun sun1" id="img-fluid"></i>
+          </button>
 
-    <div class="wrapper">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-9 mus">
+
+
+    <div class="wrapper1">
       <div class="top-bar">
         <i class="material-icons">expand_more</i>
         <span>Now Playing</span>
@@ -326,34 +493,23 @@
         </ul>
       </div>
     </div>
+  </div>
+</div>
 
     <script src="js/music_list.js"></script>
-    <script src="./js/music.js"></script>
-    <script src="./js/Nav.js"></script>
+    <script src="js/music.js"></script>
+
+
+    <script src="js/mobmenu.js"></script>
+    <script src="js/sidebar.js"></script>
+
 
     <!-- Custom Js -->
-    <script>
-      const Mode = document.querySelector(".mode__icon");
-      const nav = document.querySelector("nav");
-      const navLink = document.querySelectorAll(".nav__link");
-      const body = document.querySelector("body");
-
-      let count = 0;
-      Mode.addEventListener("click", function () {
-        body.classList.toggle("DarkMode");
-        nav.classList.toggle("DarkMode");
-        navLink.forEach((element) => {
-          element.classList.toggle("DarkMode");
-        });
-        MenuList.classList.toggle("DarkMode");
-        count = count + 1;
-        if (count % 2 === 0) {
-          Mode.setAttribute("src", "./images/icons/light.svg");
-        } else {
-          Mode.setAttribute("src", "./images/icons/dark.svg");
-        }
-      });
-    </script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Loading Scripts   -->
     <!-- Jquery Script -->
@@ -363,6 +519,105 @@
         $(".load__wrapper").fadeOut("slow");
       });
     </script>
-    <script src="js/mode.js"></script>
+    <script >
+    document.body.style.backgroundColor = "#E65C9C";
+    var moon = document.getElementById("fa-moon");
+    var sun = document.getElementById("img-fluid");
+
+    let darkMode = localStorage.getItem('darkMode');
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const enableDarkMode = () => {
+      // 1. Add the class to the body
+      document.body.classList.add('darkmode');
+      document.body.style.backgroundColor = "black";
+
+      moon.classList.add("sun1");
+    sun.classList.remove("sun1");
+
+      // 2. Update darkMode in localStorage
+      localStorage.setItem('darkMode', 'enabled');
+
+    }
+
+    const disableDarkMode = () => {
+      // 1. Remove the class from the body
+      document.body.classList.remove('darkmode');
+document.body.style.backgroundColor = "#E65C9C";
+      sun.classList.add("sun1");
+      moon.classList.remove("sun1");
+      // 2. Update darkMode in localStorage
+      localStorage.setItem('darkMode', null);
+    }
+
+    // If the user already visited and enabled darkMode
+    // start things off with it on
+    if (darkMode === 'enabled') {
+      enableDarkMode();
+
+    }
+
+    // When someone clicks the button
+    darkModeToggle.addEventListener('click', () => {
+      // get their darkMode setting
+      darkMode = localStorage.getItem('darkMode');
+
+      // if it not current enabled, enable it
+      if (darkMode !== 'enabled') {
+        enableDarkMode();
+      // if it has been enabled, turn it off
+      } else {
+        disableDarkMode();
+      }
+    });
+</script>
+<script>var moon1 = document.getElementById("fa-moon1");
+var sun1 = document.getElementById("img-fluid1");
+
+let darkMode1 = localStorage.getItem('darkMode');
+
+const darkModeToggle1 = document.getElementById('dark-mode');
+const enableDarkMode1 = () => {
+  // 1. Add the class to the body
+  document.body.classList.add('darkmode');
+  document.body.style.backgroundColor = "black";
+  moon1.classList.add("sun1");
+sun1.classList.remove("sun1");
+
+  // 2. Update darkMode in localStorage
+  localStorage.setItem('darkMode', 'enabled');
+
+}
+
+const disableDarkMode1 = () => {
+  // 1. Remove the class from the body
+  document.body.classList.remove('darkmode');
+  document.body.style.backgroundColor = "#E65C9C";
+  sun1.classList.add("sun1");
+  moon1.classList.remove("sun1");
+  // 2. Update darkMode in localStorage
+  localStorage.setItem('darkMode', null);
+}
+
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (darkMode1 === 'enabled') {
+  enableDarkMode1();
+
+}
+
+// When someone clicks the button
+darkModeToggle1.addEventListener('click', () => {
+  // get their darkMode setting
+  darkMode1 = localStorage.getItem('darkMode');
+
+  // if it not current enabled, enable it
+  if (darkMode1 !== 'enabled') {
+    enableDarkMode1();
+  // if it has been enabled, turn it off
+  } else {
+    disableDarkMode1();
+  }
+});</script>
   </body>
 </html>

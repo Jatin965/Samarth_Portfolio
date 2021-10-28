@@ -12,15 +12,12 @@
 
 }
 
-
 .cont {
   width: 100%;
   height: 100vh;
   background: linear-gradient(-45deg, #ee7752, #e73c7e);
   background-size: 400% 400%;
   position: relative;
-
-
 }
 .nav-bar {
   position: absolute;
@@ -38,7 +35,6 @@
 .toggle {
   left: 0;
   box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
-
 }
 .toggle-menu {
   background-color: rgba(0, 0, 0, 0.2);
@@ -53,12 +49,11 @@
   padding: 0.2rem 0.5rem;
   border-radius: 0.5rem;
   display: none;
-
 }
 .line {
   width: 100%;
   height: 4px;
-  border-radius:5px;
+  border-radius: 5px;
   background-color: #fff;
   transition: 0.2s ease-out;
 }
@@ -92,11 +87,10 @@
   position: relative;
   padding-bottom: 0.4rem;
   display: flex;
-
 }
 .nav-link::before {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   bottom: 0;
   width: 100%;
@@ -109,7 +103,6 @@
 .nav-link:hover::before {
   transform: scaleX(1);
 }
-
 
 /* mobile menu*/
 
@@ -237,7 +230,7 @@ textarea:focus ~ .highlight {
 
 :root {
   --body-color: #f8f8f8;
-  color: white:
+  color: white;
 }
 
 /* h1,h2,h3,h4,h5,h6,span{
@@ -392,9 +385,8 @@ nav .burger .line-3 {
   -webkit-transform: rotate(45deg) translate(-5px, -6px);
   transform: rotate(45deg) translate(-5px, -6px);
 }
-.header
-{
-  background: #77ACF1;
+.header {
+  background: #77acf1;
 }
 @keyframes jello {
   0% {
@@ -413,7 +405,6 @@ nav .burger .line-3 {
   }
 }
 
-
 .jello span:hover {
   animation: jello 0.5s infinite;
   transform-origin: center;
@@ -423,18 +414,16 @@ nav .burger .line-3 {
   font-weight: 800;
   font-weight: bolder;
   display: inline-block;
-font-weight: bold;
+  font-weight: bold;
   color: #1a08b9;
   letter-spacing: 1px;
   font-family: Georgia, serif;
   font-family: serif;
 }
-.heading-jump
-{
+.heading-jump {
   padding-top: 300px;
-text-align: right;
-padding-right: 20px;
-
+  text-align: right;
+  padding-right: 20px;
 }
 
 .time {
@@ -442,21 +431,18 @@ padding-right: 20px;
   text-align: center;
   display: flex;
   margin-left: 30px;
-
 }
-.date{
+.date {
   color: #fff;
 
-    margin: 20px;
-    margin-bottom: 0;
-    margin-top: 0px;
+  margin: 20px;
+  margin-bottom: 0;
+  margin-top: 0px;
 }
-.menu
-{
+.menu {
   z-index: 1;
   position: absolute;
-  top:0;
-
+  top: 0;
 }
 .user_img
 {
@@ -468,7 +454,7 @@ margin-left:27vh;
   overflow: hidden;
 }
 .wrapper {
- text-align:right;
+  text-align: right;
   box-sizing: content-box;
   background: rgba(255, 255, 255, 0);
   height: 80px;
@@ -521,39 +507,32 @@ margin-left:27vh;
   }
 }
 
-
-@media screen and  (max-device-width:995px) , screen and (max-width:995px)  {
-
-
-
-  .heading-jump
-  {
-
-    padding: 20px!important;
-
+@media screen and (max-device-width: 995px), screen and (max-width: 995px) {
+  .user_img {
+    margin-left: 0;
   }
-  .wrapper
-  {
-    top:40%;
-    font-size:30px;
+
+  .heading-jump {
+    padding: 20px !important;
   }
-  .heading-jump span{
-    font-size:35px!important;
-    font-weight: bold!important;
+  .wrapper {
+    top: 40%;
+    font-size: 30px;
+  }
+  .heading-jump span {
+    font-size: 35px !important;
+    font-weight: bold !important;
     font-weight: 800;
-
   }
-  .menu
-  {
+  .menu {
     display: none;
   }
 
   .nav-bar {
-position: fixed;
+    position: fixed;
     background-color: #122;
 
     height: 130vh;
-
 
     width: 200px;
     transition: 0.5s ease-out;
@@ -562,49 +541,43 @@ position: fixed;
   }
 
   .toggle-menu {
+    top: 1rem !important;
+    left: 1rem !important;
+    width: 2.3rem !important;
+    height: 2rem !important;
 
-    top: 1rem!important;
-    left: 1rem!important;
-    width: 2.3rem!important;
-    height: 2rem!important;
-
-    padding: 0.1rem 0.1rem!important;
-    border-radius: 1px!important;
+    padding: 0.1rem 0.1rem !important;
+    border-radius: 1px !important;
     display: block;
   }
   .line {
     width: 100%;
     height: 5px;
-    border-radius:5px;
+    border-radius: 5px;
     background-color: #fff;
     transition: 0.2s ease-out;
     margin: 5px 0;
   }
 
-
-
-
   .nav-list {
-    text-align: left!important;
-    padding-top: 10px!important;
+    text-align: left !important;
+    padding-top: 10px !important;
   }
   .nav-link {
     text-align: left;
     font-size: 1rem;
 
-    padding:0px!important;
+    padding: 0px !important;
   }
 
-.nav-list-item a i{
-  padding:  10px;
-}
-.nav-list-item div i {
-font-size: 30px;
-  text-align: center;
-  color: #fff;
-}
-
-
+  .nav-list-item a i {
+    padding: 10px;
+  }
+  .nav-list-item div i {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -696,10 +669,6 @@ font-size: 30px;
   height: auto;
 }*/
 
-@media only screen and (min-width: 1400px) {
-]
-}
-
 .Heading,
 .Heading2,
 .Heading3,
@@ -744,7 +713,6 @@ font-size: 30px;
 }
 
 @media only screen and (max-width: 992px) {
-
   .Heading {
     top: 50%;
   }
@@ -782,7 +750,6 @@ font-size: 30px;
 }
 
 @media only screen and (max-width: 700px) {
-
   .First__Section .container {
     margin-top: 100px;
   }
@@ -1160,7 +1127,6 @@ font-size: 30px;
 
 /* Footer Design */
 footer {
-
   height: 40px;
 }
 

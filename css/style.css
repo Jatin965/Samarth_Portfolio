@@ -532,12 +532,12 @@ margin-left:27vh;
     position: fixed;
     background-color: #122;
 
-    height: 130vh;
+    height: 120vh;
 
     width: 200px;
     transition: 0.5s ease-out;
-    z-index: 1;
-    padding-top: 25vh;
+    z-index: 11;
+    padding-top: 15vh!important;
   }
 
   .toggle-menu {

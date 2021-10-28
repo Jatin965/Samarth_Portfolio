@@ -501,6 +501,7 @@ const button = document.getElementById('button');
 							document.getElementById("name").value="";
 											document.getElementById("name").classList.remove("used");
 											document.getElementById("email").value="";
+											document.getElementById("email").style.backgroundColor="#121212";
 											document.getElementById("email").classList.remove("used");
 											document.getElementById("phone").value="";
 											document.getElementById("phone").classList.remove("used");

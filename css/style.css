@@ -9,6 +9,7 @@
   font-family: "Poppins", sans-serif;
   font-family: "Philosopher", sans-serif;
   font-family: "Roboto", sans-serif;
+
 }
 
 
@@ -123,8 +124,7 @@ textarea {
   padding: 10px 10px 10px 5px;
   -webkit-appearance: none;
   display: block;
-  background: #fafafa;
-  color: #636363;
+    color: #636363;
   width: 100%;
   border: none;
   border-radius: 0;
@@ -134,6 +134,7 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
+
 }
 
 /* Label */
@@ -161,6 +162,7 @@ textarea.used ~ label {
   /* font-size: 14px; */
   color: #4a89dc;
 }
+
 
 /* Underline */
 
@@ -198,6 +200,7 @@ input:focus ~ .bar:after {
 textarea:focus ~ .bar:before,
 textarea:focus ~ .bar:after {
   width: 50%;
+
 }
 
 /* Highlight */
@@ -211,6 +214,7 @@ textarea:focus ~ .bar:after {
   pointer-events: none;
   opacity: 0.5;
 }
+
 
 /* active */
 
@@ -244,6 +248,7 @@ body {
   scroll-behavior: smooth;
   background: var(--clr-dark);
   background: var(--clr-dark);
+  overflow-x: hidden;
 }
 
 .darkmode {
@@ -455,9 +460,9 @@ padding-right: 20px;
 }
 .user_img
 {
-
-  width: 110%;
-  height: 110%;
+margin-left:27vh;
+  width: 115%;
+  height: 100%;
 }
 .word {
   overflow: hidden;
@@ -547,13 +552,13 @@ padding-right: 20px;
 position: fixed;
     background-color: #122;
 
-    height: 110vh;
+    height: 130vh;
 
 
     width: 200px;
     transition: 0.5s ease-out;
     z-index: 1;
-    padding-top: 14vh;
+    padding-top: 25vh;
   }
 
   .toggle-menu {

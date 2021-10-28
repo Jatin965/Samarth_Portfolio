@@ -49,7 +49,7 @@
 
   </head>
 
-  <body style="min-height: 100vh">
+  <body style="min-height: 100vh;overflow-x:hidden">
 
     <!-- Loader Addition -->
     <div class="loading-screen load__wrapper">
@@ -248,7 +248,7 @@
               <div class="Form__btn">
                 <!-- <button class="btn btn-primary">Submit</button> -->
 
-                <button id="button" class="ready" onclick=" clickButton()" style="z-index:-1;">
+                <button id="button" class="ready" onclick="clickButton()" >
                   <div class="message submitMessage">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -323,7 +323,7 @@
     <script src="./js/Nav.js"></script>
     <script src="./js/Map.js"></script>
 
-    <script src="js/mode.js"></script>
+
     <script src="js/sidebar.js"></script>
     <script src="js/mobile.js"></script>
     <script src="js/mobmenu.js"></script>
@@ -358,6 +358,81 @@
 
       });
     </script>
+    <script >
 
+    var moon = document.getElementById("fa-moon");
+    var sun = document.getElementById("img-fluid");
+
+    let darkMode = localStorage.getItem('darkMode');
+
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const enableDarkMode = () => {
+      // 1. Add the class to the body
+
+      document.body.classList.add('darkmode');
+
+
+    document.getElementById("name").style.backgroundColor="#121212";
+      document.getElementById("name").style.color="#ffff";
+
+
+      document.getElementById("email").style.backgroundColor="#121212";
+        document.getElementById("email").style.color="#ffff";
+        document.getElementById("phone").style.backgroundColor="#121212";
+          document.getElementById("phone").style.color="#ffff";
+          document.getElementById("texta").style.backgroundColor="#121212";
+            document.getElementById("texta").style.color="#ffff";
+
+      moon.classList.add("sun1");
+    sun.classList.remove("sun1");
+
+
+      // 2. Update darkMode in localStorage
+      localStorage.setItem('darkMode', 'enabled');
+
+    }
+
+    const disableDarkMode = () => {
+      // 1. Remove the class from the body
+      document.body.classList.remove('darkmode');
+      document.getElementById("name").style.backgroundColor="#ffff";
+        document.getElementById("name").style.color="#121212";
+
+
+        document.getElementById("email").style.backgroundColor="#ffff";
+          document.getElementById("email").style.color="#121212";
+          document.getElementById("phone").style.backgroundColor="#ffff";
+            document.getElementById("phone").style.color="#121212";
+            document.getElementById("texta").style.backgroundColor="#ffff";
+              document.getElementById("texta").style.color="#121212";
+           sun.classList.add("sun1");
+       moon.classList.remove("sun1");
+      // 2. Update darkMode in localStorage
+      localStorage.setItem('darkMode', null);
+    }
+
+    // If the user already visited and enabled darkMode
+    // start things off with it on
+    if (darkMode === 'enabled') {
+      enableDarkMode();
+
+    }
+
+    // When someone clicks the button
+    darkModeToggle.addEventListener('click', () => {
+      // get their darkMode setting
+      darkMode = localStorage.getItem('darkMode');
+
+      // if it not current enabled, enable it
+      if (darkMode !== 'enabled') {
+        enableDarkMode();
+      // if it has been enabled, turn it off
+      } else {
+        disableDarkMode();
+      }
+    });
+
+
+    </script>
   </body>
 </html>

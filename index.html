@@ -730,7 +730,7 @@
               <div class="Form__btn">
                 <!-- <button class="btn btn-primary">Submit</button> -->
 
-                <button id="button" class="ready" onclick=" clickButton()">
+                <button id="button" class="ready" onclick=" clickButton()" >
                   <div class="message submitMessage">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -938,6 +938,7 @@
       });
 
 
+
     </script>
 
     <script >
@@ -958,6 +959,16 @@
    document.getElementsByClassName("cta")[2].style.color="white";
     document.getElementsByClassName("cta")[3].style.color="white";
     document.getElementsByClassName("cta")[4].style.color="white";
+    document.getElementById("name").style.backgroundColor="#121212";
+      document.getElementById("name").style.color="#ffff";
+
+
+      document.getElementById("email").style.backgroundColor="#121212";
+        document.getElementById("email").style.color="#ffff";
+        document.getElementById("phone").style.backgroundColor="#121212";
+          document.getElementById("phone").style.color="#ffff";
+          document.getElementById("texta").style.backgroundColor="#121212";
+            document.getElementById("texta").style.color="#ffff";
 
       moon.classList.add("sun1");
     sun.classList.remove("sun1");
@@ -971,8 +982,6 @@
     const disableDarkMode = () => {
       // 1. Remove the class from the body
       document.body.classList.remove('darkmode');
-
-
       document.getElementById("headerrr1").classList.add("header");
       document.getElementsByClassName("cta")[0].style.color="black";
       document.getElementsByClassName("cta")[1].style.color="black";
@@ -989,6 +998,7 @@
     // start things off with it on
     if (darkMode === 'enabled') {
       enableDarkMode();
+      
 
     }
 
@@ -1007,6 +1017,37 @@
     });
 
 
+    </script>
+    <script>
+    function focusFunction() {
+document.getElementById("myInput").style.background = "yellow";
+}
+
+function blurFunction() {
+document.getElementById("myInput").style.background = "red";
+}
+
+    $(window, document, undefined).ready(function() {
+
+      $('input').blur(function() {
+        var $this = $(this);
+
+        if ($this.val())
+        $this.addClass('used');
+          else
+          $this.removeClass('used');
+
+      });
+      $('textarea').blur(function() {
+        var $this = $(this);
+        if ($this.val())
+          $this.addClass('used');
+        else
+          $this.removeClass('used');
+      });
+
+
+    });
     </script>
 
 

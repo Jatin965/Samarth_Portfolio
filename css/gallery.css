@@ -111,16 +111,17 @@ h1 {
 }
 
 .modal-img {
-  width: 100vh;
-  height: 90vh;
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 800px;
   opacity: 1;
-
 }
 .modal-body {
-  width: 100%;
+  width: 100vw;
   height: 100%;
-background: rgba(0, 0, 0, 0.3);
-text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
 
   position: fixed;
   background: blur(4px);

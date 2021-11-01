@@ -9,7 +9,6 @@
   font-family: "Poppins", sans-serif;
   font-family: "Philosopher", sans-serif;
   font-family: "Roboto", sans-serif;
-
 }
 .loading-screen
 {
@@ -127,7 +126,7 @@ textarea {
   padding: 10px 10px 10px 5px;
   -webkit-appearance: none;
   display: block;
-    color: #636363;
+  color: #636363;
   width: 100%;
   border: none;
   border-radius: 0;
@@ -137,7 +136,6 @@ textarea {
 input:focus,
 textarea:focus {
   outline: none;
-
 }
 
 /* Label */
@@ -165,7 +163,6 @@ textarea.used ~ label {
   /* font-size: 14px; */
   color: #4a89dc;
 }
-
 
 /* Underline */
 
@@ -203,7 +200,6 @@ input:focus ~ .bar:after {
 textarea:focus ~ .bar:before,
 textarea:focus ~ .bar:after {
   width: 50%;
-
 }
 
 /* Highlight */
@@ -217,7 +213,6 @@ textarea:focus ~ .bar:after {
   pointer-events: none;
   opacity: 0.5;
 }
-
 
 /* active */
 
@@ -454,9 +449,8 @@ nav .burger .line-3 {
   position: absolute;
   top: 0;
 }
-.user_img
-{
-margin-left:27vh;
+.user_img {
+  margin-left: 27vh;
   width: 115%;
   height: 100%;
 }
@@ -577,7 +571,7 @@ margin-left:27vh;
     width: 200px;
     transition: 0.5s ease-out;
     z-index: 11;
-    padding-top: 15vh!important;
+    padding-top: 15vh !important;
   }
 
   .toggle-menu {

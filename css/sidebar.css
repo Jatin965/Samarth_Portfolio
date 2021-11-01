@@ -301,279 +301,270 @@
 }
 */
 
-
 .menu {
+  width: 100px;
+  height: 586px;
+  background-color: rgb(10, 0, 19);
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  border-radius: 40px;
 
-    width: 100px;
-    height: 586px;
-    background-color: rgb(10, 0, 19);
-    position:relative;
-    top: 0px;
-    left:0px;
-   overflow:hidden;
-   border-radius: 40px;
-
-    transition: 0.3s ease 0.15s;
-    font-family: sans-serif;
+  transition: 0.3s ease 0.15s;
+  font-family: sans-serif;
 }
 .menu li {
-    list-style-type: none;
+  list-style-type: none;
 }
 .menu a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .menu .actionsBar {
-
-    padding: 1rem 2rem;
-    overflow: hidden;
+  padding: 1rem 2rem;
+  overflow: hidden;
 }
 
 .menu .actionsBar div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 0.5rem;
-    transition: 0.3s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
 }
-.menu .menuItem  img {
-
+.menu .menuItem img {
   width: 30px;
   height: 30px;
 }
 
 .menu .actionsBar div button {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    border-radius: 0.5rem;
-    color: #fff;
-    width: 45px;
-    height: 45px;
-    transition: 0.3s ease;
-    font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  transition: 0.3s ease;
+  font-size: 1rem;
 }
 
 .menu .actionsBar div button:hover {
-    background-color: rgb(132, 0, 255);
+  background-color: rgb(132, 0, 255);
 }
 
 .menu .actionsBar div h3 {
-    width: calc(100% - 40px);
-    text-align: center;
+  width: calc(100% - 40px);
+  text-align: center;
 }
 
 .menu .optionsBar {
-    overflow: hidden;
-    display: flex;
-    width: 100%;
-    height: 60%;
-    padding: 1rem 2rem;
-    align-items: center;
-    flex-direction: column;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 60%;
+  padding: 1rem 2rem;
+  align-items: center;
+  flex-direction: column;
 }
 
 .menu .optionsBar .menuItem {
-    width: 100%;
-    height: 45px;
-    margin: 0.3rem;
+  width: 100%;
+  height: 45px;
+  margin: 0.3rem;
 }
 
 .menu .optionsBar .menuItem .menuOption {
-    font-size: 1rem;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    margin-right: 10px;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 0.5rem;
-    transition: 0.3s ease;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
 }
 
 .menu .optionsBar .menuItem .menuOption:hover {
-    background-color: rgb(132, 0, 255);
+  background-color: rgb(132, 0, 255);
 }
 
 .menu .optionsBar .menuItem .menuOption i {
-    width: 45px;
-    text-align: center;
-    color: #fff;
-
+  width: 45px;
+  text-align: center;
+  color: #fff;
 }
 
 .menu .optionsBar .menuItem .menuOption h5 {
-    width: calc(100% - 45px);
-
+  width: calc(100% - 45px);
 }
 
 .menuText {
-    color: rgba(255, 255, 255, 0.8);
-    transform: translateX(-250px);
-    opacity: 0;
-    transition: transform 0.3s ease 0.1s;
+  color: rgba(255, 255, 255, 0.8);
+  transform: translateX(-250px);
+  opacity: 0;
+  transition: transform 0.3s ease 0.1s;
 }
 
-
-
 .menu.open {
-    width: 240px;
+  width: 240px;
 }
 
 .menuText.open2 {
-    opacity: 1;
-    transform: translateX(0);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .menu .menuBreak {
-    width: 100%;
-    height: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .menu .themeBar {
-    overflow: hidden;
-    width: 100%;
-    height: 10%;
-    padding: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  height: 10%;
+  padding: 0.5rem;
 }
 
 .menu .themeBar div {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 
-    justify-content: space-around;
-    border-radius: 0.5rem;
-    transition: 0.3s ease;
+  justify-content: space-around;
+  border-radius: 0.5rem;
+  transition: 0.3s ease;
 }
 
 .menu .themeBar div button {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    border-radius: 0.5rem;
-    color: #fff;
-    width: 100%;
-    height: 45px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  color: #fff;
+  width: 100%;
+  height: 45px;
 
-    transition: 0.3s ease;
-    font-size: 1rem;
+  transition: 0.3s ease;
+  font-size: 1rem;
 }
 
 .menu .themeBar div button:hover {
-    background-color: rgb(132, 0, 255);
+  background-color: rgb(132, 0, 255);
 }
 
 .menu .menuUser {
-    width: 100%;
-    height: 10%;
+  width: 100%;
+  height: 10%;
 }
 
 .menu .menuUser a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-decoration: none;
-    padding: 0.5rem;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 0.5rem;
+  position: relative;
 }
 
 .menu .menuUser a div {
-    width: 45px;
-    height: 45px;
-    position: relative;
-    border-radius: 0.5rem;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  border-radius: 0.5rem;
 }
 
 .menu .menuUser a div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 
 .menu .menuUser a .Username {
-    width: calc(70% - 45px);
+  width: calc(70% - 45px);
 }
 
 .menu .menuUser a p {
-    width: calc(30% - 45px);
+  width: calc(30% - 45px);
 }
 
-.menu .menuUser a:hover p{
-    animation: animArrow 0.3s ease 2;
+.menu .menuUser a:hover p {
+  animation: animArrow 0.3s ease 2;
 }
 
 @keyframes animArrow {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(5px);
-    }
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .menu .menuUser .userInfo {
-    position: absolute;
-    width: 20rem;
-    height: 18rem;
-    opacity: 0;
-    pointer-events: none;
-    top: 34%;
-    left: 1.5rem;
-    transition: 0.3s ease;
-    transform: scale(0);
-    transform-origin: bottom left;
+  position: absolute;
+  width: 20rem;
+  height: 18rem;
+  opacity: 0;
+  pointer-events: none;
+  top: 34%;
+  left: 1.5rem;
+  transition: 0.3s ease;
+  transform: scale(0);
+  transform-origin: bottom left;
 }
 
 .menu .menuUser .userInfo div {
-    position: relative;
-    width: 100%;
-    height: calc(100% - 20px);
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: calc(100% - 20px);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .menu .menuUser .userInfo div h1 {
-    font-size: 8rem;
+  font-size: 8rem;
 }
 
 .menu .menuUser .userInfo div::before {
-    content: '';
-    position: absolute;
-    bottom: -18px;
-    left: -2px;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right:15px solid #fff;
-    transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: -2px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #fff;
+  transform: rotate(45deg);
 }
 
 .menu .menuUser:hover .userInfo {
-    pointer-events: all;
-    opacity: 1;
-    transform: scale(1);
+  pointer-events: all;
+  opacity: 1;
+  transform: scale(1);
 }

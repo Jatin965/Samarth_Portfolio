@@ -111,10 +111,9 @@ h1 {
 }
 
 .modal-img {
-  width: 100%;
-  height: 90vh;
+  width: auto;
   max-width: 500px;
-  max-height: 800px;
+  max-height: 90vh;
   opacity: 1;
 }
 .modal-body {
@@ -138,8 +137,7 @@ h1 {
   .modal-img {
     display: none;
   }
-  .my-glry
-  {
+  .my-glry {
     font-size: 1.8rem;
   }
 }

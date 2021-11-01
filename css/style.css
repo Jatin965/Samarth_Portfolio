@@ -10,14 +10,11 @@
   font-family: "Philosopher", sans-serif;
   font-family: "Roboto", sans-serif;
 }
-.loading-screen
-{
+.loading-screen {
   padding-top: 20vh;
   text-align: center;
-
 }
-.logo
-{
+.logo {
   width: 300px;
   height: 300px;
 }
@@ -450,9 +447,8 @@ nav .burger .line-3 {
   top: 0;
 }
 .user_img {
-  margin-left: 27vh;
   width: 115%;
-  height: 100%;
+  height: auto;
 }
 .word {
   overflow: hidden;
@@ -510,37 +506,29 @@ nav .burger .line-3 {
     transform: translateY(-400%);
   }
 }
-#wrapper
-{
+#wrapper {
   display: none;
 }
-#heading-jump
-{
+#heading-jump {
   display: none;
 }
-#First__Section-img
-{
+#First__Section-img {
   display: none;
 }
 
 @media screen and (max-device-width: 995px), screen and (max-width: 995px) {
-#mob-jum
-{
-  display: none;
-}
-#heading-jump
-{
-  display: block;
-}
-#mob-user_img
-{
-  display:none;
-}
-#First__Section-img
-{
-  display: block;
-}
-
+  #mob-jum {
+    display: none;
+  }
+  #heading-jump {
+    display: block;
+  }
+  #mob-user_img {
+    display: none;
+  }
+  #First__Section-img {
+    display: block;
+  }
 
   .user_img {
     margin-left: 0;

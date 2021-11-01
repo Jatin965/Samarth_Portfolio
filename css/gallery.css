@@ -112,7 +112,7 @@ h1 {
 
 .modal-img {
   width: 100%;
-  height: auto;
+  height: 90vh;
   max-width: 500px;
   max-height: 800px;
   opacity: 1;

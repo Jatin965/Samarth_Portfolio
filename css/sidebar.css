@@ -309,7 +309,7 @@
   top: 0px;
   left: 0px;
   overflow: hidden;
-  border-radius: 40px;
+  border-radius: 0.8rem;
 
   transition: 0.3s ease 0.15s;
   font-family: sans-serif;

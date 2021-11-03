@@ -448,7 +448,7 @@ nav .burger .line-3 {
 }
 .user_img {
   width: 115%;
-  height: auto;
+  height: 100%;
 }
 .word {
   overflow: hidden;
@@ -514,6 +514,10 @@ nav .burger .line-3 {
 }
 #First__Section-img {
   display: none;
+}
+
+.row > * {
+  padding-left: 0;
 }
 
 @media screen and (max-device-width: 995px), screen and (max-width: 995px) {

@@ -352,7 +352,7 @@
 </div>
 
 </div>
-     <div class="col-lg-3">
+     <div class="col-lg-4">
         <div class="heading-jump" id="mob-jum">
           <h2 class="center jello">
             <span>H</span>
@@ -534,7 +534,7 @@
                     </div>
                      -->
 
-            <div id="tag"></div>
+            <p id="tag"></p>
           </div>
         </div>
       </div>
@@ -927,7 +927,7 @@
     <footer>
       <p >
         Copyright © 2021 Samarth Goyal, All Rights Reserved
-        
+
       </p>
     </footer>
 
@@ -945,18 +945,19 @@
     <script>
       $(document).ready(function () {
         let entries = [
-          { label: "PYTHON" },
-          { label: "CSS" },
-          { label: "JAVASCRIPT" },
-          { label: "HTML" },
-          { label: "ANDROID" },
-          { label: "JAVA" },
-          { label: "XML" },
-          { label: "C" },
-          { label: "C++" },
-          { label: "TENSORFLOW" },
-          { label: "DEEP LEARNING" },
-          { label: "SOCIAL MEDIA" },
+          { label: "PYTHON" , url: '#', target: '_top'},
+          { label: "CSS" , url: '#', target: '_top'},
+          { label: "JAVASCRIPT" , url: '#', target: '_top'},
+          { label: "HTML" , url: '#', target: '_top'},
+          { label: "ANDROID" , url: '#', target: '_top'},
+          { label: "JAVA" , url: '#', target: '_top'},
+          { label: "XML" , url: '#', target: '_top'},
+          { label: "C" , url: '#', target: '_top' },
+          { label: "C++" , url: '#', target: '_top'},
+          { label: "TENSORFLOW" , url: '#', target: '_top'},
+          { label: "DEEP LEARNING", url: '#', target: '_top' },
+          { label: "SOCIAL MEDIA" , url: '#', target: '_top'},
+
           // {label : ''},
           // {label : 'REACT-NATIVE'},
           // {label : 'AWS'},
@@ -990,6 +991,7 @@
           fontStyle: "normal",
           fontSretch: "normal",
           fontToUppercase: true,
+
         };
 
         $("#tag").svg3DTagCloud(settings);

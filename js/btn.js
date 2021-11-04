@@ -468,17 +468,18 @@ const button = document.getElementById('button');
 		      let y = document.getElementById("email").value;
 		       let z = document.getElementById("phone").value;
 		        let a = document.getElementById("texta").value;
+						let text= a.length;
 
 
-		  if(x== '' || y=='' || z=='' || a=='')
+		  if(x== '' || y=='' || z=='' || text===6)
 		  {
 
 		    alert("enter detail");
 		  }
 			else
 		  {
-
-
+				if(text>12)
+       {
 		    if (!disabled) {
 		          disabled = true;
 		    // Loading stage
@@ -501,7 +502,7 @@ const button = document.getElementById('button');
 							document.getElementById("name").value="";
 											document.getElementById("name").classList.remove("used");
 											document.getElementById("email").value="";
-											document.getElementById("email").style.backgroundColor="#121212";
+
 											document.getElementById("email").classList.remove("used");
 											document.getElementById("phone").value="";
 											document.getElementById("phone").classList.remove("used");
@@ -518,7 +519,11 @@ const button = document.getElementById('button');
 		 }
 
 
-
+       }
+			 else
+			 {
+				 alert("comment must be more than 12 charecter");
+			 }
 		}
 
 		}

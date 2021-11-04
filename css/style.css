@@ -516,11 +516,22 @@ nav .burger .line-3 {
   display: none;
 }
 
-.row > * {
-  padding-left: 0;
-}
+
 
 @media screen and (max-device-width: 995px), screen and (max-width: 995px) {
+  .loading-screen {
+    padding-top: 20vh!important;
+    text-align: center!important;
+    display: block!!important;
+  }
+  .logo {
+    width: 200px;
+    height: 200px;
+  }
+  .loading-bar
+  {
+    left: 10vh!important;
+  }
   #mob-jum {
     display: none;
   }

@@ -388,7 +388,7 @@ nav .burger .line-3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 .header {
-  background: #77acf1;
+  background: linear-gradient(132deg, #fff, #000, #eeff04, #fff, #fff);
 }
 @keyframes jello {
   0% {

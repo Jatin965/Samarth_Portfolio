@@ -426,6 +426,9 @@ nav .burger .line-3 {
   padding-top: 300px;
   text-align: right;
   padding-right: 20px;
+  position: absolute;
+  right: 10px;
+  top: 0;
 }
 
 .time {
@@ -447,23 +450,25 @@ nav .burger .line-3 {
   top: 0;
 }
 .user_img {
-  width: 115%;
-  height: 100%;
+  width: 90%;
+  height: auto;
 }
 .word {
   overflow: hidden;
 }
-.wrapper {
+
+.wrapper1 {
   text-align: right;
   box-sizing: content-box;
   background: rgba(255, 255, 255, 0);
   height: 80px;
-
-  padding: 10px 0;
+  position: absolute;
+  right: 20px;
+  bottom: 28vh;
   display: flex;
   border-radius: 8px;
 }
-.wrapper span {
+.wrapper1 span {
   display: block;
   height: 100%;
   padding-left: 10px;
@@ -475,7 +480,7 @@ nav .burger .line-3 {
   margin-left: 0px;
 }
 
-.wrapper p {
+.wrapper1 p {
   font-size: 35px;
   font-weight: bold;
   color: #1a08b9;
@@ -516,21 +521,17 @@ nav .burger .line-3 {
   display: none;
 }
 
-
-
 @media screen and (max-device-width: 995px), screen and (max-width: 995px) {
   .loading-screen {
-    padding-top: 20vh!important;
-    text-align: center!important;
-    display: block!!important;
+    padding-top: 20vh !important;
+    text-align: center !important;
   }
   .logo {
     width: 200px;
     height: 200px;
   }
-  .loading-bar
-  {
-    left: 10vh!important;
+  .loading-bar {
+    left: 10vh !important;
   }
   #mob-jum {
     display: none;

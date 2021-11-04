@@ -311,7 +311,7 @@
     <!--  <div class="Separator"><br /><br /><br /><br /></div>-->
     <!-- First Section Main Area   old imge class Main__Img img-fluid-->
 
-      <div class="col-lg-7">
+      <div class="col-lg-10">
         <div class="First__Section " id="mob-user_img">
         <img
           src="./images/Main__img-1.png"
@@ -373,7 +373,7 @@
           </h2>
         </div>
         <!--<h1 class="Heading3"></h1>-->
-        <div class="wrapper">
+        <div class="wrapper1">
           <div class="word">
             <span></span>
             <span>Android Developer</span>
@@ -439,7 +439,15 @@
             </div>
 
             <div class="Next__Quote__Btn__Holder">
-              <button class="Next__Quote__Btn">Next Quote</button>
+              <!-- <button class="Next__Quote__Btn">Next Quote</button> -->
+              <a
+                class="cta"
+                href=""
+                ><span>Next Quote</span>
+                <svg width="13px" height="10px" viewBox="0 0 13 10">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline></svg
+              ></a>
             </div>
           </div>
         </div>
@@ -795,7 +803,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col col-sm-12 col-md-6 col-lg-6 mx-auto Contact__Part_1">
-            <h1>Contact Me</h1>
+
             <div class="MAIN__FORM">
               <div class="group">
                 <input type="text" id="name" /><span class="highlight"></span
@@ -821,7 +829,7 @@
               <div class="Form__btn">
                 <!-- <button class="btn btn-primary">Submit</button> -->
 
-                <button id="button" class="ready" onclick=" clickButton()" >
+                <button id="button" class="ready" onclick="clickButton()" >
                   <div class="message submitMessage">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1153,6 +1161,20 @@ document.getElementById("myInput").style.background = "red";
     });
     </script>
 
+    <script>
+      const coords = [24.577278536264505,73.68667602539064]
+const MAP_Generator = function(coords) {
+    let map = L.map('map').setView(coords, 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker(coords).addTo(map)
+    .openPopup();
+}
+MAP_Generator(coords);
+    </script>
 
     <script src="js/sidebar.js"></script>
     <script src="js/mobile.js"></script>

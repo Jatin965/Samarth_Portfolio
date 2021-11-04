@@ -464,7 +464,7 @@ nav .burger .line-3 {
   height: 80px;
   position: absolute;
   right: 20px;
-  bottom: 28vh;
+  bottom: 18vh;
   display: flex;
   border-radius: 8px;
 }
@@ -511,7 +511,7 @@ nav .burger .line-3 {
     transform: translateY(-400%);
   }
 }
-#wrapper {
+#wrapper1 {
   display: none;
 }
 #heading-jump {
@@ -543,6 +543,7 @@ nav .burger .line-3 {
     display: none;
   }
   #First__Section-img {
+    margin-top: 150px;
     display: block;
   }
 
@@ -553,8 +554,8 @@ nav .burger .line-3 {
   .heading-jump {
     padding: 20px !important;
   }
-  .wrapper {
-    top: 40%;
+  .wrapper1 {
+    top: 20%;
     font-size: 30px;
   }
   .heading-jump span {

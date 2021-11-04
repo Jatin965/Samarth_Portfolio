@@ -1,11 +1,13 @@
 .certificate__section
 {
   padding: 5px;
+
 }
 .Certificate__Display img
 {
   width: 100%;
   padding: 10px;
+  padding-bottom: 0px!important;
 }
 
 
@@ -20,8 +22,10 @@
 .side
 {
  background: #FEFBF3;
- margin: 0px;
+ margin: 10px;
  color: grey;
+ margin-top: 0;
+
 }
 .text-center
 
@@ -34,6 +38,7 @@
 }
 footer{
   background: ##FFFAFA;
+
 }
 
 
@@ -71,6 +76,12 @@ footer{
 .side h5
 {
   font-size: 12px;
+}
+.side
+{
+
+margin: 10px;
+  margin-top: 0!important;
 }
 footer
 {

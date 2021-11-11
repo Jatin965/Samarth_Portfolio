@@ -540,6 +540,11 @@ nav .burger .line-3 {
     padding-top: 20vh !important;
     text-align: center !important;
   }
+
+  .time {
+    margin-left: 0;
+    padding-right: 10px;
+  }
   .logo {
     width: 200px;
     height: 200px;
@@ -1534,10 +1539,6 @@ a:hover {
 
   .Projects__section .Project__Second__column p {
     font-size: 13px;
-  }
-
-  .Projects__section .Project__Second__column a {
-    padding: 7px 14px;
   }
 
   .Projects__section .row {

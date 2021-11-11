@@ -76,7 +76,7 @@ body {
 }
 
 .toggle .toggle-menu {
-  background-color: white;
+  background-color: inherit;
 }
 .nav-list {
   list-style: none;
@@ -389,6 +389,20 @@ nav .burger .line-3 {
 }
 .header {
   background: linear-gradient(132deg, #fff, #000, #eeff04, #fff, #fff);
+  background-size: 400% 400%;
+  animation: animateMainBackground 5s ease infinite;
+}
+
+@keyframes animateMainBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @keyframes jello {
   0% {
@@ -548,7 +562,7 @@ nav .burger .line-3 {
   }
 
   .user_img {
-    margin-left: 0;
+    margin-left: 30px;
   }
 
   .heading-jump {
@@ -570,13 +584,14 @@ nav .burger .line-3 {
   .nav-bar {
     position: fixed;
     background-color: #122;
+    bottom: 0;
 
-    height: 120vh;
+    height: 100vh;
 
     width: 200px;
     transition: 0.5s ease-out;
     z-index: 11;
-    padding-top: 15vh !important;
+    padding-top: 10px !important;
   }
 
   .toggle-menu {
@@ -596,6 +611,13 @@ nav .burger .line-3 {
     background-color: #fff;
     transition: 0.2s ease-out;
     margin: 5px 0;
+  }
+  .Contact__Part_2 {
+    display: block;
+  }
+
+  .Contact__Part_2 #map {
+    height: 400px;
   }
 
   .nav-list {
@@ -1157,10 +1179,6 @@ nav .burger .line-3 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
-
-  .Contact__Part_2 {
-    display: none;
   }
 }
 

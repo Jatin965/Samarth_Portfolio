@@ -1,205 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Samarth Portfolio</title>
-    <!-- Bootstrap Css -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samarth Portfolio</title>
+  <!-- Bootstrap Css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <!-- LeafLet Script -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""
-    ></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Custom Css -->
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/certificates.css" />
-      <link rel="stylesheet" href="../css/sidebar.css" />
-      <link rel="stylesheet" href="./css/formBtn.css" />
-      <link rel="stylesheet" href="./css/loading.css" />
-      <link rel="stylesheet" href="./css/myanimation.css" />
+  <!-- LeafLet Script -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 
-      <link rel="stylesheet" href="./css/dark.css" />
-  </head>
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/certificates.css" />
+  <link rel="stylesheet" href="../css/sidebar.css" />
+  <link rel="stylesheet" href="./css/formBtn.css" />
+  <link rel="stylesheet" href="./css/loading.css" />
+  <link rel="stylesheet" href="./css/myanimation.css" />
 
-  <body>
-    <div class="con">
-          <div class="nav-bar">
-            <div class="toggle-menu">
-              <div class="line line1"></i></div>
-              <div class="line line2"></div>
-              <div class="line line3"></div>
+  <link rel="stylesheet" href="./css/dark.css" />
+</head>
+
+<body>
+  <div class="con">
+    <div class="nav-bar">
+      <div class="toggle-menu">
+        <div class="line line1"></i></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li class="nav-list-item"><a href="../index.html" class="nav-link"><img src="../images/Logo.png"
+              class="img-fluid" alt="Logo" width="30" height="30" />
+            <h5>Home</h5>
+          </a></li>
+        <li class="nav-list-item"><a href="../about.html" class="nav-link"><i class="fas fa-info"></i>
+            <h5>About</h5>
+          </a></li>
+        <li class="nav-list-item">
+          <a href="#" class="nav-link"> <i class="fas fa-border-all"></i>
+            <h5>Projects</h5>
+          </a>
+        </li>
+        <li class="nav-list-item"><a href="../certificates/cr-main.html" class="nav-link"><i
+              class="fas fa-certificate"></i>
+            <h5>Certificate</h5>
+          </a></li>
+        <li class="nav-list-item">
+          <a href="../gallery.html" class="nav-link"><i class="fas fa-images"></i>
+            <h5>Gallery</h5>
+          </a>
+        </li>
+        <li class="nav-list-item">
+          <a href="../music.html" class="nav-link"><i class="fas fa-play"></i>
+            <h5>Music</h5>
+          </a>
+        </li>
+        <li class="nav-list-item">
+          <a href="/blog" class="nav-link"> <i class="fas fa-blog"></i>
+            <h5>Blogs</h5>
+          </a>
+        </li>
+        <li class="nav-list-item">
+          <a href="../contact.html" class="nav-link"><i class="fas fa-phone"></i>
+            <h5>Contact</h5>
+          </a>
+        </li>
+        <li class="nav-list-item">
+          <div class="btn-toggle button" type="button" id="dark-mode">
+            <i class="fas fa-moon" id="fa-moon1"></i>
+            <i class="fas fa-sun sun1" id="img-fluid1"></i>
+          </div>
+        </li>
+
+        <li>
+          <div class="time">
+            <span class="Time"></span>
+            <span class="Format"></span>
+            <div class="date">
+              <span class="Month"></span>
+              <span class="Day"></span>
             </div>
-            <ul class="nav-list">
-              <li class="nav-list-item"><a href="../index.html" class="nav-link"><img src="../images/Logo.png" class="img-fluid" alt="Logo" width="30" height="30" />Home</a></li>
-              <li class="nav-list-item"><a href="../about.html"  class="nav-link"><i class="fas fa-info"></i>
-              <h5 >About</h5></a></li>
-              <li class="nav-list-item">
-                <a href="#" class="nav-link">    <i class="fas fa-border-all"></i>
-                    <h5 >Projects</h5></a>
-              </li>
-              <li class="nav-list-item"><a href="../certificates/cr-main.html" class="nav-link"><i class="fas fa-certificate"></i>
-              <h5 >Certificate</h5></a></li>
-              <li class="nav-list-item">
-                <a href="../gallery.html" class="nav-link"><i class="fas fa-images"></i>
-                <h5 >Gallery</h5></a>
-              </li>
-              <li class="nav-list-item">
-                <a href="../music.html" class="nav-link"><i class="fas fa-play"></i>
-                <h5 >Music</h5></a>
-              </li>
-              <li class="nav-list-item">
-                <a href="/blog" class="nav-link">  <i class="fas fa-blog"></i>
-                    <h5>Blogs</h5></a>
-              </li>
-              <li class="nav-list-item">
-                <a href="../contact.html" class="nav-link"><i class="fas fa-phone"></i>
-                <h5 >Contact</h5></a>
-              </li>
-              <li class="nav-list-item">
-                <div class="btn-toggle button" type="button" id="dark-mode">
-                  <i class="fas fa-moon" id="fa-moon1"></i>
-                  <i class="fas fa-sun sun1" id="img-fluid1"></i>
-                </div>
-              </li>
+            <div class='partition'>
+              <span class='temp'></span>
+            </div>
+          </div>
+        </li>
+      </ul>
 
-              <li>
-                <div  class="time">
-                  <span class="Time"></span>
-                  <span class="Format"></span>
-                  <div class="date">
-                        <span class="Month"></span>
-                        <span class="Day"></span>
-                  </div>
-                  <div class='partition'>
-                    <span class='temp'></span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-
+    </div>
+  </div>
+  <!-- Menu Bar Creation -->
+  <div class="row  cir">
+    <div class="col-lg-2">
+      <div id="menu" class="menu">
+        <div class="actionsBar">
+          <div>
+            <button id="menuBtn" type="button">
+              <i class="fas fa-bars"></i>
+            </button>
+            <h3 class="menuText">Dashboard</h3>
           </div>
         </div>
-    <!-- Menu Bar Creation -->
-    <div class="row  cir">
-      <div class="col-lg-2">
-        <div id="menu" class="menu">
-          <div class="actionsBar">
-            <div>
-              <button id="menuBtn" type="button">
-                <i class="fas fa-bars"></i>
-              </button>
-              <h3 class="menuText">Dashboard</h3>
-            </div>
-          </div>
-          <ul class="optionsBar">
-            <li class="menuItem">
-              <a href="../index.html" class="menuOption">
-                <img src="../images/Logo.png" class="img-fluid" alt="Logo">
-                <h5 class="menuText">Home</h5>
-              </a>
-            </li>
+        <ul class="optionsBar">
+          <li class="menuItem">
+            <a href="../index.html" class="menuOption">
+              <img src="../images/Logo.png" class="img-fluid" alt="Logo">
+              <h5 class="menuText">Home</h5>
+            </a>
+          </li>
 
-            <li class="menuItem">
-              <a href="../about.html" id="productManagerBtn" class="menuOption">
-                <i class="fas fa-info"></i>
-                <h5 class="menuText">About</h5>
-              </a>
-            </li>
-            <li class="menuItem">
-              <a href="#" id="constantManagerBtn" class="menuOption">
-                <i class="fas fa-border-all"></i>
-                <h5 class="menuText">Projects</h5>
-              </a>
-            </li>
-            <li class="menuItem">
-              <a
-                href="../certificates/cr-main.html"
-                id="constantManagerBtn"
-                class="menuOption"
-              >
-                <i class="fas fa-certificate"></i>
-                <h5 class="menuText">Certificate</h5>
-              </a>
-            </li>
-            <li class="menuItem">
-              <a href="../gallery.html" id="constantManagerBtn" class="menuOption">
+          <li class="menuItem">
+            <a href="../about.html" id="productManagerBtn" class="menuOption">
+              <i class="fas fa-info"></i>
+              <h5 class="menuText">About</h5>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a href="#" id="constantManagerBtn" class="menuOption">
+              <i class="fas fa-border-all"></i>
+              <h5 class="menuText">Projects</h5>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a href="../certificates/cr-main.html" id="constantManagerBtn" class="menuOption">
+              <i class="fas fa-certificate"></i>
+              <h5 class="menuText">Certificate</h5>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a href="../gallery.html" id="constantManagerBtn" class="menuOption">
               <i class="fas fa-images"></i>
-                <h5 class="menuText">Gallery</h5>
-              </a>
-            </li>
+              <h5 class="menuText">Gallery</h5>
+            </a>
+          </li>
 
-            <li class="menuItem">
-              <a href="../music.html" id="constantManagerBtn" class="menuOption">
-                <i class="fas fa-play"></i>
-                <h5 class="menuText">Music</h5>
-              </a>
-            </li>
-            <li class="menuItem">
-              <a href="#" id="constantManagerBtn" class="menuOption">
-                <i class="fas fa-blog"></i>
-                <h5 class="menuText">Blogs</h5>
-              </a>
-            </li>
-            <li class="menuItem">
-              <a href="../contact.html" id="constantManagerBtn" class="menuOption">
-                <i class="fas fa-phone"></i>
-                <h5 class="menuText">Contact</h5>
-              </a>
-            </li>
-          </ul>
+          <li class="menuItem">
+            <a href="../music.html" id="constantManagerBtn" class="menuOption">
+              <i class="fas fa-play"></i>
+              <h5 class="menuText">Music</h5>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a href="#" id="constantManagerBtn" class="menuOption">
+              <i class="fas fa-blog"></i>
+              <h5 class="menuText">Blogs</h5>
+            </a>
+          </li>
+          <li class="menuItem">
+            <a href="../contact.html" id="constantManagerBtn" class="menuOption">
+              <i class="fas fa-phone"></i>
+              <h5 class="menuText">Contact</h5>
+            </a>
+          </li>
+        </ul>
 
 
-          <div class="themeBar">
-            <div>
-              <button class="btn-toggle button" type="button" id="dark-mode-toggle">
-                <i class="fas fa-moon" id="fa-moon"></i>
-                <i class="fas fa-sun sun1" id="img-fluid"></i>
-              </button>
-            </div>
+        <div class="themeBar">
+          <div>
+            <button class="btn-toggle button" type="button" id="dark-mode-toggle">
+              <i class="fas fa-moon" id="fa-moon"></i>
+              <i class="fas fa-sun sun1" id="img-fluid"></i>
+            </button>
           </div>
         </div>
       </div>
+    </div>
 
 
 
     <!-- Certifcate Display Region -->
     <div class="col-lg-10 ">
 
-    <section class="container certificate__section" >
-      <div >
-        <div
-          class="col col-sm-12 col-md-12 col-lg-12 mx-auto Certificate__Display"
-        >
-          <img
-            src="../images/Certificates/2232261-1586586800.jpg"
-            class="img-fluid"
-            alt="IMG__1"
-          />
-        </div>
+      <section class="container certificate__section">
+        <div>
+          <div class="col col-sm-12 col-md-12 col-lg-12 mx-auto Certificate__Display">
+            <img src="../images/Certificates/2232261-1586586800.jpg" class="img-fluid" alt="IMG__1" />
+          </div>
         </div>
 
         <div class="row  side ">
@@ -208,11 +197,7 @@
           <hr />
           <div class="col-lg-4 col-4 text-center img-box">
 
-            <img
-              src="../images/Certificates/clog.png"
-              class="img-clog"
-              alt="IMG__1"
-            />
+            <img src="../images/Certificates/clog.png" class="img-clog" alt="IMG__1" />
 
 
           </div>
@@ -227,51 +212,51 @@
             <h5>C2232261 EN</h5>
           </div>
 
-      </div>
-      </div>
+        </div>
+    </div>
     </section>
-  </div></div>
+  </div>
+  </div>
   <footer style="margin-top:50px;">
-    <p >
-      Created With ❤️ By Samarth | Copyright &copy;
-      <span class="Footer__year">2021</span> All rights reserved !
+    <p>
+      Copyright © 2021 Samarth Goyal, All Rights Reserved
+
     </p>
   </footer>
-    <!-- Bootstrap Js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap Js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <script src="./js/sidebar.js"></script>
-    <!-- Custom Js -->
-    <script>
-      const Mode = document.querySelector(".mode__icon");
-      const nav = document.querySelector("nav");
-      const navLink = document.querySelectorAll(".nav__link");
-      const body = document.querySelector("body");
+  <!-- Custom Js -->
+  <script>
+    const Mode = document.querySelector(".mode__icon");
+    const nav = document.querySelector("nav");
+    const navLink = document.querySelectorAll(".nav__link");
+    const body = document.querySelector("body");
 
-      let count = 0;
-      Mode.addEventListener("click", function () {
-        body.classList.toggle("DarkMode");
-        nav.classList.toggle("DarkMode");
-        navLink.forEach((element) => {
-          element.classList.toggle("DarkMode");
-        });
-        MenuList.classList.toggle("DarkMode");
-        count = count + 1;
-        if (count % 2 === 0) {
-          Mode.setAttribute("src", "../images/icons/light.svg");
-        } else {
-          Mode.setAttribute("src", "../images/icons/dark.svg");
-        }
+    let count = 0;
+    Mode.addEventListener("click", function () {
+      body.classList.toggle("DarkMode");
+      nav.classList.toggle("DarkMode");
+      navLink.forEach((element) => {
+        element.classList.toggle("DarkMode");
       });
-    </script>
+      MenuList.classList.toggle("DarkMode");
+      count = count + 1;
+      if (count % 2 === 0) {
+        Mode.setAttribute("src", "../images/icons/light.svg");
+      } else {
+        Mode.setAttribute("src", "../images/icons/dark.svg");
+      }
+    });
+  </script>
 
-    <script src="../js/Nav.js"></script>
-    <script src="../js/sidebar.js"></script>
-      <script src="../js/mode.js"></script>
-      <script src="../js/mobile.js"></script>
-      <script src="../js/mobmenu.js"></script>
-  </body>
+  <script src="../js/Nav.js"></script>
+  <script src="../js/sidebar.js"></script>
+  <script src="../js/mode.js"></script>
+  <script src="../js/mobile.js"></script>
+  <script src="../js/mobmenu.js"></script>
+</body>
+
 </html>

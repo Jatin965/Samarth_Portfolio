@@ -404,6 +404,7 @@
 
 .menu .optionsBar .menuItem .menuOption h5 {
   width: calc(100% - 45px);
+  margin: 0;
 }
 
 .menuText {

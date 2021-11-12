@@ -131,13 +131,12 @@ h1 {
   display: none;
 }
 @media screen and (max-device-width: 995px), screen and (max-width: 995px) {
-  .modal-body {
-    display: none;
-  }
-  .modal-img {
-    display: none;
-  }
   .my-glry {
     font-size: 1.8rem;
+  }
+
+  .modal-img {
+    max-width: 95vw;
+    margin-top: 10vh;
   }
 }

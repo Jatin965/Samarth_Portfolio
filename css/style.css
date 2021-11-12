@@ -64,14 +64,14 @@ body {
   transition: 0.2s ease-out;
 }
 .toggle .line1 {
-  background-color: #e73c7e;
+  background-color: white; /* #e73c7e */
   transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
 }
 .toggle .line2 {
   display: none;
 }
 .toggle .line3 {
-  background-color: #e73c7e;
+  background-color: white; /* #e73c7e;*/
   transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
 }
 
@@ -466,6 +466,7 @@ nav .burger .line-3 {
 .user_img {
   width: 90%;
   height: auto;
+  margin-left: 5vw;
 }
 .word {
   overflow: hidden;
@@ -638,6 +639,10 @@ nav .burger .line-3 {
 
   .nav-list-item a i {
     padding: 10px;
+  }
+
+  .nav-list-item a h5 {
+    margin: 0;
   }
   .nav-list-item div i {
     font-size: 30px;
